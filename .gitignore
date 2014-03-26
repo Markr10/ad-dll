@@ -25,8 +25,6 @@ build/
 *_i.c
 *_p.c
 *.ilk
-*.meta
-*.obj
 *.pch
 *.pdb
 *.pgc
@@ -43,7 +41,6 @@ build/
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # Visual Studio profiler
@@ -67,9 +64,6 @@ _TeamCity*
 # NCrunch
 *.ncrunch*
 .*crunch*.local.xml
-
-# NuGet Packages Directory
-packages
 
 # Others
 *.Cache
