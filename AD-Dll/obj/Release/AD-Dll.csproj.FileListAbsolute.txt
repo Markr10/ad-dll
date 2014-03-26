@@ -1,4 +1,0 @@
-C:\Users\Wybren\Documents\Visual Studio 2012\Projects\AD-Dll\AD-Dll\bin\Release\AD-Dll.dll
-C:\Users\Wybren\Documents\Visual Studio 2012\Projects\AD-Dll\AD-Dll\bin\Release\AD-Dll.pdb
-C:\Users\Wybren\Documents\Visual Studio 2012\Projects\AD-Dll\AD-Dll\obj\Release\AD-Dll.dll
-C:\Users\Wybren\Documents\Visual Studio 2012\Projects\AD-Dll\AD-Dll\obj\Release\AD-Dll.pdb
