@@ -1,0 +1,8 @@
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\obj\Debug\AD-ConsoleApplication.csprojResolveAssemblyReference.cache
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\bin\Debug\AD-ConsoleApplication.exe.config
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\bin\Debug\AD-ConsoleApplication.exe
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\bin\Debug\AD-ConsoleApplication.pdb
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\bin\Debug\AD-Dll.dll
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\bin\Debug\AD-Dll.pdb
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\obj\Debug\AD-ConsoleApplication.exe
+E:\Informatica leerjaar 2\Periode 3\Vakken\Algoritmen en datastructuren\AD-Dll\AD-ConsoleApplication\obj\Debug\AD-ConsoleApplication.pdb
