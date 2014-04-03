@@ -16,7 +16,15 @@ namespace AD_Dll.Hoofdstuk_1
         public int CompareTo(Student other)
         {
             //return de studentID
-            return other.StudentID.CompareTo(this.StudentID);
+            if (this.StudentID > other.StudentID)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+            //return other.StudentID.CompareTo(this.StudentID);
             
         }
 
