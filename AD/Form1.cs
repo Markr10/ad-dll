@@ -42,5 +42,25 @@ namespace AD
             Form sort = new Sorteren();
             sort.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            List<Student> list = new List<Student>();
+            list.Add(new Student() { Name = "Steve", Salary = 10000 });
+            list.Add(new Student() { Name = "Janet", Salary = 10000 });
+            list.Add(new Student() { Name = "Andrew", Salary = 10000 });
+            list.Add(new Student() { Name = "Bill", Salary = 500000 });
+            list.Add(new Student() { Name = "Lucy", Salary = 8000 });
+
+            // Uses IComparable.CompareTo()
+            list.Sort();
+
+            // Uses Student.ToString
+            foreach (var element in list)
+            {
+                Console.WriteLine(element);
+            }
+        }
     }
 }
