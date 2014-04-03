@@ -9,24 +9,21 @@ namespace AD_Dll.Hoofdstuk_1
     public class Student : IComparable<Student>
     {
 
-        public int Salary { get; set; }
-        public string Name { get; set; }
+        public String Name { get; set; }
+        public int Age { get; set; }
+        public int StudentID{ get; set;}
 
         public int CompareTo(Student other)
         {
-            // Alphabetic sort if salary is equal. [A to Z]
-            if (this.Salary == other.Salary)
-            {
-                return this.Name.CompareTo(other.Name);
-            }
-            // Default to salary sort. [High to low]
-            return other.Salary.CompareTo(this.Salary);
+            //return de studentID
+            return other.StudentID.CompareTo(this.StudentID);
+            
         }
 
         public override string ToString()
         {
             // String representation.
-            return this.Salary.ToString() + "," + this.Name;
+            return this.Name.ToString() + "," + this.StudentID;
         }
     }
 

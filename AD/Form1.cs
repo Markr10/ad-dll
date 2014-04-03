@@ -47,11 +47,10 @@ namespace AD
         {
 
             List<Student> list = new List<Student>();
-            list.Add(new Student() { Name = "Steve", Salary = 10000 });
-            list.Add(new Student() { Name = "Janet", Salary = 10000 });
-            list.Add(new Student() { Name = "Andrew", Salary = 10000 });
-            list.Add(new Student() { Name = "Bill", Salary = 500000 });
-            list.Add(new Student() { Name = "Lucy", Salary = 8000 });
+            list.Add(new Student() { Name = "Wybren", Age = 21, StudentID = 282235 });
+            list.Add(new Student() { Name = "Raymon", Age = 20, StudentID = 197955 });
+            list.Add(new Student() { Name = "Mark", Age = 20, StudentID = 255815 });
+            
 
             // Uses IComparable.CompareTo()
             list.Sort();
