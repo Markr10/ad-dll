@@ -45,21 +45,14 @@ namespace AD
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            List<Student> list = new List<Student>();
-            list.Add(new Student() { Name = "Wybren", Age = 21, StudentID = 282235 });
-            list.Add(new Student() { Name = "Raymon", Age = 20, StudentID = 197955 });
-            list.Add(new Student() { Name = "Mark", Age = 20, StudentID = 255815 });
+            Form GenericStudent = new GenericStudent();
+            GenericStudent.Show();
             
+        }
 
-            // Uses IComparable.CompareTo()
-            list.Sort();
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-            // Uses Student.ToString
-            foreach (var element in list)
-            {
-                Console.WriteLine(element);
-            }
         }
     }
 }
