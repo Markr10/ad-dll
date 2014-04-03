@@ -44,7 +44,6 @@ namespace AD_Dll.Hoofdstuk_10
                 }
                 else
                 {
-                    //Raymon's test
                     throw new ArgumentException("String of parameter incorrect");
                 }
                 names[hashVal] = name;
