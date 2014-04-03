@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="Hoofdstuk 10\HashTable.cs" />
     <Compile Include="Hoofdstuk 1\ActionMeasurement.cs" />
+    <Compile Include="Hoofdstuk 1\Generics.cs" />
     <Compile Include="Hoofdstuk 1\MassiveMeasurement.cs" />
+    <Compile Include="Hoofdstuk 1\Student.cs" />
     <Compile Include="Hoofdstuk 3\BubbleSort.cs" />
     <Compile Include="Hoofdstuk 3\InsertionSort.cs" />
     <Compile Include="Hoofdstuk 3\SelectionSort.cs" />
