@@ -12,7 +12,7 @@ using AD_Dll.Hoofdstuk_1;
 
 namespace AD
 {
-    public partial class Form1 : Form
+    public partial class Form1 : FormConsole
     {
         public Form1()
         {
@@ -55,11 +55,19 @@ namespace AD
             // Uses IComparable.CompareTo()
             list.Sort();
 
+            ShowConsole("Generics");
             // Uses Student.ToString
             foreach (var element in list)
             {
                 Console.WriteLine(element);
             }
+            CloseConsole();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Voorkom dat wanneer de applicatie via cmd.exe aangeroepen is, cmd.exe afgesloten wordt.
+            Program.setConsoleWindowVisibility(true);
         }
     }
 }
