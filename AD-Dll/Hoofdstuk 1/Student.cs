@@ -31,7 +31,7 @@ namespace AD_Dll.Hoofdstuk_1
         public override string ToString()
         {
             // String representation.
-            return this.Name.ToString() + "," + this.StudentID;
+            return this.Name.ToString() + ", " + this.StudentID;
         }
     }
 

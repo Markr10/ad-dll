@@ -45,23 +45,8 @@ namespace AD
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            List<Student> list = new List<Student>();
-            list.Add(new Student() { Name = "Wybren", Age = 21, StudentID = 282235 });
-            list.Add(new Student() { Name = "Raymon", Age = 20, StudentID = 197955 });
-            list.Add(new Student() { Name = "Mark", Age = 20, StudentID = 255815 });
-            
-
-            // Uses IComparable.CompareTo()
-            list.Sort();
-
-            ShowConsole("Generics");
-            // Uses Student.ToString
-            foreach (var element in list)
-            {
-                Console.WriteLine(element);
-            }
-            CloseConsole();
+            Form GenericStudent = new GenericStudent();
+            GenericStudent.Show();
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
