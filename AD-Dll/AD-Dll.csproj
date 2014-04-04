@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hoofdstuk 10\BucketHash.cs" />
     <Compile Include="Hoofdstuk 10\HashTable.cs" />
     <Compile Include="Hoofdstuk 1\ActionMeasurement.cs" />
     <Compile Include="Hoofdstuk 1\Generics.cs" />

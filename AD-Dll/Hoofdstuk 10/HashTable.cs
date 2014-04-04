@@ -74,6 +74,13 @@ namespace AD_Dll.Hoofdstuk_10
             return (int)tot;
         }
 
-
+        static bool InHash(string s, string[] arr)
+        {
+            int hval = BetterHash(s, arr);
+            if (arr[hval] == s)
+                return true;
+            else
+                return false;
+        }
     }
 }
