@@ -12,7 +12,7 @@ using AD_Dll.Hoofdstuk_1;
 
 namespace AD
 {
-    public partial class GenericStudent : Form
+    public partial class GenericStudent : FormConsole
     {
         public GenericStudent()
         {
@@ -36,12 +36,14 @@ namespace AD
             // Uses IComparable.CompareTo()
             list.Sort();
 
+            ShowConsole("Generics");
             // Uses Student.ToString
             foreach (var element in list)
             {
                 textBox1.Text += element.ToString() + "\r\n";
                 Console.WriteLine(element);
             }
+            CloseConsole();
         }
 
     }

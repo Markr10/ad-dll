@@ -73,7 +73,7 @@
             this.Controls.Add(this.button3);
             this.Name = "Form1";
             this.Text = "AD Dll";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
 
         }
@@ -85,4 +85,3 @@
         private System.Windows.Forms.Button button1;
     }
 }
-

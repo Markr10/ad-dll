@@ -12,7 +12,7 @@ using AD_Dll.Hoofdstuk_1;
 
 namespace AD
 {
-    public partial class Form1 : Form
+    public partial class Form1 : FormConsole
     {
         public Form1()
         {
@@ -47,12 +47,12 @@ namespace AD
         {
             Form GenericStudent = new GenericStudent();
             GenericStudent.Show();
-            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            // Voorkom dat wanneer de applicatie via cmd.exe aangeroepen is, cmd.exe afgesloten wordt.
+            Program.setConsoleWindowVisibility(true);
         }
     }
 }
