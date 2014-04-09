@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AD_Dll.Hoofdstuk_1;
+using AD_Dll.Hoofdstuk_2;
 using AD_Dll;
 
 namespace AD
@@ -74,35 +75,10 @@ namespace AD
         private void btnShowInfoArrays_Click(object sender, EventArgs e)
         {
             ShowConsole("Information about the Student Arrays");
-            printInfoAboutArray(students, "students array");
+            CustomArrayMethods.printInfoAboutArray(students, "students array");
             Console.WriteLine();
-            printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
+            CustomArrayMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
             CloseConsole();
-        }
-
-        private void printInfoAboutArray(Array array, string nameOfArray)
-        {
-            Console.WriteLine(nameOfArray + ":");
-            Console.WriteLine(AD_Dll.Hoofdstuk_2.getStringTypeIsArrayType(array.GetType()));
-            Console.WriteLine("The total number of elements in all dimensions of the " + nameOfArray + " is " + array.Length.ToString() + ".");
-            printArrayDimensions(array, nameOfArray);
-        }
-
-        private void printArrayDimensions(Array array, string nameOfArray)
-        {
-            if (array.Rank > 1)
-            {
-                Console.WriteLine("The " + nameOfArray + " has " + array.Rank + " dimensions.");
-            }
-            else
-            {
-                Console.WriteLine("The " + nameOfArray + " has " + array.Rank + " dimension.");
-            }
-
-            for (int i = 0; i < array.Rank; i++)
-            {
-                Console.WriteLine("The number of elements in the " + i.ToString() + " dimension of the " + nameOfArray + " is " + array.GetLength(i).ToString() + ".");
-            }
         }
     }
 }
