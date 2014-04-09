@@ -9,7 +9,7 @@ namespace AD_Dll
 {
     public class Other
     {
-        private static Random rndObj = new Random();
+        public static readonly Random rndObj = new Random();
 
         /// <summary>
         /// Generates a random string with the given length.
@@ -26,16 +26,6 @@ namespace AD_Dll
                 builder.Append(ch);
             }
             return builder.ToString();
-        }
-
-        public static Student getRandomStudent()
-        {
-            return new Student()
-            {
-                Name = getRandomString(rndObj.Next(3, 11)).ToLowerInvariant(),
-                Age = rndObj.Next(16, 31),
-                StudentID = rndObj.Next(180000, 400001)
-            };
         }
     }
 }

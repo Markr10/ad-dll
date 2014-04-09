@@ -26,17 +26,17 @@ namespace AD
         private void btnCreateArray_Click(object sender, EventArgs e)
         {
             students = new Student[3];
-            students[0] = Other.getRandomStudent();
-            students.SetValue(Other.getRandomStudent(), 1);
+            students[0] = Student.getRandomStudent();
+            students.SetValue(Student.getRandomStudent(), 1);
 
             studentsOtherSchool = new Student[]
             {
-                Other.getRandomStudent(),
-                Other.getRandomStudent(),
-                Other.getRandomStudent(),
-                Other.getRandomStudent(),
-                Other.getRandomStudent(),
-                Other.getRandomStudent()
+                Student.getRandomStudent(),
+                Student.getRandomStudent(),
+                Student.getRandomStudent(),
+                Student.getRandomStudent(),
+                Student.getRandomStudent(),
+                Student.getRandomStudent()
             };
 
             btnShowArrays.Enabled = btnShowInfoArrays.Enabled = true;
