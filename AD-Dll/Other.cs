@@ -14,8 +14,8 @@ namespace AD_Dll
         /// <summary>
         /// Generates a random string with the given length.
         /// </summary>
-        /// <param name="length">Length of the string.</param>
-        /// <returns>Random string.</returns>
+        /// <param name="length">The length of the string.</param>
+        /// <returns>A random string.</returns>
         public static string getRandomString(int length)
         {
             StringBuilder builder = new StringBuilder();
