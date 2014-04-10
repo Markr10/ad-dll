@@ -14,7 +14,7 @@ namespace AD
 {
     public partial class Form1 : FormConsole
     {
-        public Form1()
+        public Form1() : base(true)
         {
             InitializeComponent();
         }
@@ -49,10 +49,9 @@ namespace AD
             GenericStudent.Show();
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void btnArrayAndArrayLists_Click(object sender, EventArgs e)
         {
-            // Voorkom dat wanneer de applicatie via cmd.exe aangeroepen is, cmd.exe afgesloten wordt.
-            Program.setConsoleWindowVisibility(true);
+           new Hoofdstuk_2().Show();
         }
     }
 }

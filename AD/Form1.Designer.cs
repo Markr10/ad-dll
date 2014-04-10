@@ -31,6 +31,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.Sorteren = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnArrayAndArrayLists = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -63,17 +64,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnArrayAndArrayLists
+            // 
+            this.btnArrayAndArrayLists.Location = new System.Drawing.Point(12, 107);
+            this.btnArrayAndArrayLists.Name = "btnArrayAndArrayLists";
+            this.btnArrayAndArrayLists.Size = new System.Drawing.Size(82, 36);
+            this.btnArrayAndArrayLists.TabIndex = 6;
+            this.btnArrayAndArrayLists.Text = "Array and ArrayLists";
+            this.btnArrayAndArrayLists.UseVisualStyleBackColor = true;
+            this.btnArrayAndArrayLists.Click += new System.EventHandler(this.btnArrayAndArrayLists_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnArrayAndArrayLists);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sorteren);
             this.Controls.Add(this.button3);
             this.Name = "Form1";
             this.Text = "AD Dll";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
 
         }
@@ -83,5 +94,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Sorteren;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnArrayAndArrayLists;
     }
 }
