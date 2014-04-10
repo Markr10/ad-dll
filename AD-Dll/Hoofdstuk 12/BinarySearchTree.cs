@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_12
 {
-    public class BinarySearchTree
+    public class BinarySearchTree<T> where T : IComparable<T>
     {
 
-        public Node root;
+        public Node<T> root;
         public BinarySearchTree()
         {
             root = null;
         }
 
-        public void Insert(int i)
+        public void Insert(T i)
         {
-            Node newNode = new Node();
+            Node<T> newNode = new Node<T>();
             newNode.Data = i;
             if (root == null)
             {
@@ -25,12 +25,12 @@ namespace AD_Dll.Hoofdstuk_12
             }
             else
             {
-                Node current = root;
-                Node parent;
+                Node<T> current = root;
+                Node<T> parent;
                 while (true)
                 {
                     parent = current;
-                    if (i < current.Data)
+                    if (i.CompareTo(current.Data) < 0)
                     {
                         current = current.Left;
                         if (current == null)
@@ -52,7 +52,7 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        public void InOrder(Node theRoot)
+        public void InOrder(Node<T> theRoot)
         {
             if (!(theRoot == null))
             {
@@ -62,7 +62,7 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        public void PreOrder(Node theRoot)
+        public void PreOrder(Node<T> theRoot)
         {
             if (!(theRoot == null))
             {
@@ -72,7 +72,7 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        public void PostOrder(Node theRoot)
+        public void PostOrder(Node<T> theRoot)
         {
             if (!(theRoot == null))
             {
@@ -82,28 +82,28 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        public int FindMin()
+        public T FindMin()
         {
-            Node current = root;
+            Node<T> current = root;
             while (!(current.Left == null))
                 current = current.Left;
             return current.Data;
         }
 
-        public int FindMax()
+        public T FindMax()
         {
-            Node current = root;
+            Node<T> current = root;
             while (!(current.Right == null))
                 current = current.Right;
             return current.Data;
         }
 
-        public Node Find(int key)
+        public Node<T> Find(T key)
         {
-            Node current = root;
-            while (current.Data != key)
+            Node<T> current = root;
+            while (current.Data.CompareTo(key) != 0)
             {
-                if (key < current.Data)
+                if (key.CompareTo(current.Data) < 0)
                 {
                     current = current.Left;
                 }
@@ -119,11 +119,11 @@ namespace AD_Dll.Hoofdstuk_12
             return current;
         }
 
-        public Node GetSuccessor(Node delNode)
+        public Node<T> GetSuccessor(Node<T> delNode)
         {
-            Node successorParent = delNode;
-            Node successor = delNode;
-            Node current = delNode.Right;
+            Node<T> successorParent = delNode;
+            Node<T> successor = delNode;
+            Node<T> current = delNode.Right;
             while (!(current == null))
             {
                 successorParent = current;
@@ -138,15 +138,15 @@ namespace AD_Dll.Hoofdstuk_12
             return successor;
         }
 
-        public bool Delete(int key)
+        public bool Delete(T key)
         {
-            Node current = root;
-            Node parent = root;
+            Node<T> current = root;
+            Node<T> parent = root;
             bool isLeftChild = true;
-            while (current.Data != key)
+            while (current.Data.CompareTo(key) != 0)
             {
                 parent = current;
-                if (key < current.Data)
+                if (key.CompareTo(current.Data) < 0)
                 {
                     isLeftChild = true;
                     current = current.Right;
@@ -208,7 +208,7 @@ namespace AD_Dll.Hoofdstuk_12
             }
             else
             {
-                Node successor = GetSuccessor(current);
+                Node<T> successor = GetSuccessor(current);
                 if (current == root)
                 {
                     root = successor;
