@@ -14,7 +14,7 @@ namespace AD
 {
     public partial class GenericStudent : FormConsole
     {
-        public GenericStudent()
+        public GenericStudent() : base(false)
         {
             InitializeComponent();
             CreateOutput();
