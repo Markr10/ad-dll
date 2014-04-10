@@ -9,6 +9,7 @@ namespace AD_Dll.hoofdstuk_13
 {
     public class CSet
     {
+        //temp wijziging
         private Hashtable data;
         private int hashValue;
 
@@ -30,8 +31,8 @@ namespace AD_Dll.hoofdstuk_13
             char[] chars;
             string s = item.ToString();
             chars = s.ToCharArray();
-            
-            
+
+
             for (int i = 0; i <= chars.GetUpperBound(0); i++)
             {
                 hashValue += (int)chars[i];
