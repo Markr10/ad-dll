@@ -45,6 +45,7 @@
     <Compile Include="Hoofdstuk 10\HashTable.cs" />
     <Compile Include="Hoofdstuk 12\BinarySearchTree.cs" />
     <Compile Include="Hoofdstuk 12\Node.cs" />
+    <Compile Include="Hoofdstuk 13\CSet.cs" />
     <Compile Include="Hoofdstuk 1\ActionMeasurement.cs" />
     <Compile Include="Hoofdstuk 1\Generics.cs" />
     <Compile Include="Hoofdstuk 1\MassiveMeasurement.cs" />
