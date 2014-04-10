@@ -43,13 +43,17 @@
   <ItemGroup>
     <Compile Include="Hoofdstuk 10\BucketHash.cs" />
     <Compile Include="Hoofdstuk 10\HashTable.cs" />
+    <Compile Include="Hoofdstuk 12\BinarySearchTree.cs" />
+    <Compile Include="Hoofdstuk 12\Node.cs" />
     <Compile Include="Hoofdstuk 1\ActionMeasurement.cs" />
     <Compile Include="Hoofdstuk 1\Generics.cs" />
     <Compile Include="Hoofdstuk 1\MassiveMeasurement.cs" />
     <Compile Include="Hoofdstuk 1\Student.cs" />
+    <Compile Include="Hoofdstuk 2\CustomMethods.cs" />
     <Compile Include="Hoofdstuk 3\BubbleSort.cs" />
     <Compile Include="Hoofdstuk 3\InsertionSort.cs" />
     <Compile Include="Hoofdstuk 3\SelectionSort.cs" />
+    <Compile Include="Other.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Hoofdstuk 1\ProcessTimer.cs" />
   </ItemGroup>
