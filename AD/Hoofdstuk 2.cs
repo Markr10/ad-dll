@@ -17,6 +17,8 @@ namespace AD
     {
         private Student[] students;
         private Student[] studentsOtherSchool;
+        private int[,] grades;
+        private double[,] sales;
 
         public Hoofdstuk_2() : base(false)
         {
@@ -47,13 +49,14 @@ namespace AD
             WriteFirstLine("students array:", "Student Arrays");
             for (int i = 0; i <= students.GetUpperBound(0); i++)
             {
+                Console.Write(i.ToString() + ": ");
                 if(students[i] == null)
                 {
-                    Console.WriteLine(i.ToString() + ": " +  "null");
+                    Console.WriteLine("null");
                 }
                 else
                 {
-                    Console.WriteLine(i.ToString() + ": " + students[i].ToString());
+                    Console.WriteLine(students[i].ToString());
                 }
             }
             Console.WriteLine();
@@ -75,9 +78,59 @@ namespace AD
         private void btnShowInfoArrays_Click(object sender, EventArgs e)
         {
             ShowConsole("Information about the Student Arrays");
-            CustomArrayMethods.printInfoAboutArray(students, "students array");
+            CustomMethods.printInfoAboutArray(students, "students array");
             Console.WriteLine();
-            CustomArrayMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
+            CustomMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
+            CloseConsole();
+        }
+
+        private void btnCreateMDArrays_Click(object sender, EventArgs e)
+        {
+            sales = new double[4,5];
+            grades = new int[,]
+            {
+                {1, 82, 74, 89, 100},
+                {2, 93, 96, 85, 86},
+                {3, 83, 72, 95, 89},
+                {4, 91, 98, 79, 88}
+            };
+
+            sales.SetValue(4, 0, 0);
+            sales.SetValue(105, 0, 1);
+            sales[0, 2] = 25;
+            sales[0, 3] = 57;
+            sales[0, 4] = 309;
+
+            for (int row = 1, lengthRow = sales.GetLength(0); row < lengthRow; row++)
+            {
+                for (int column = 0, lengthColumn = sales.GetLength(1); column < lengthColumn; column++)
+                {
+                    sales.SetValue(Other.rndObj.Next(0, 1000), row, column);
+                }
+            }
+
+            btnShowMDArrays.Enabled = btnShowInfoMDArrays.Enabled = true;
+        }
+
+        private void btnShowMDArrays_Click(object sender, EventArgs e)
+        {
+            WriteFirstLine("grades array:", "Multidimensional Arrays");
+            CustomMethods.print2DArray<int>(grades);
+            Console.WriteLine();
+            Console.WriteLine("sales array:");
+            CustomMethods.print2DArray<double>(sales);
+            CloseConsole();
+        }
+
+        private void btnShowInfoMDArrays_Click(object sender, EventArgs e)
+        {
+            WriteFirstLine("grades array:", "Information about multidimensional Arrays");
+            Console.WriteLine("The first item of the grades array is: {0}", grades.GetValue(0, 0));
+            CustomMethods.calculateAndPrintAverages(grades);
+            Console.WriteLine();
+            Console.WriteLine("sales array:");
+            Console.WriteLine("The first item of the sales array is: {0}", sales[0, 0]);
+            CustomMethods.calculateAndPrintAverages(sales);
             CloseConsole();
         }
     }
