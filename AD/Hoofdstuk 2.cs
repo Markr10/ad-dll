@@ -133,5 +133,62 @@ namespace AD
             CustomMethods.calculateAndPrintAverages(sales);
             CloseConsole();
         }
+
+        private void btnSumNums_Click(object sender, EventArgs e)
+        {
+            WriteFirstLine("The sum of 1, 2, 3 is: " + CustomMethods.sumNums(1, 2, 3).ToString(), "Sum numbers");
+            
+            int[] numbersOneTillTen = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            CustomMethods.sumNumsAndPrint(numbersOneTillTen);
+            
+            CustomMethods.sumNumsAndPrint(Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101),
+                Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101));
+            
+            CloseConsole();
+        }
+
+        private void btnShowAJaggedArray_Click(object sender, EventArgs e)
+        {
+            int[][] jagged = new int[12][];
+            jagged[0] = new int[2];
+            jagged[0][0] = 23;
+            jagged[0][1] = 13;
+            jagged[7] = new int[6];
+            jagged[7][0] = 65;
+            jagged[7][1] = 28;
+            jagged[7][2] = 93;
+            jagged[7][3] = 26;
+            jagged[7][4] = 19;
+            jagged[7][5] = 45;
+            CustomMethods.fillJaggedArrayRows(jagged, 1, 7, 10, 100, 1, 10);
+            CustomMethods.fillJaggedArrayRows(jagged, 8, 12, 10, 100, 1, 10);
+            ShowConsole("Jagged Array");
+            CustomMethods.printJaggedArray<int>(jagged);
+            CloseConsole();
+        }
+
+        private void btnJaggedArraySales_Click(object sender, EventArgs e)
+        {
+            int[] jan = new int[31];
+            int[] feb = new int[29];
+            int[][] sales = new int[][] { jan, feb };
+            sales[0][0] = 41;
+            sales[0][1] = 30;
+            sales[0][2] = 23;
+            sales[0][3] = 34;
+            sales[0][4] = 28;
+            sales[0][5] = 35;
+            sales[0][6] = 45;
+            sales[1][0] = 35;
+            sales[1][1] = 37;
+            sales[1][2] = 32;
+            sales[1][3] = 26;
+            sales[1][4] = 45;
+            sales[1][5] = 38;
+            sales[1][6] = 42;
+            ShowConsole("Average sales with jagged Array");
+            CustomMethods.calculateAndPrintAverages(sales, "sales for month", 2);
+            CloseConsole();
+        }
     }
 }

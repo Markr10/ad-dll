@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ArrayList = new System.Windows.Forms.Button();
+            this.btnSumNums = new System.Windows.Forms.Button();
             this.btnCreateArrays = new System.Windows.Forms.Button();
             this.btnShowArrays = new System.Windows.Forms.Button();
             this.btnShowInfoArrays = new System.Windows.Forms.Button();
             this.btnCreateMDArrays = new System.Windows.Forms.Button();
             this.btnShowMDArrays = new System.Windows.Forms.Button();
             this.btnShowInfoMDArrays = new System.Windows.Forms.Button();
+            this.btnShowAJaggedArray = new System.Windows.Forms.Button();
+            this.btnJaggedArraySales = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ArrayList
+            // btnSumNums
             // 
-            this.ArrayList.Location = new System.Drawing.Point(212, 12);
-            this.ArrayList.Name = "ArrayList";
-            this.ArrayList.Size = new System.Drawing.Size(75, 23);
-            this.ArrayList.TabIndex = 0;
-            this.ArrayList.Text = "ArrayList";
-            this.ArrayList.UseVisualStyleBackColor = true;
+            this.btnSumNums.Location = new System.Drawing.Point(212, 12);
+            this.btnSumNums.Name = "btnSumNums";
+            this.btnSumNums.Size = new System.Drawing.Size(75, 34);
+            this.btnSumNums.TabIndex = 0;
+            this.btnSumNums.Text = "Sum numbers";
+            this.btnSumNums.UseVisualStyleBackColor = true;
+            this.btnSumNums.Click += new System.EventHandler(this.btnSumNums_Click);
             // 
             // btnCreateArrays
             // 
@@ -52,7 +55,7 @@
             this.btnCreateArrays.Name = "btnCreateArrays";
             this.btnCreateArrays.Size = new System.Drawing.Size(94, 47);
             this.btnCreateArrays.TabIndex = 1;
-            this.btnCreateArrays.Text = "Initializing and fill Student Arrays";
+            this.btnCreateArrays.Text = "Initialize and fill Student Arrays";
             this.btnCreateArrays.UseVisualStyleBackColor = true;
             this.btnCreateArrays.Click += new System.EventHandler(this.btnCreateArray_Click);
             // 
@@ -84,7 +87,7 @@
             this.btnCreateMDArrays.Name = "btnCreateMDArrays";
             this.btnCreateMDArrays.Size = new System.Drawing.Size(94, 47);
             this.btnCreateMDArrays.TabIndex = 4;
-            this.btnCreateMDArrays.Text = "Initializing and fill multidimensional Arrays";
+            this.btnCreateMDArrays.Text = "Initialize and fill multidimensional Arrays";
             this.btnCreateMDArrays.UseVisualStyleBackColor = true;
             this.btnCreateMDArrays.Click += new System.EventHandler(this.btnCreateMDArrays_Click);
             // 
@@ -110,18 +113,40 @@
             this.btnShowInfoMDArrays.UseVisualStyleBackColor = true;
             this.btnShowInfoMDArrays.Click += new System.EventHandler(this.btnShowInfoMDArrays_Click);
             // 
+            // btnShowAJaggedArray
+            // 
+            this.btnShowAJaggedArray.Location = new System.Drawing.Point(212, 52);
+            this.btnShowAJaggedArray.Name = "btnShowAJaggedArray";
+            this.btnShowAJaggedArray.Size = new System.Drawing.Size(75, 49);
+            this.btnShowAJaggedArray.TabIndex = 7;
+            this.btnShowAJaggedArray.Text = "Initialize, fill and show jagged Array";
+            this.btnShowAJaggedArray.UseVisualStyleBackColor = true;
+            this.btnShowAJaggedArray.Click += new System.EventHandler(this.btnShowAJaggedArray_Click);
+            // 
+            // btnJaggedArraySales
+            // 
+            this.btnJaggedArraySales.Location = new System.Drawing.Point(212, 107);
+            this.btnJaggedArraySales.Name = "btnJaggedArraySales";
+            this.btnJaggedArraySales.Size = new System.Drawing.Size(75, 47);
+            this.btnJaggedArraySales.TabIndex = 8;
+            this.btnJaggedArraySales.Text = "Average sales with jagged Array";
+            this.btnJaggedArraySales.UseVisualStyleBackColor = true;
+            this.btnJaggedArraySales.Click += new System.EventHandler(this.btnJaggedArraySales_Click);
+            // 
             // Hoofdstuk_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(297, 262);
+            this.Controls.Add(this.btnJaggedArraySales);
+            this.Controls.Add(this.btnShowAJaggedArray);
             this.Controls.Add(this.btnShowInfoMDArrays);
             this.Controls.Add(this.btnShowMDArrays);
             this.Controls.Add(this.btnCreateMDArrays);
             this.Controls.Add(this.btnShowInfoArrays);
             this.Controls.Add(this.btnShowArrays);
             this.Controls.Add(this.btnCreateArrays);
-            this.Controls.Add(this.ArrayList);
+            this.Controls.Add(this.btnSumNums);
             this.Name = "Hoofdstuk_2";
             this.Text = "Hoofdstuk_2";
             this.ResumeLayout(false);
@@ -130,12 +155,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ArrayList;
+        private System.Windows.Forms.Button btnSumNums;
         private System.Windows.Forms.Button btnCreateArrays;
         private System.Windows.Forms.Button btnShowArrays;
         private System.Windows.Forms.Button btnShowInfoArrays;
         private System.Windows.Forms.Button btnCreateMDArrays;
         private System.Windows.Forms.Button btnShowMDArrays;
         private System.Windows.Forms.Button btnShowInfoMDArrays;
+        private System.Windows.Forms.Button btnShowAJaggedArray;
+        private System.Windows.Forms.Button btnJaggedArraySales;
     }
 }
