@@ -15,6 +15,7 @@ namespace AD_Dll.Hoofdstuk_4
             {
                 if (v.Equals(a[i]))
                 {
+                    Console.WriteLine("Found at index: ");
                     return i;
                 }
             }
@@ -44,6 +45,7 @@ namespace AD_Dll.Hoofdstuk_4
 
                 else
                 {
+                    Console.WriteLine("Found at index: ");
                     return mid;
                 }
             }
