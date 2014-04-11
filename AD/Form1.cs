@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AD_Dll.Hoofdstuk_1;
-using AD_Dll.hoofdstuk_13;
 using AD_Dll.Hoofdstuk_13;
 
 namespace AD
@@ -54,6 +53,17 @@ namespace AD
         private void btnArrayAndArrayLists_Click(object sender, EventArgs e)
         {
            new Hoofdstuk_2().Show();
+        }
+
+        private void stacksQueues_Click(object sender, EventArgs e)
+        {
+            Form stacksQueue = new Stacks_and_Queues();
+            stacksQueue.Show();
+        }
+
+        private void btnBST_Click(object sender, EventArgs e)
+        {
+            new BinarySearchTree().Show();
         }
 
         private void CSet1_Click(object sender, EventArgs e)
@@ -135,6 +145,11 @@ namespace AD
             }
             Console.Read();
             CloseConsole();
+        }
+
+        private void btnBasicSearch_Click(object sender, EventArgs e)
+        {
+            new BasicSearch().Show();
         }
     }
 }

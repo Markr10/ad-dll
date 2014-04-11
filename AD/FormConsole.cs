@@ -48,7 +48,7 @@ namespace AD
             {
                 Program.setConsoleWindowVisibility(true, title);
             }
-            else if (Console.Title != this.Text)
+            else if (Console.Title != title && Console.Title != this.Text)
             {
                 Program.setConsoleWindowVisibility(true, this.Text);
             }

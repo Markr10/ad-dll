@@ -10,6 +10,7 @@ namespace AD_Dll.Hoofdstuk_12
     {
 
         public Node<T> root;
+
         public BinarySearchTree()
         {
             root = null;
@@ -38,14 +39,14 @@ namespace AD_Dll.Hoofdstuk_12
                             parent.Left = newNode;
                             break;
                         }
-                        else
+                    }
+                    else
+                    {
+                        current = current.Right;
+                        if (current == null)
                         {
-                            current = current.Right;
-                            if (current == null)
-                            {
-                                parent.Right = newNode;
-                                break;
-                            }
+                            parent.Right = newNode;
+                            break;
                         }
                     }
                 }
@@ -54,7 +55,7 @@ namespace AD_Dll.Hoofdstuk_12
 
         public void InOrder(Node<T> theRoot)
         {
-            if (!(theRoot == null))
+            if (theRoot != null)
             {
                 InOrder(theRoot.Left);
                 theRoot.DisplayNode();
@@ -86,7 +87,9 @@ namespace AD_Dll.Hoofdstuk_12
         {
             Node<T> current = root;
             while (!(current.Left == null))
+            {
                 current = current.Left;
+            }
             return current.Data;
         }
 
@@ -94,7 +97,9 @@ namespace AD_Dll.Hoofdstuk_12
         {
             Node<T> current = root;
             while (!(current.Right == null))
+            {
                 current = current.Right;
+            }
             return current.Data;
         }
 
