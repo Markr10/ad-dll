@@ -130,6 +130,9 @@
     <EmbeddedResource Include="StacksAndQueues.resx">
       <DependentUpon>StacksAndQueues.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
