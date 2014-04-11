@@ -13,9 +13,9 @@ using AD_Dll.Hoofdstuk_13;
 
 namespace AD
 {
-    public partial class Form1 : FormConsole
+    public partial class FormMain : FormConsole
     {
-        public Form1() : base(true)
+        public FormMain() : base(true)
         {
             InitializeComponent();
         }
