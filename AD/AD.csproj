@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicSearch.Designer.cs">
+      <DependentUpon>BasicSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="BinarySearchTree.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="Stacks_and_Queues.Designer.cs">
       <DependentUpon>Stacks_and_Queues.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BasicSearch.resx">
+      <DependentUpon>BasicSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BinarySearchTree.resx">
       <DependentUpon>BinarySearchTree.cs</DependentUpon>
     </EmbeddedResource>

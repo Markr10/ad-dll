@@ -34,6 +34,9 @@
             this.btnArrayAndArrayLists = new System.Windows.Forms.Button();
             this.btnBST = new System.Windows.Forms.Button();
             this.stacksQueues = new System.Windows.Forms.Button();
+            this.CSet1 = new System.Windows.Forms.Button();
+            this.Cset2 = new System.Windows.Forms.Button();
+            this.btnBasicSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -68,7 +71,7 @@
             // 
             // btnArrayAndArrayLists
             // 
-            this.btnArrayAndArrayLists.Location = new System.Drawing.Point(12, 107);
+            this.btnArrayAndArrayLists.Location = new System.Drawing.Point(13, 107);
             this.btnArrayAndArrayLists.Name = "btnArrayAndArrayLists";
             this.btnArrayAndArrayLists.Size = new System.Drawing.Size(82, 36);
             this.btnArrayAndArrayLists.TabIndex = 6;
@@ -78,7 +81,7 @@
             // 
             // btnBST
             // 
-            this.btnBST.Location = new System.Drawing.Point(13, 150);
+            this.btnBST.Location = new System.Drawing.Point(13, 191);
             this.btnBST.Name = "btnBST";
             this.btnBST.Size = new System.Drawing.Size(81, 36);
             this.btnBST.TabIndex = 7;
@@ -96,13 +99,46 @@
             this.stacksQueues.UseVisualStyleBackColor = true;
             this.stacksQueues.Click += new System.EventHandler(this.stacksQueues_Click);
             // 
+            // CSet1
+            // 
+            this.CSet1.Location = new System.Drawing.Point(13, 150);
+            this.CSet1.Name = "CSet1";
+            this.CSet1.Size = new System.Drawing.Size(81, 23);
+            this.CSet1.TabIndex = 7;
+            this.CSet1.Text = "Cset1";
+            this.CSet1.UseVisualStyleBackColor = true;
+            this.CSet1.Click += new System.EventHandler(this.CSet1_Click);
+            // 
+            // Cset2
+            // 
+            this.Cset2.Location = new System.Drawing.Point(13, 179);
+            this.Cset2.Name = "Cset2";
+            this.Cset2.Size = new System.Drawing.Size(81, 23);
+            this.Cset2.TabIndex = 8;
+            this.Cset2.Text = "Cset2";
+            this.Cset2.UseVisualStyleBackColor = true;
+            this.Cset2.Click += new System.EventHandler(this.Cset2_Click);
+            // 
+            // btnBasicSearch
+            // 
+            this.btnBasicSearch.Location = new System.Drawing.Point(100, 8);
+            this.btnBasicSearch.Name = "btnBasicSearch";
+            this.btnBasicSearch.Size = new System.Drawing.Size(75, 34);
+            this.btnBasicSearch.TabIndex = 8;
+            this.btnBasicSearch.Text = "Basic Search";
+            this.btnBasicSearch.UseVisualStyleBackColor = true;
+            this.btnBasicSearch.Click += new System.EventHandler(this.btnBasicSearch_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnBasicSearch);
             this.Controls.Add(this.btnBST);
             this.Controls.Add(this.stacksQueues);
+            this.Controls.Add(this.Cset2);
+            this.Controls.Add(this.CSet1);
             this.Controls.Add(this.btnArrayAndArrayLists);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sorteren);
@@ -121,5 +157,8 @@
         private System.Windows.Forms.Button btnArrayAndArrayLists;
         private System.Windows.Forms.Button btnBST;
         private System.Windows.Forms.Button stacksQueues;
+        private System.Windows.Forms.Button CSet1;
+        private System.Windows.Forms.Button Cset2;
+        private System.Windows.Forms.Button btnBasicSearch;
     }
 }
