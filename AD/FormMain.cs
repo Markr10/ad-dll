@@ -151,5 +151,10 @@ namespace AD
         {
             new BasicSearch().Show();
         }
+
+        private void btnStrings_Click(object sender, EventArgs e)
+        {
+            new Strings().Show();
+        }
     }
 }

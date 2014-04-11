@@ -37,6 +37,7 @@
             this.CSet1 = new System.Windows.Forms.Button();
             this.Cset2 = new System.Windows.Forms.Button();
             this.btnBasicSearch = new System.Windows.Forms.Button();
+            this.btnStrings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -129,11 +130,22 @@
             this.btnBasicSearch.UseVisualStyleBackColor = true;
             this.btnBasicSearch.Click += new System.EventHandler(this.btnBasicSearch_Click);
             // 
-            // Form1
+            // btnStrings
+            // 
+            this.btnStrings.Location = new System.Drawing.Point(100, 90);
+            this.btnStrings.Name = "btnStrings";
+            this.btnStrings.Size = new System.Drawing.Size(81, 23);
+            this.btnStrings.TabIndex = 9;
+            this.btnStrings.Text = "Strings";
+            this.btnStrings.UseVisualStyleBackColor = true;
+            this.btnStrings.Click += new System.EventHandler(this.btnStrings_Click);
+            // 
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(189, 261);
+            this.Controls.Add(this.btnStrings);
             this.Controls.Add(this.btnBasicSearch);
             this.Controls.Add(this.btnBST);
             this.Controls.Add(this.stacksQueues);
@@ -143,7 +155,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sorteren);
             this.Controls.Add(this.button3);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "AD Dll";
             this.ResumeLayout(false);
 
@@ -160,5 +172,6 @@
         private System.Windows.Forms.Button CSet1;
         private System.Windows.Forms.Button Cset2;
         private System.Windows.Forms.Button btnBasicSearch;
+        private System.Windows.Forms.Button btnStrings;
     }
 }
