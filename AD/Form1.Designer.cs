@@ -32,6 +32,8 @@
             this.Sorteren = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnArrayAndArrayLists = new System.Windows.Forms.Button();
+            this.CSet1 = new System.Windows.Forms.Button();
+            this.Cset2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -74,11 +76,33 @@
             this.btnArrayAndArrayLists.UseVisualStyleBackColor = true;
             this.btnArrayAndArrayLists.Click += new System.EventHandler(this.btnArrayAndArrayLists_Click);
             // 
+            // CSet1
+            // 
+            this.CSet1.Location = new System.Drawing.Point(13, 150);
+            this.CSet1.Name = "CSet1";
+            this.CSet1.Size = new System.Drawing.Size(81, 23);
+            this.CSet1.TabIndex = 7;
+            this.CSet1.Text = "Cset1";
+            this.CSet1.UseVisualStyleBackColor = true;
+            this.CSet1.Click += new System.EventHandler(this.CSet1_Click);
+            // 
+            // Cset2
+            // 
+            this.Cset2.Location = new System.Drawing.Point(13, 179);
+            this.Cset2.Name = "Cset2";
+            this.Cset2.Size = new System.Drawing.Size(81, 23);
+            this.Cset2.TabIndex = 8;
+            this.Cset2.Text = "Cset2";
+            this.Cset2.UseVisualStyleBackColor = true;
+            this.Cset2.Click += new System.EventHandler(this.Cset2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.Cset2);
+            this.Controls.Add(this.CSet1);
             this.Controls.Add(this.btnArrayAndArrayLists);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sorteren);
@@ -95,5 +119,7 @@
         private System.Windows.Forms.Button Sorteren;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnArrayAndArrayLists;
+        private System.Windows.Forms.Button CSet1;
+        private System.Windows.Forms.Button Cset2;
     }
 }
