@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -289,6 +290,52 @@ namespace AD_Dll.Hoofdstuk_2
             }
         }
 
+        #endregion
+
+        #region Custom ArrayList Methods
+
+        /// <summary>
+        /// Berekend de gemiddelden van alle cijfers in de ArrayList en print deze naar de console.
+        /// </summary>
+        /// <param name="arrayWithNumbers">De ArrayList die gebruikt moet worden voor het berekenen van de gemiddelden.</param>
+        /// <param name="averageForText">De tekst die aangeeft wat voor gemiddelde uitgerekend wordt. De tekst
+        /// wordt in een zin geprint naar de console.</param>
+        /// <param name="digits">Het aantal decimalen dat wordt getoond wanneer het gemiddelde wordt geprint.</param>
+        /// <exception cref="System.ArgumentOutOfRangeException"><paramref name="digits"/> moet groter zijn dan 0 en kleiner zijn dan 28.</exception>
+        public static void calculateAndPrintAverages(ArrayList arrayWithNumbers, string averageForText, int digits)
+        {
+            if (digits < 0 && digits > 28)
+            {
+                throw new ArgumentOutOfRangeException("digits", "digits moet groter zijn dan 0 en kleiner zijn dan 28.");
+            }
+
+            double total = total = 0;
+            
+            foreach (Object grade in arrayWithNumbers)
+	        {
+		        total += (int)grade;
+	        }
+
+            Console.WriteLine("The average " + averageForText + " is: " + Math.Round((total / arrayWithNumbers.Count), digits));
+        }
+
+        public static void removeAndPrint(ArrayList arrayList, Object item)
+        {
+            if (arrayList.Contains(item))
+            {
+                arrayList.Remove(item);
+                Console.WriteLine(item.ToString() + " removed from ArrayList");
+            }
+            else
+            {
+                Console.WriteLine(item.ToString() + " not in ArrayList.");
+            }
+        }
+
+        public static void removeAtAndPrint()
+        {
+
+        }
         #endregion
     }
 }

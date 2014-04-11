@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using AD_Dll.Hoofdstuk_1;
 using AD_Dll.Hoofdstuk_2;
 using AD_Dll;
+using System.Collections;
 
 namespace AD
 {
@@ -19,6 +20,7 @@ namespace AD
         private Student[] studentsOtherSchool;
         private int[,] grades;
         private double[,] sales;
+        private ArrayList gradesAL;
 
         public Hoofdstuk_2() : base(false)
         {
@@ -188,6 +190,41 @@ namespace AD
             sales[1][6] = 42;
             ShowConsole("Average sales with jagged Array");
             CustomMethods.calculateAndPrintAverages(sales, "sales for month", 2);
+            CloseConsole();
+        }
+
+        private void btnCreateArrayList_Click(object sender, EventArgs e)
+        {
+            gradesAL = new ArrayList();
+            gradesAL.Add(100);
+            gradesAL.Add(84);
+            gradesAL.Insert(1, 99);
+            gradesAL.Insert(3, 80);
+
+            btnGetPositionArrayList.Enabled = btnAverageArrayList.Enabled = btnRemoveItemsArrayList.Enabled = true;
+        }
+
+        private void btnGetPositionArrayList_Click(object sender, EventArgs e)
+        {
+            WriteFirstLine("The grade 77 was added at position: " + gradesAL.Add(77).ToString(),
+                "Get position of new item in ArrayList");
+            CloseConsole();
+        }
+
+        private void btnAverageArrayList_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Average grade in ArrayList");
+            CustomMethods.calculateAndPrintAverages(gradesAL, "grade", 2);
+            CloseConsole();
+        }
+
+        private void btnRemoveItemsArrayList_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Remove Items for ArrayList");
+            CustomMethods.removeAndPrint(gradesAL, 54);
+
+            gradesAL.RemoveAt(2);
+            gradesAL.RemoveAt(gradesAL.IndexOf(70));
             CloseConsole();
         }
     }
