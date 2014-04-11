@@ -13,6 +13,19 @@ namespace AD_Dll.Hoofdstuk_12
         public Node<T> Left;
         public Node<T> Right;
 
+        /// <summary>
+        /// Standaard constructor.
+        /// </summary>
+        /// <remarks>
+        /// De constructor van deze klasse is standaard leeg.
+        /// </remarks>
+        public Node(){}
+
+        public override string ToString()
+        {
+            return Data.ToString();
+        }
+
         public void DisplayNode()
         {
             Console.Write(Data + " ");
