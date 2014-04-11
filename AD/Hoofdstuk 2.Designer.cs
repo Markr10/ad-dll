@@ -37,13 +37,14 @@
             this.btnShowInfoMDArrays = new System.Windows.Forms.Button();
             this.btnShowAJaggedArray = new System.Windows.Forms.Button();
             this.btnJaggedArraySales = new System.Windows.Forms.Button();
-            this.btnCreateArrayList = new System.Windows.Forms.Button();
+            this.btnCreateArrayLists = new System.Windows.Forms.Button();
             this.btnGetPositionArrayList = new System.Windows.Forms.Button();
             this.btnAverageArrayList = new System.Windows.Forms.Button();
             this.btnRemoveItemsArrayList = new System.Windows.Forms.Button();
             this.btnShowInformationArrayList = new System.Windows.Forms.Button();
-            this.btnDemonstrationALRangeMethods = new System.Windows.Forms.Button();
-            this.btnDemonstrationALGetRangeMethod = new System.Windows.Forms.Button();
+            this.btnDemoALRangeMethods = new System.Windows.Forms.Button();
+            this.btnDemoALGetRangeMethod = new System.Windows.Forms.Button();
+            this.btnDemoALToArrayMethod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumNums
@@ -64,7 +65,7 @@
             this.btnCreateArrays.TabIndex = 1;
             this.btnCreateArrays.Text = "Initialize and fill Student Arrays";
             this.btnCreateArrays.UseVisualStyleBackColor = true;
-            this.btnCreateArrays.Click += new System.EventHandler(this.btnCreateArray_Click);
+            this.btnCreateArrays.Click += new System.EventHandler(this.btnCreateArrays_Click);
             // 
             // btnShowArrays
             // 
@@ -140,15 +141,15 @@
             this.btnJaggedArraySales.UseVisualStyleBackColor = true;
             this.btnJaggedArraySales.Click += new System.EventHandler(this.btnJaggedArraySales_Click);
             // 
-            // btnCreateArrayList
+            // btnCreateArrayLists
             // 
-            this.btnCreateArrayList.Location = new System.Drawing.Point(339, 13);
-            this.btnCreateArrayList.Name = "btnCreateArrayList";
-            this.btnCreateArrayList.Size = new System.Drawing.Size(75, 34);
-            this.btnCreateArrayList.TabIndex = 9;
-            this.btnCreateArrayList.Text = "Initialize and fill Arraylist";
-            this.btnCreateArrayList.UseVisualStyleBackColor = true;
-            this.btnCreateArrayList.Click += new System.EventHandler(this.btnCreateArrayList_Click);
+            this.btnCreateArrayLists.Location = new System.Drawing.Point(339, 13);
+            this.btnCreateArrayLists.Name = "btnCreateArrayLists";
+            this.btnCreateArrayLists.Size = new System.Drawing.Size(75, 34);
+            this.btnCreateArrayLists.TabIndex = 9;
+            this.btnCreateArrayLists.Text = "Initialize and fill Arraylists";
+            this.btnCreateArrayLists.UseVisualStyleBackColor = true;
+            this.btnCreateArrayLists.Click += new System.EventHandler(this.btnCreateArrayLists_Click);
             // 
             // btnGetPositionArrayList
             // 
@@ -194,40 +195,52 @@
             this.btnShowInformationArrayList.UseVisualStyleBackColor = true;
             this.btnShowInformationArrayList.Click += new System.EventHandler(this.btnShowInformationArrayList_Click);
             // 
-            // btnDemonstrationALRangeMethods
+            // btnDemoALRangeMethods
             // 
-            this.btnDemonstrationALRangeMethods.Enabled = false;
-            this.btnDemonstrationALRangeMethods.Location = new System.Drawing.Point(420, 80);
-            this.btnDemonstrationALRangeMethods.Name = "btnDemonstrationALRangeMethods";
-            this.btnDemonstrationALRangeMethods.Size = new System.Drawing.Size(75, 115);
-            this.btnDemonstrationALRangeMethods.TabIndex = 14;
-            this.btnDemonstrationALRangeMethods.Text = "Demonstrate the AddRange and InsertRange methods from ArrayList";
-            this.btnDemonstrationALRangeMethods.UseVisualStyleBackColor = true;
-            this.btnDemonstrationALRangeMethods.Click += new System.EventHandler(this.btnDemonstrationALRangeMethods_Click);
+            this.btnDemoALRangeMethods.Enabled = false;
+            this.btnDemoALRangeMethods.Location = new System.Drawing.Point(420, 80);
+            this.btnDemoALRangeMethods.Name = "btnDemoALRangeMethods";
+            this.btnDemoALRangeMethods.Size = new System.Drawing.Size(75, 115);
+            this.btnDemoALRangeMethods.TabIndex = 14;
+            this.btnDemoALRangeMethods.Text = "Demonstrate the AddRange and InsertRange methods from ArrayList";
+            this.btnDemoALRangeMethods.UseVisualStyleBackColor = true;
+            this.btnDemoALRangeMethods.Click += new System.EventHandler(this.btnDemoALRangeMethods_Click);
             // 
-            // btnDemonstrationALGetRangeMethod
+            // btnDemoALGetRangeMethod
             // 
-            this.btnDemonstrationALGetRangeMethod.Enabled = false;
-            this.btnDemonstrationALGetRangeMethod.Location = new System.Drawing.Point(501, 13);
-            this.btnDemonstrationALGetRangeMethod.Name = "btnDemonstrationALGetRangeMethod";
-            this.btnDemonstrationALGetRangeMethod.Size = new System.Drawing.Size(75, 73);
-            this.btnDemonstrationALGetRangeMethod.TabIndex = 15;
-            this.btnDemonstrationALGetRangeMethod.Text = "Demonstrate the GetRange method from ArrayList";
-            this.btnDemonstrationALGetRangeMethod.UseVisualStyleBackColor = true;
-            this.btnDemonstrationALGetRangeMethod.Click += new System.EventHandler(this.btnDemonstrationALGetRangeMethod_Click);
+            this.btnDemoALGetRangeMethod.Enabled = false;
+            this.btnDemoALGetRangeMethod.Location = new System.Drawing.Point(501, 13);
+            this.btnDemoALGetRangeMethod.Name = "btnDemoALGetRangeMethod";
+            this.btnDemoALGetRangeMethod.Size = new System.Drawing.Size(75, 73);
+            this.btnDemoALGetRangeMethod.TabIndex = 15;
+            this.btnDemoALGetRangeMethod.Text = "Demonstrate the GetRange method from ArrayList";
+            this.btnDemoALGetRangeMethod.UseVisualStyleBackColor = true;
+            this.btnDemoALGetRangeMethod.Click += new System.EventHandler(this.btnDemoALGetRangeMethod_Click);
+            // 
+            // btnDemoALToArrayMethod
+            // 
+            this.btnDemoALToArrayMethod.Enabled = false;
+            this.btnDemoALToArrayMethod.Location = new System.Drawing.Point(501, 92);
+            this.btnDemoALToArrayMethod.Name = "btnDemoALToArrayMethod";
+            this.btnDemoALToArrayMethod.Size = new System.Drawing.Size(75, 63);
+            this.btnDemoALToArrayMethod.TabIndex = 16;
+            this.btnDemoALToArrayMethod.Text = "Demonstrate the ToArray method from ArrayList";
+            this.btnDemoALToArrayMethod.UseVisualStyleBackColor = true;
+            this.btnDemoALToArrayMethod.Click += new System.EventHandler(this.btnDemoALToArrayMethod_Click);
             // 
             // Hoofdstuk_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 250);
-            this.Controls.Add(this.btnDemonstrationALGetRangeMethod);
-            this.Controls.Add(this.btnDemonstrationALRangeMethods);
+            this.Controls.Add(this.btnDemoALToArrayMethod);
+            this.Controls.Add(this.btnDemoALGetRangeMethod);
+            this.Controls.Add(this.btnDemoALRangeMethods);
             this.Controls.Add(this.btnShowInformationArrayList);
             this.Controls.Add(this.btnRemoveItemsArrayList);
             this.Controls.Add(this.btnAverageArrayList);
             this.Controls.Add(this.btnGetPositionArrayList);
-            this.Controls.Add(this.btnCreateArrayList);
+            this.Controls.Add(this.btnCreateArrayLists);
             this.Controls.Add(this.btnJaggedArraySales);
             this.Controls.Add(this.btnShowAJaggedArray);
             this.Controls.Add(this.btnShowInfoMDArrays);
@@ -254,12 +267,13 @@
         private System.Windows.Forms.Button btnShowInfoMDArrays;
         private System.Windows.Forms.Button btnShowAJaggedArray;
         private System.Windows.Forms.Button btnJaggedArraySales;
-        private System.Windows.Forms.Button btnCreateArrayList;
+        private System.Windows.Forms.Button btnCreateArrayLists;
         private System.Windows.Forms.Button btnGetPositionArrayList;
         private System.Windows.Forms.Button btnAverageArrayList;
         private System.Windows.Forms.Button btnRemoveItemsArrayList;
         private System.Windows.Forms.Button btnShowInformationArrayList;
-        private System.Windows.Forms.Button btnDemonstrationALRangeMethods;
-        private System.Windows.Forms.Button btnDemonstrationALGetRangeMethod;
+        private System.Windows.Forms.Button btnDemoALRangeMethods;
+        private System.Windows.Forms.Button btnDemoALGetRangeMethod;
+        private System.Windows.Forms.Button btnDemoALToArrayMethod;
     }
 }

@@ -28,7 +28,7 @@ namespace AD
             InitializeComponent();
         }
 
-        private void btnCreateArray_Click(object sender, EventArgs e)
+        private void btnCreateArrays_Click(object sender, EventArgs e)
         {
             students = new Student[3];
             students[0] = Student.getRandomStudent();
@@ -49,19 +49,8 @@ namespace AD
 
         private void btnShowArrays_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("students array:", "Student Arrays");
-            for (int i = 0; i <= students.GetUpperBound(0); i++)
-            {
-                Console.Write(i.ToString() + ": ");
-                if(students[i] == null)
-                {
-                    Console.WriteLine("null");
-                }
-                else
-                {
-                    Console.WriteLine(students[i].ToString());
-                }
-            }
+            ShowConsole("Student Arrays");
+            CustomMethods.printArray<Student>(students, "students array:");
             Console.WriteLine();
             Console.WriteLine("studentsOtherSchool array:");
             for (int i = 0; i <= studentsOtherSchool.GetUpperBound(0); i++)
@@ -194,7 +183,7 @@ namespace AD
             CloseConsole();
         }
 
-        private void btnCreateArrayList_Click(object sender, EventArgs e)
+        private void btnCreateArrayLists_Click(object sender, EventArgs e)
         {
             gradesAL = new ArrayList();
             gradesAL.Add(100);
@@ -211,7 +200,7 @@ namespace AD
 
             btnGetPositionArrayList.Enabled = btnAverageArrayList.Enabled =
                 btnRemoveItemsArrayList.Enabled = btnShowInformationArrayList.Enabled =
-                btnDemonstrationALRangeMethods.Enabled = true;
+                btnDemoALRangeMethods.Enabled = btnDemoALToArrayMethod.Enabled = true;
         }
 
         private void btnGetPositionArrayList_Click(object sender, EventArgs e)
@@ -245,7 +234,7 @@ namespace AD
             CloseConsole();
         }
 
-        private void btnDemonstrationALRangeMethods_Click(object sender, EventArgs e)
+        private void btnDemoALRangeMethods_Click(object sender, EventArgs e)
         {
             ShowConsole("Demonstration of the AddRange and InsertRange methods from ArrayList");
             CustomMethods.printArrayList(names, "The original list of names: ");
@@ -268,11 +257,24 @@ namespace AD
             Console.WriteLine();
             CustomMethods.printArrayList(names, "The new list of names: ");
             CloseConsole();
+
+            btnDemoALGetRangeMethod.Enabled = true;
         }
 
-        private void btnDemonstrationALGetRangeMethod_Click(object sender, EventArgs e)
+        private void btnDemoALGetRangeMethod_Click(object sender, EventArgs e)
         {
+            ArrayList someNames = new ArrayList(names.GetRange(2, 4));
+            ShowConsole("Demonstration of the GetRange method from ArrayList");
+            CustomMethods.printArrayList(someNames, "someNames sub-ArrayList: ");
+            CloseConsole();
+        }
 
+        private void btnDemoALToArrayMethod_Click(object sender, EventArgs e)
+        {
+            Object[] arrNames = names.ToArray();
+            ShowConsole("Demonstration of the ToArray method from ArrayList");
+            CustomMethods.printArray<Object>(arrNames, "Names from an array: ");
+            CloseConsole();
         }
     }
 }
