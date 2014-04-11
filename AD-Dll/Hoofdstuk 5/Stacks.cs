@@ -12,76 +12,41 @@ namespace AD_Dll.Hoofdstuk_5
     {
         static Stacks()
         {
-            Stack nums = new Stack();
-            Stack ops = new Stack();
-            string expression = "5 + 10 + 15 + 20";
-            Calculate(nums, ops, expression);
-            Console.WriteLine(nums.Pop());
-            Console.Read();
-        }
+            Stack st = new Stack();
 
-        // IsNumeric isn't built into C# so we must define it 
-        static bool IsNumeric(string input)
-        {
-            bool flag = true;
-            string pattern = (@"^\d+$");
-            Regex validate = new Regex(pattern); if(!validate.IsMatch(input))
-            {
-                flag = false;
-            }
-            return flag;
-        }
+            st.Push('A');
+            st.Push('M');
+            st.Push('G');
+            st.Push('W');
 
-        static void Calculate(Stack N, Stack O, string exp)
-        {
-            string ch;
-            string token = "";
-            for (int p = 0; p < exp.Length; p++)
+            Console.WriteLine("Current stack: ");
+            foreach (char c in st)
             {
-                ch = exp.Substring(p, 1);
-                if (IsNumeric(ch))
-                {
-                    token += ch;
-                    if (ch == " " || p == (exp.Length - 1))
-                    {
-                        if (IsNumeric(token))
-                        {
-                            N.Push(token);
-                            token = " ";
-                        }
-                    }
-                }
-                else if (ch == "+" || ch == "-" || ch == "*" || ch == "/")
-                {
-                    O.Push(ch);
-                }
-                if (N.Count == 2)
-                {
-                    Compute(N, O);
-                }
+                Console.Write(c + " ");
             }
-        }
+            Console.WriteLine();
 
-        static void Compute(Stack N, Stack O)
-        {
-            int oper1, oper2;
-            string oper;
-            oper1 = Convert.ToInt32(N.Pop());
-            oper2 = Convert.ToInt32(N.Pop());
-            oper = Convert.ToString(O.Pop());
-            
-            switch (oper)
+            st.Push('V');
+            st.Push('H');
+            Console.WriteLine("The next poppable value in stack: {0}",
+            st.Peek());
+            Console.WriteLine("Current stack: ");
+            foreach (char c in st)
             {
-                case "+": N.Push(oper1 + oper2);
-                    break;
-                case "-": N.Push(oper1 - oper2);
-                    break;
-                case "*": N.Push(oper1 * oper2);
-                    break;
-                case "/": N.Push(oper1 / oper2);
-                    break;
+                Console.Write(c + " ");
             }
-            
+            Console.WriteLine();
+
+            Console.WriteLine("Removing values ");
+            st.Pop();
+            st.Pop();
+            st.Pop();
+
+            Console.WriteLine("Current stack: ");
+            foreach (char c in st)
+            {
+                Console.Write(c + " ");
+            }
         }
     }
 }

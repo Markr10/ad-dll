@@ -16,8 +16,19 @@ namespace AD
         public Stacks_and_Queues() : base(false)
         {
             InitializeComponent();
-            ShowConsole("Hallo");
-            textBox1.Text = new Stacks().ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Queue");
+            new Queue().ToString();
+            CloseConsole();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Stack");
+            new Stacks().ToString();
             CloseConsole();
         }
     }
