@@ -92,7 +92,7 @@
             // 
             // btnStacksQueues
             // 
-            this.btnStacksQueues.Location = new System.Drawing.Point(12, 207);
+            this.btnStacksQueues.Location = new System.Drawing.Point(12, 215);
             this.btnStacksQueues.Name = "btnStacksQueues";
             this.btnStacksQueues.Size = new System.Drawing.Size(82, 36);
             this.btnStacksQueues.TabIndex = 7;
@@ -104,7 +104,7 @@
             // 
             this.btnCSet1.Location = new System.Drawing.Point(12, 149);
             this.btnCSet1.Name = "btnCSet1";
-            this.btnCSet1.Size = new System.Drawing.Size(82, 23);
+            this.btnCSet1.Size = new System.Drawing.Size(82, 27);
             this.btnCSet1.TabIndex = 7;
             this.btnCSet1.Text = "CSet1";
             this.btnCSet1.UseVisualStyleBackColor = true;
@@ -112,9 +112,9 @@
             // 
             // btnCset2
             // 
-            this.btnCset2.Location = new System.Drawing.Point(12, 178);
+            this.btnCset2.Location = new System.Drawing.Point(12, 182);
             this.btnCset2.Name = "btnCset2";
-            this.btnCset2.Size = new System.Drawing.Size(82, 23);
+            this.btnCset2.Size = new System.Drawing.Size(82, 27);
             this.btnCset2.TabIndex = 8;
             this.btnCset2.Text = "CSet2";
             this.btnCset2.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@
             // 
             this.btnStrings.Location = new System.Drawing.Point(100, 90);
             this.btnStrings.Name = "btnStrings";
-            this.btnStrings.Size = new System.Drawing.Size(81, 23);
+            this.btnStrings.Size = new System.Drawing.Size(81, 27);
             this.btnStrings.TabIndex = 9;
             this.btnStrings.Text = "Strings";
             this.btnStrings.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(189, 261);
+            this.ClientSize = new System.Drawing.Size(189, 263);
             this.Controls.Add(this.btnStrings);
             this.Controls.Add(this.btnBasicSearch);
             this.Controls.Add(this.btnBST);
