@@ -20,9 +20,7 @@ namespace AD
 
         private void btnShowSeqSearch_Click(object sender, EventArgs e)
         {
-            ShowConsole("Sequential search");
-            
-            Console.WriteLine("Enter 10 letters for the array: ");
+            WriteFirstLine("Enter 10 letters for the array: ", "Sequential search");
             string[] searchArray = new string[10];
 
             for (int i = 0; i < searchArray.Length; i++)
@@ -33,14 +31,12 @@ namespace AD
             Console.WriteLine("Enter a letter to search for: ");
             string searchLetter = Console.ReadLine();
                         
-            Console.WriteLine(Search<string>.linear(searchArray, searchLetter));
-            CloseConsole();
+            WriteLastLine(Search<string>.linear(searchArray, searchLetter).ToString());
         }
 
         private void btnShowBinSearch_Click(object sender, EventArgs e)
         {
-            ShowConsole("Binary search");           
-            Console.WriteLine("Enter 10 numbers for the array: ");
+            WriteFirstLine("Enter 10 numbers for the array: ", "Binary search");
             int[] searchArray = new int[10];
 
             for (int i = 0; i < searchArray.Length; i++)
@@ -58,15 +54,15 @@ namespace AD
             {
                 Console.WriteLine("Numbers only");
             }
+
             Array.Sort(searchArray);
             Console.WriteLine("Array sorted: ");
             for (int i = 0; i < searchArray.Length; i++)
             {
                 Console.WriteLine(searchArray[i]);
             }
-            Console.WriteLine(Search<int>.binary(searchArray, searchNumber));
-            CloseConsole();
-            
+
+            WriteLastLine(Search<int>.binary(searchArray, searchNumber).ToString());
         }
     }
 }
