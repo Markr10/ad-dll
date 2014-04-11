@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AD_Dll.hoofdstuk_13
+namespace AD_Dll.Hoofdstuk_13
 {
     public class CSet<T>
     {
