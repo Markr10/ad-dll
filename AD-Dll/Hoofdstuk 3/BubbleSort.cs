@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_3
 {
-    public class BubbleSort
+    public class BubbleSort<T> where T : IComparable
     {
         string result;
 
@@ -15,15 +15,15 @@ namespace AD_Dll.Hoofdstuk_3
 
         }
 
-        public string Start(int[] array)
+        public string Start(T[] array)
         {
-            int temp;
+            T temp;
 
             for (int p = 0; p <= array.Length - 2; p++)
             {
                 for (int i = 0; i <= array.Length - 2; i++)
                 {
-                    if (array[i] > array[i + 1])
+                    if (array[i].CompareTo(array[i + 1]) > 0)
                     {
                         temp = array[i + 1];
                         array[i + 1] = array[i];
@@ -31,7 +31,7 @@ namespace AD_Dll.Hoofdstuk_3
                     }
                 }
             }
-            foreach (int aa in array)
+            foreach (T aa in array)
             {
                 result += (aa + " ");
             }
