@@ -25,7 +25,7 @@ namespace AD
             Console.WriteLine("Enter 10 letters for the array: ");
             string[] searchArray = new string[10];
 
-            for (int i = 0; i < searchArray.Length - 1; i++)
+            for (int i = 0; i < searchArray.Length; i++)
             {
                 searchArray[i] = Console.ReadLine();
             }
@@ -43,7 +43,7 @@ namespace AD
             Console.WriteLine("Enter 10 numbers for the array: ");
             int[] searchArray = new int[10];
 
-            for (int i = 0; i < searchArray.Length - 1; i++)
+            for (int i = 0; i < searchArray.Length; i++)
             {
                     if(!Int32.TryParse(Console.ReadLine(), out searchArray[i]))
                     {
@@ -60,7 +60,7 @@ namespace AD
             }
             Array.Sort(searchArray);
             Console.WriteLine("Array sorted: ");
-            for (int i = 0; i < searchArray.Length - 1; i++)
+            for (int i = 0; i < searchArray.Length; i++)
             {
                 Console.WriteLine(searchArray[i]);
             }
