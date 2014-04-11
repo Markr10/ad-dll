@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_3
 {
-    public class InsertionSort
+    public class InsertionSort<T> where T : IComparable
     {
         string result;
 
@@ -15,16 +15,17 @@ namespace AD_Dll.Hoofdstuk_3
 
         }
 
-        public string Start(int[] array)
+        public string Start(T[] array)
         {
             int array_size = array.Length;
 
-            int temp, k;
+            T temp; 
+            int k;
             for (int i = 1; i < array_size; i++)
             {
                 temp = array[i];
                 k = i - 1;
-                while (k >= 0 && array[k] > temp)
+                while (k >= 0 && array[k].CompareTo(temp) > 0)
                 {
                     array[k + 1] = array[k];
                     k--;

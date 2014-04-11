@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.random = new System.Windows.Forms.Button();
-            this.outputArray = new System.Windows.Forms.TextBox();
             this.inputArray = new System.Windows.Forms.TextBox();
+            this.outputArray = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -107,23 +107,23 @@
             this.random.UseVisualStyleBackColor = true;
             this.random.Click += new System.EventHandler(this.random_Click);
             // 
-            // outputArray
-            // 
-            this.outputArray.Location = new System.Drawing.Point(107, 122);
-            this.outputArray.Multiline = true;
-            this.outputArray.Name = "outputArray";
-            this.outputArray.ReadOnly = true;
-            this.outputArray.Size = new System.Drawing.Size(309, 58);
-            this.outputArray.TabIndex = 13;
-            // 
             // inputArray
             // 
-            this.inputArray.Location = new System.Drawing.Point(107, 186);
+            this.inputArray.Location = new System.Drawing.Point(107, 122);
             this.inputArray.Multiline = true;
             this.inputArray.Name = "inputArray";
             this.inputArray.ReadOnly = true;
-            this.inputArray.Size = new System.Drawing.Size(308, 58);
-            this.inputArray.TabIndex = 14;
+            this.inputArray.Size = new System.Drawing.Size(309, 58);
+            this.inputArray.TabIndex = 13;
+            // 
+            // outputArray
+            // 
+            this.outputArray.Location = new System.Drawing.Point(107, 186);
+            this.outputArray.Multiline = true;
+            this.outputArray.Name = "outputArray";
+            this.outputArray.ReadOnly = true;
+            this.outputArray.Size = new System.Drawing.Size(308, 58);
+            this.outputArray.TabIndex = 14;
             // 
             // textBox2
             // 
@@ -161,8 +161,8 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.inputArray);
             this.Controls.Add(this.outputArray);
+            this.Controls.Add(this.inputArray);
             this.Controls.Add(this.random);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -186,8 +186,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button random;
-        private System.Windows.Forms.TextBox outputArray;
         private System.Windows.Forms.TextBox inputArray;
+        private System.Windows.Forms.TextBox outputArray;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
