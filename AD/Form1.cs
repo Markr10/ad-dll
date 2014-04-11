@@ -146,5 +146,10 @@ namespace AD
             Console.Read();
             CloseConsole();
         }
+
+        private void btnBasicSearch_Click(object sender, EventArgs e)
+        {
+            new BasicSearch().Show();
+        }
     }
 }
