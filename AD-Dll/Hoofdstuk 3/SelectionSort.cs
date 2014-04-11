@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_3
 {
-    public class SelectionSort
+    public class SelectionSort<T> where T : IComparable
     {
         string result;
+        
 
         public SelectionSort()
         {
 
         }
 
-        public string Start(int[] array)
+        public string Start(T[] array)
         {
             int array_size = array.Length;
-            int tmp, min_key;
+            T tmp;
+            int min_key;
 
             for (int j = 0; j < array_size - 1; j++)
             {
@@ -26,7 +28,7 @@ namespace AD_Dll.Hoofdstuk_3
 
                 for (int k = j + 1; k < array_size; k++)
                 {
-                    if (array[k] < array[min_key])
+                    if (array[k].CompareTo(array[min_key]) < 0)
                     {
                         min_key = k;
                     }

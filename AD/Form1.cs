@@ -53,5 +53,11 @@ namespace AD
         {
            new Hoofdstuk_2().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form stacksQueue = new Stacks_and_Queues();
+            stacksQueue.Show();
+        }
     }
 }
