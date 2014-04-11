@@ -324,17 +324,48 @@ namespace AD_Dll.Hoofdstuk_2
             if (arrayList.Contains(item))
             {
                 arrayList.Remove(item);
-                Console.WriteLine(item.ToString() + " removed from ArrayList");
+                Console.WriteLine(item.ToString() + " is removed from the ArrayList.");
             }
             else
             {
-                Console.WriteLine(item.ToString() + " not in ArrayList.");
+                Console.WriteLine(item.ToString() + " is not in the ArrayList.");
             }
         }
 
-        public static void removeAtAndPrint()
+        public static void removeAtAndPrint(ArrayList arrayList, Object item)
         {
+            int pos = arrayList.IndexOf(item);
+            if(pos != -1)
+            {
+                arrayList.RemoveAt(pos);
+                Console.WriteLine(item.ToString() + " is removed from the ArrayList.");
+            }
+            else
+            {
+                Console.WriteLine(item.ToString() + " is not in the ArrayList.");
+            }
+        }
 
+        public static void removeAtAndPrint(ArrayList arrayList, int index)
+        {
+            if (index >= 0 && index < arrayList.Count)
+            {
+                arrayList.RemoveAt(index);
+                Console.WriteLine("The item at index " + index + " is removed from the ArrayList.");
+            }
+            else
+            {
+                Console.WriteLine("Index " + index.ToString() + " does not exist in the ArrayList.");
+            }
+        }
+
+        public static void printArrayList(ArrayList arrayList, String firstLine)
+        {
+            Console.WriteLine(firstLine);
+            foreach (Object item in arrayList)
+            {
+                Console.WriteLine(item);
+            }
         }
         #endregion
     }

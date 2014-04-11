@@ -21,6 +21,7 @@ namespace AD
         private int[,] grades;
         private double[,] sales;
         private ArrayList gradesAL;
+        ArrayList names;
 
         public Hoofdstuk_2() : base(false)
         {
@@ -201,7 +202,16 @@ namespace AD
             gradesAL.Insert(1, 99);
             gradesAL.Insert(3, 80);
 
-            btnGetPositionArrayList.Enabled = btnAverageArrayList.Enabled = btnRemoveItemsArrayList.Enabled = true;
+            names = new ArrayList();
+            names.Add("Mike");
+            names.Add("Beata");
+            names.Add("Raymond");
+            names.Add("Bernica");
+            names.Add("Jennifer");
+
+            btnGetPositionArrayList.Enabled = btnAverageArrayList.Enabled =
+                btnRemoveItemsArrayList.Enabled = btnShowInformationArrayList.Enabled =
+                btnDemonstrationALRangeMethods.Enabled = true;
         }
 
         private void btnGetPositionArrayList_Click(object sender, EventArgs e)
@@ -222,10 +232,47 @@ namespace AD
         {
             ShowConsole("Remove Items for ArrayList");
             CustomMethods.removeAndPrint(gradesAL, 54);
-
-            gradesAL.RemoveAt(2);
-            gradesAL.RemoveAt(gradesAL.IndexOf(70));
+            CustomMethods.removeAtAndPrint(gradesAL, (Object)70);
+            CustomMethods.removeAtAndPrint(gradesAL, 2);
             CloseConsole();
+        }
+
+        private void btnShowInformationArrayList_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Information about grades ArrayList");
+            Console.WriteLine("The current capacity of the grades ArrayList is: " + gradesAL.Capacity.ToString());
+            Console.WriteLine("The number of grades in the grades ArrayList is: " + gradesAL.Count.ToString());
+            CloseConsole();
+        }
+
+        private void btnDemonstrationALRangeMethods_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Demonstration of the AddRange and InsertRange methods from ArrayList");
+            CustomMethods.printArrayList(names, "The original list of names: ");
+
+            string[] newNames = new string[]
+            {
+                "David",
+                "Michael"
+            };
+            ArrayList moreNames = new ArrayList();
+            moreNames.Add("Terrill");
+            moreNames.Add("Donnie");
+            moreNames.Add("Mayo");
+            moreNames.Add("Clayton");
+            moreNames.Add("Alisa");
+
+            names.InsertRange(0, newNames);
+            names.AddRange(moreNames);
+
+            Console.WriteLine();
+            CustomMethods.printArrayList(names, "The new list of names: ");
+            CloseConsole();
+        }
+
+        private void btnDemonstrationALGetRangeMethod_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
