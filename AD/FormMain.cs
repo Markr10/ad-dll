@@ -52,7 +52,7 @@ namespace AD
 
         private void btnArrayAndArrayLists_Click(object sender, EventArgs e)
         {
-           new Hoofdstuk_2().Show();
+           new Array_and_ArrayLists().Show();
         }
 
         private void stacksQueues_Click(object sender, EventArgs e)

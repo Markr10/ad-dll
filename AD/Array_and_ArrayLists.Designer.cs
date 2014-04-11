@@ -1,6 +1,6 @@
 ﻿namespace AD
 {
-    partial class Hoofdstuk_2
+    partial class Array_and_ArrayLists
     {
         /// <summary>
         /// Required designer variable.
@@ -251,7 +251,7 @@
             this.Controls.Add(this.btnCreateArrays);
             this.Controls.Add(this.btnSumNums);
             this.Name = "Hoofdstuk_2";
-            this.Text = "Hoofdstuk_2";
+            this.Text = "Array and ArrayLists";
             this.ResumeLayout(false);
 
         }
