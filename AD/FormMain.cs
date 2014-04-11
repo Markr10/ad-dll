@@ -35,7 +35,7 @@ namespace AD
 
         private void btnTimer_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(new ActionMeasurement().MeasureMilliseconds(RandomIteration).ToString());
+            MessageBox.Show(new ActionMeasurement().MeasureMilliseconds(RandomIteration).ToString(), "Timer");
         }
 
         private void btnSorteren_Click(object sender, EventArgs e)

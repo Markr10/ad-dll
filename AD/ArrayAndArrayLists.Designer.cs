@@ -198,7 +198,7 @@
             // btnDemoALRangeMethods
             // 
             this.btnDemoALRangeMethods.Enabled = false;
-            this.btnDemoALRangeMethods.Location = new System.Drawing.Point(420, 80);
+            this.btnDemoALRangeMethods.Location = new System.Drawing.Point(501, 13);
             this.btnDemoALRangeMethods.Name = "btnDemoALRangeMethods";
             this.btnDemoALRangeMethods.Size = new System.Drawing.Size(75, 115);
             this.btnDemoALRangeMethods.TabIndex = 14;
@@ -209,7 +209,7 @@
             // btnDemoALGetRangeMethod
             // 
             this.btnDemoALGetRangeMethod.Enabled = false;
-            this.btnDemoALGetRangeMethod.Location = new System.Drawing.Point(501, 13);
+            this.btnDemoALGetRangeMethod.Location = new System.Drawing.Point(501, 134);
             this.btnDemoALGetRangeMethod.Name = "btnDemoALGetRangeMethod";
             this.btnDemoALGetRangeMethod.Size = new System.Drawing.Size(75, 73);
             this.btnDemoALGetRangeMethod.TabIndex = 15;
@@ -220,7 +220,7 @@
             // btnDemoALToArrayMethod
             // 
             this.btnDemoALToArrayMethod.Enabled = false;
-            this.btnDemoALToArrayMethod.Location = new System.Drawing.Point(501, 92);
+            this.btnDemoALToArrayMethod.Location = new System.Drawing.Point(420, 80);
             this.btnDemoALToArrayMethod.Name = "btnDemoALToArrayMethod";
             this.btnDemoALToArrayMethod.Size = new System.Drawing.Size(75, 63);
             this.btnDemoALToArrayMethod.TabIndex = 16;
@@ -228,11 +228,11 @@
             this.btnDemoALToArrayMethod.UseVisualStyleBackColor = true;
             this.btnDemoALToArrayMethod.Click += new System.EventHandler(this.btnDemoALToArrayMethod_Click);
             // 
-            // Array_and_ArrayLists
+            // ArrayAndArrayLists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 250);
+            this.ClientSize = new System.Drawing.Size(590, 247);
             this.Controls.Add(this.btnDemoALToArrayMethod);
             this.Controls.Add(this.btnDemoALGetRangeMethod);
             this.Controls.Add(this.btnDemoALRangeMethods);
@@ -250,7 +250,7 @@
             this.Controls.Add(this.btnShowArrays);
             this.Controls.Add(this.btnCreateArrays);
             this.Controls.Add(this.btnSumNums);
-            this.Name = "Array_and_ArrayLists";
+            this.Name = "ArrayAndArrayLists";
             this.Text = "ArrayandArrayLists";
             this.ResumeLayout(false);
 
