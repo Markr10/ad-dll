@@ -21,10 +21,52 @@ namespace AD
         private void btnShowSeqSearch_Click(object sender, EventArgs e)
         {
             ShowConsole("Sequential search");
-            int[] searchArray = new int[] { 1, 2, 3, 4, 5 };
-            Console.WriteLine(Search<int>.linear(searchArray, 3));
-            CloseConsole();
+            
+            Console.WriteLine("Enter 10 letters for the array: ");
+            string[] searchArray = new string[10];
 
+            for (int i = 0; i < searchArray.Length - 1; i++)
+            {
+                searchArray[i] = Console.ReadLine();
+            }
+
+            Console.WriteLine("Enter a letter to search for: ");
+            string searchLetter = Console.ReadLine();
+                        
+            Console.WriteLine(Search<string>.linear(searchArray, searchLetter));
+            CloseConsole();
+        }
+
+        private void btnShowBinSearch_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Binary search");           
+            Console.WriteLine("Enter 10 numbers for the array: ");
+            int[] searchArray = new int[10];
+
+            for (int i = 0; i < searchArray.Length - 1; i++)
+            {
+                    if(!Int32.TryParse(Console.ReadLine(), out searchArray[i]))
+                    {
+                        Console.WriteLine("Numbers only");
+                        i--;
+                    }                
+            }
+
+            Console.WriteLine("Enter a number to search for: ");
+            int searchNumber;
+            while (!Int32.TryParse(Console.ReadLine(), out searchNumber))
+            {
+                Console.WriteLine("Numbers only");
+            }
+            Array.Sort(searchArray);
+            Console.WriteLine("Array sorted: ");
+            for (int i = 0; i < searchArray.Length - 1; i++)
+            {
+                Console.WriteLine(searchArray[i]);
+            }
+            Console.WriteLine(Search<int>.binary(searchArray, searchNumber));
+            CloseConsole();
+            
         }
     }
 }
