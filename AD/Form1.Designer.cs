@@ -32,6 +32,7 @@
             this.Sorteren = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnArrayAndArrayLists = new System.Windows.Forms.Button();
+            this.btnBST = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -74,11 +75,22 @@
             this.btnArrayAndArrayLists.UseVisualStyleBackColor = true;
             this.btnArrayAndArrayLists.Click += new System.EventHandler(this.btnArrayAndArrayLists_Click);
             // 
+            // btnBST
+            // 
+            this.btnBST.Location = new System.Drawing.Point(13, 150);
+            this.btnBST.Name = "btnBST";
+            this.btnBST.Size = new System.Drawing.Size(81, 36);
+            this.btnBST.TabIndex = 7;
+            this.btnBST.Text = "Binary Search Tree";
+            this.btnBST.UseVisualStyleBackColor = true;
+            this.btnBST.Click += new System.EventHandler(this.btnBST_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnBST);
             this.Controls.Add(this.btnArrayAndArrayLists);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sorteren);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button Sorteren;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnArrayAndArrayLists;
+        private System.Windows.Forms.Button btnBST;
     }
 }
