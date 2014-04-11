@@ -14,7 +14,7 @@ using System.Collections;
 
 namespace AD
 {
-    public partial class Array_and_ArrayLists : FormConsole
+    public partial class ArrayAndArrayLists : FormConsole
     {
         private Student[] students;
         private Student[] studentsOtherSchool;
@@ -23,7 +23,7 @@ namespace AD
         private ArrayList gradesAL;
         private ArrayList names;
 
-        public Array_and_ArrayLists() : base(false)
+        public ArrayAndArrayLists() : base(false)
         {
             InitializeComponent();
         }

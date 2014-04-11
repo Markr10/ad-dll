@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.Sorteren = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTimer = new System.Windows.Forms.Button();
+            this.btnSorteren = new System.Windows.Forms.Button();
+            this.btnGenerics = new System.Windows.Forms.Button();
             this.btnArrayAndArrayLists = new System.Windows.Forms.Button();
             this.btnBST = new System.Windows.Forms.Button();
-            this.stacksQueues = new System.Windows.Forms.Button();
-            this.CSet1 = new System.Windows.Forms.Button();
-            this.Cset2 = new System.Windows.Forms.Button();
+            this.btnStacksQueues = new System.Windows.Forms.Button();
+            this.btnCSet1 = new System.Windows.Forms.Button();
+            this.btnCset2 = new System.Windows.Forms.Button();
             this.btnBasicSearch = new System.Windows.Forms.Button();
             this.btnStrings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button3
+            // btnTimer
             // 
-            this.button3.Location = new System.Drawing.Point(12, 8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 27);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Timer";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnTimer.Location = new System.Drawing.Point(12, 8);
+            this.btnTimer.Name = "btnTimer";
+            this.btnTimer.Size = new System.Drawing.Size(82, 27);
+            this.btnTimer.TabIndex = 2;
+            this.btnTimer.Text = "Timer";
+            this.btnTimer.UseVisualStyleBackColor = true;
+            this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
             // 
-            // Sorteren
+            // btnSorteren
             // 
-            this.Sorteren.Location = new System.Drawing.Point(12, 41);
-            this.Sorteren.Name = "Sorteren";
-            this.Sorteren.Size = new System.Drawing.Size(82, 27);
-            this.Sorteren.TabIndex = 4;
-            this.Sorteren.Text = "Sorteren";
-            this.Sorteren.UseVisualStyleBackColor = true;
-            this.Sorteren.Click += new System.EventHandler(this.Sorteren_Click);
+            this.btnSorteren.Location = new System.Drawing.Point(12, 41);
+            this.btnSorteren.Name = "btnSorteren";
+            this.btnSorteren.Size = new System.Drawing.Size(82, 27);
+            this.btnSorteren.TabIndex = 4;
+            this.btnSorteren.Text = "Sorteren";
+            this.btnSorteren.UseVisualStyleBackColor = true;
+            this.btnSorteren.Click += new System.EventHandler(this.btnSorteren_Click);
             // 
-            // button1
+            // btnGenerics
             // 
-            this.button1.Location = new System.Drawing.Point(12, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 27);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Generics";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnGenerics.Location = new System.Drawing.Point(12, 74);
+            this.btnGenerics.Name = "btnGenerics";
+            this.btnGenerics.Size = new System.Drawing.Size(82, 27);
+            this.btnGenerics.TabIndex = 5;
+            this.btnGenerics.Text = "Generics";
+            this.btnGenerics.UseVisualStyleBackColor = true;
+            this.btnGenerics.Click += new System.EventHandler(this.btnGenerics_Click);
             // 
             // btnArrayAndArrayLists
             // 
@@ -90,35 +90,35 @@
             this.btnBST.UseVisualStyleBackColor = true;
             this.btnBST.Click += new System.EventHandler(this.btnBST_Click);
             // 
-            // stacksQueues
+            // btnStacksQueues
             // 
-            this.stacksQueues.Location = new System.Drawing.Point(12, 207);
-            this.stacksQueues.Name = "stacksQueues";
-            this.stacksQueues.Size = new System.Drawing.Size(82, 36);
-            this.stacksQueues.TabIndex = 7;
-            this.stacksQueues.Text = "Stacks and Queue";
-            this.stacksQueues.UseVisualStyleBackColor = true;
-            this.stacksQueues.Click += new System.EventHandler(this.stacksQueues_Click);
+            this.btnStacksQueues.Location = new System.Drawing.Point(12, 207);
+            this.btnStacksQueues.Name = "btnStacksQueues";
+            this.btnStacksQueues.Size = new System.Drawing.Size(82, 36);
+            this.btnStacksQueues.TabIndex = 7;
+            this.btnStacksQueues.Text = "Stacks and Queue";
+            this.btnStacksQueues.UseVisualStyleBackColor = true;
+            this.btnStacksQueues.Click += new System.EventHandler(this.btnStacksQueues_Click);
             // 
-            // CSet1
+            // btnCSet1
             // 
-            this.CSet1.Location = new System.Drawing.Point(12, 149);
-            this.CSet1.Name = "CSet1";
-            this.CSet1.Size = new System.Drawing.Size(82, 23);
-            this.CSet1.TabIndex = 7;
-            this.CSet1.Text = "Cset1";
-            this.CSet1.UseVisualStyleBackColor = true;
-            this.CSet1.Click += new System.EventHandler(this.CSet1_Click);
+            this.btnCSet1.Location = new System.Drawing.Point(12, 149);
+            this.btnCSet1.Name = "btnCSet1";
+            this.btnCSet1.Size = new System.Drawing.Size(82, 23);
+            this.btnCSet1.TabIndex = 7;
+            this.btnCSet1.Text = "Cset1";
+            this.btnCSet1.UseVisualStyleBackColor = true;
+            this.btnCSet1.Click += new System.EventHandler(this.btnCSet1_Click);
             // 
-            // Cset2
+            // btnCset2
             // 
-            this.Cset2.Location = new System.Drawing.Point(12, 178);
-            this.Cset2.Name = "Cset2";
-            this.Cset2.Size = new System.Drawing.Size(82, 23);
-            this.Cset2.TabIndex = 8;
-            this.Cset2.Text = "Cset2";
-            this.Cset2.UseVisualStyleBackColor = true;
-            this.Cset2.Click += new System.EventHandler(this.Cset2_Click);
+            this.btnCset2.Location = new System.Drawing.Point(12, 178);
+            this.btnCset2.Name = "btnCset2";
+            this.btnCset2.Size = new System.Drawing.Size(82, 23);
+            this.btnCset2.TabIndex = 8;
+            this.btnCset2.Text = "Cset2";
+            this.btnCset2.UseVisualStyleBackColor = true;
+            this.btnCset2.Click += new System.EventHandler(this.btnCset2_Click);
             // 
             // btnBasicSearch
             // 
@@ -148,13 +148,13 @@
             this.Controls.Add(this.btnStrings);
             this.Controls.Add(this.btnBasicSearch);
             this.Controls.Add(this.btnBST);
-            this.Controls.Add(this.stacksQueues);
-            this.Controls.Add(this.Cset2);
-            this.Controls.Add(this.CSet1);
+            this.Controls.Add(this.btnStacksQueues);
+            this.Controls.Add(this.btnCset2);
+            this.Controls.Add(this.btnCSet1);
             this.Controls.Add(this.btnArrayAndArrayLists);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Sorteren);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnGenerics);
+            this.Controls.Add(this.btnSorteren);
+            this.Controls.Add(this.btnTimer);
             this.Name = "FormMain";
             this.Text = "AD Dll";
             this.ResumeLayout(false);
@@ -163,14 +163,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button Sorteren;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTimer;
+        private System.Windows.Forms.Button btnSorteren;
+        private System.Windows.Forms.Button btnGenerics;
         private System.Windows.Forms.Button btnArrayAndArrayLists;
         private System.Windows.Forms.Button btnBST;
-        private System.Windows.Forms.Button stacksQueues;
-        private System.Windows.Forms.Button CSet1;
-        private System.Windows.Forms.Button Cset2;
+        private System.Windows.Forms.Button btnStacksQueues;
+        private System.Windows.Forms.Button btnCSet1;
+        private System.Windows.Forms.Button btnCset2;
         private System.Windows.Forms.Button btnBasicSearch;
         private System.Windows.Forms.Button btnStrings;
     }

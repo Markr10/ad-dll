@@ -1,6 +1,6 @@
 ﻿namespace AD
 {
-    partial class Array_and_ArrayLists
+    partial class ArrayAndArrayLists
     {
         /// <summary>
         /// Required designer variable.
@@ -228,7 +228,7 @@
             this.btnDemoALToArrayMethod.UseVisualStyleBackColor = true;
             this.btnDemoALToArrayMethod.Click += new System.EventHandler(this.btnDemoALToArrayMethod_Click);
             // 
-            // Hoofdstuk_2
+            // Array_and_ArrayLists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -250,8 +250,8 @@
             this.Controls.Add(this.btnShowArrays);
             this.Controls.Add(this.btnCreateArrays);
             this.Controls.Add(this.btnSumNums);
-            this.Name = "Hoofdstuk_2";
-            this.Text = "Array and ArrayLists";
+            this.Name = "Array_and_ArrayLists";
+            this.Text = "ArrayandArrayLists";
             this.ResumeLayout(false);
 
         }

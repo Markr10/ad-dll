@@ -11,9 +11,9 @@ using AD_Dll.Hoofdstuk_5;
 
 namespace AD
 {
-    public partial class Stacks_and_Queues : FormConsole
+    public partial class StacksAndQueues : FormConsole
     {
-        public Stacks_and_Queues() : base(false)
+        public StacksAndQueues() : base(false)
         {
             InitializeComponent();
         }

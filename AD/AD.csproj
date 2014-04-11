@@ -59,11 +59,11 @@
     <Compile Include="BinarySearchTree.Designer.cs">
       <DependentUpon>BinarySearchTree.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConsole.cs">
       <SubType>Form</SubType>
@@ -74,11 +74,11 @@
     <Compile Include="GenericStudent.Designer.cs">
       <DependentUpon>GenericStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hoofdstuk 2.cs">
+    <Compile Include="ArrayAndArrayLists.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hoofdstuk 2.Designer.cs">
-      <DependentUpon>Hoofdstuk 2.cs</DependentUpon>
+    <Compile Include="ArrayAndArrayLists.Designer.cs">
+      <DependentUpon>ArrayAndArrayLists.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,11 +88,17 @@
     <Compile Include="Sorteren.Designer.cs">
       <DependentUpon>Sorteren.cs</DependentUpon>
     </Compile>
-    <Compile Include="Stacks_and_Queues.cs">
+    <Compile Include="StacksAndQueues.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stacks_and_Queues.Designer.cs">
-      <DependentUpon>Stacks_and_Queues.cs</DependentUpon>
+    <Compile Include="StacksAndQueues.Designer.cs">
+      <DependentUpon>StacksAndQueues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BasicSearch.resx">
       <DependentUpon>BasicSearch.cs</DependentUpon>
@@ -100,14 +106,14 @@
     <EmbeddedResource Include="BinarySearchTree.resx">
       <DependentUpon>BinarySearchTree.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenericStudent.resx">
       <DependentUpon>GenericStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hoofdstuk 2.resx">
-      <DependentUpon>Hoofdstuk 2.cs</DependentUpon>
+    <EmbeddedResource Include="ArrayAndArrayLists.resx">
+      <DependentUpon>ArrayAndArrayLists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,8 +127,8 @@
     <EmbeddedResource Include="Sorteren.resx">
       <DependentUpon>Sorteren.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stacks_and_Queues.resx">
-      <DependentUpon>Stacks_and_Queues.cs</DependentUpon>
+    <EmbeddedResource Include="StacksAndQueues.resx">
+      <DependentUpon>StacksAndQueues.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

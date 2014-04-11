@@ -33,32 +33,29 @@ namespace AD
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnTimer_Click(object sender, EventArgs e)
         {
             MessageBox.Show(new ActionMeasurement().MeasureMilliseconds(RandomIteration).ToString());
         }
 
-        private void Sorteren_Click(object sender, EventArgs e)
+        private void btnSorteren_Click(object sender, EventArgs e)
         {
-            Form sort = new Sorteren();
-            sort.Show();
+            new Sorteren().Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGenerics_Click(object sender, EventArgs e)
         {
-            Form GenericStudent = new GenericStudent();
-            GenericStudent.Show();
+            new GenericStudent().Show();
         }
 
         private void btnArrayAndArrayLists_Click(object sender, EventArgs e)
         {
-           new Array_and_ArrayLists().Show();
+           new ArrayAndArrayLists().Show();
         }
 
-        private void stacksQueues_Click(object sender, EventArgs e)
+        private void btnStacksQueues_Click(object sender, EventArgs e)
         {
-            Form stacksQueue = new Stacks_and_Queues();
-            stacksQueue.Show();
+            new StacksAndQueues().Show();
         }
 
         private void btnBST_Click(object sender, EventArgs e)
@@ -66,7 +63,7 @@ namespace AD
             new BinarySearchTree().Show();
         }
 
-        private void CSet1_Click(object sender, EventArgs e)
+        private void btnCSet1_Click(object sender, EventArgs e)
         {
             ShowConsole("CSet1");
             CSet<string> setA = new CSet<string>();
@@ -107,7 +104,7 @@ namespace AD
 
         }
 
-        private void Cset2_Click(object sender, EventArgs e)
+        private void btnCset2_Click(object sender, EventArgs e)
         {
             ShowConsole("CSet2");
             CSet2 setA = new CSet2();
