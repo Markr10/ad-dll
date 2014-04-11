@@ -12,7 +12,7 @@ namespace AD_Dll.Hoofdstuk_5
     {
         static Stacks()
         {
-            Stack st = new Stack();
+            Stack<char> st = new Stack<char>();
 
             st.Push('A');
             st.Push('M');
