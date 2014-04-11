@@ -59,5 +59,10 @@ namespace AD
             Form stacksQueue = new Stacks_and_Queues();
             stacksQueue.Show();
         }
+
+        private void btnBST_Click(object sender, EventArgs e)
+        {
+            new BinarySearchTree().Show();
+        }
     }
 }
