@@ -64,5 +64,10 @@ namespace AD
         {
             new BinarySearchTree().Show();
         }
+
+        private void btnBasicSearch_Click(object sender, EventArgs e)
+        {
+            new BasicSearch().Show();
+        }
     }
 }

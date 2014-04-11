@@ -54,7 +54,7 @@
     <Compile Include="Hoofdstuk 3\BubbleSort.cs" />
     <Compile Include="Hoofdstuk 3\InsertionSort.cs" />
     <Compile Include="Hoofdstuk 3\SelectionSort.cs" />
-    <Compile Include="Hoofdstuk 4\search.cs" />
+    <Compile Include="Hoofdstuk 4\Search.cs" />
     <Compile Include="Hoofdstuk 5\Queue.cs" />
     <Compile Include="Hoofdstuk 5\Stacks.cs" />
     <Compile Include="Other.cs" />

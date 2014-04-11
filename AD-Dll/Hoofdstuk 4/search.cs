@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter4
+namespace AD_Dll.Hoofdstuk_4
 {
-    class search<T> where T : IComparable<T>
+    public class Search<T> where T : IComparable<T>
     {
        
-        public int linear(T[] a, T v)
+        public static int linear(T[] a, T v)
         {
             for (int i = 0; i < a.Length; ++i)
             {
@@ -21,7 +21,7 @@ namespace Chapter4
             return -1;
         }
 
-        public int binary(T[] a, T v)
+        public static int binary(T[] a, T v)
         {
             int low = 0;
             int high = a.Length - 1;
