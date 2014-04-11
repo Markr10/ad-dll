@@ -11,6 +11,23 @@ namespace AD_Dll.Hoofdstuk_2
     {
         #region Custom Array Methods
 
+        public static void printArray<T>(T[] arrayToPrint, String firstLine)
+        {
+            Console.WriteLine(firstLine);
+            for (int i = 0; i <= arrayToPrint.GetUpperBound(0); i++)
+            {
+                Console.Write(i.ToString() + ": ");
+                if (arrayToPrint[i] != null)
+                {
+                    Console.WriteLine(arrayToPrint[i].ToString());
+                }
+                else
+                {
+                    Console.WriteLine("null");
+                }
+            }
+        }
+
         /// <summary>
         /// Print een zin naar de console waarin staat of het type van een item een array type is en
         /// van welk type het item precies is.
@@ -367,6 +384,7 @@ namespace AD_Dll.Hoofdstuk_2
                 Console.WriteLine(item);
             }
         }
+
         #endregion
     }
 }

@@ -21,7 +21,7 @@ namespace AD
         private int[,] grades;
         private double[,] sales;
         private ArrayList gradesAL;
-        ArrayList names;
+        private ArrayList names;
 
         public Hoofdstuk_2() : base(false)
         {
