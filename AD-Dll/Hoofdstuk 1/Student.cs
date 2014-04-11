@@ -31,8 +31,22 @@ namespace AD_Dll.Hoofdstuk_1
         public override string ToString()
         {
             // String representation.
-            return this.Name.ToString() + "," + this.StudentID;
+            return this.Name.ToString() + ", " + this.StudentID;
         }
+
+        #region Static methods
+
+        public static Student getRandomStudent()
+        {
+            return new Student()
+            {
+                Name = Other.getRandomString(Other.rndObj.Next(3, 11)).ToLowerInvariant(),
+                Age = Other.rndObj.Next(16, 31),
+                StudentID = Other.rndObj.Next(180000, 400001)
+            };
+        }
+
+        #endregion
     }
 
 }
