@@ -44,7 +44,7 @@ namespace AD
             t.Start();
             for (int times = 0; times < 99; times++)
             {
-                outputArray.Text = new BubbleSort().Start(getArray());
+                outputArray.Text = new BubbleSort<int>().Start(getArray());
             }
             t.Stop();
             }
@@ -59,7 +59,7 @@ namespace AD
             t.Start();
             for (int times = 0; times < 99; times++)
             {
-                outputArray.Text = new InsertionSort().Start(getArray());
+                outputArray.Text = new InsertionSort<int>().Start(getArray());
             }
                 t.Stop();
             textBox3.Text = t.Duration(1).ToString();
@@ -72,7 +72,7 @@ namespace AD
             t.Start();
             for (int times = 0; times < 99; times++)
             {
-                outputArray.Text = new SelectionSort().Start(getArray());
+                outputArray.Text = new SelectionSort<int>().Start(getArray());
             }
             t.Stop();
             textBox4.Text = t.Duration(1).ToString();
