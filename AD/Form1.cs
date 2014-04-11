@@ -53,5 +53,10 @@ namespace AD
         {
            new Hoofdstuk_2().Show();
         }
+
+        private void btnBST_Click(object sender, EventArgs e)
+        {
+            new BinarySearchTree().Show();
+        }
     }
 }
