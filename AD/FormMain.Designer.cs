@@ -106,7 +106,7 @@
             this.btnCSet1.Name = "btnCSet1";
             this.btnCSet1.Size = new System.Drawing.Size(82, 23);
             this.btnCSet1.TabIndex = 7;
-            this.btnCSet1.Text = "Cset1";
+            this.btnCSet1.Text = "CSet1";
             this.btnCSet1.UseVisualStyleBackColor = true;
             this.btnCSet1.Click += new System.EventHandler(this.btnCSet1_Click);
             // 
@@ -116,7 +116,7 @@
             this.btnCset2.Name = "btnCset2";
             this.btnCset2.Size = new System.Drawing.Size(82, 23);
             this.btnCset2.TabIndex = 8;
-            this.btnCset2.Text = "Cset2";
+            this.btnCset2.Text = "CSet2";
             this.btnCset2.UseVisualStyleBackColor = true;
             this.btnCset2.Click += new System.EventHandler(this.btnCset2_Click);
             // 
