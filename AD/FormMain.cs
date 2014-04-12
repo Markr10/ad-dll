@@ -99,9 +99,7 @@ namespace AD
             {
                 Console.WriteLine("b is not a subset of a");
             }
-            Console.Read();
             CloseConsole();
-
         }
 
         private void btnCset2_Click(object sender, EventArgs e)
@@ -140,7 +138,6 @@ namespace AD
             {
                 Console.WriteLine("b is not a subset of a");
             }
-            Console.Read();
             CloseConsole();
         }
 

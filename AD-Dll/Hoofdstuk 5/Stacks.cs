@@ -10,7 +10,7 @@ namespace AD_Dll.Hoofdstuk_5
 {
     public class Stacks
     {
-        static Stacks()
+        public static Stacks()
         {
             Stack<char> st = new Stack<char>();
 

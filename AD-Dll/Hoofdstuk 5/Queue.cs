@@ -9,7 +9,7 @@ namespace AD_Dll.Hoofdstuk_5
 {
     public class Queue 
     {
-        static Queue()
+        public static Queue()
         {
             Queue<string> q = new Queue<string>();
 
@@ -37,7 +37,6 @@ namespace AD_Dll.Hoofdstuk_5
             Console.WriteLine("The removed value: {0}", ch);
             ch = (string) q.Dequeue();
             Console.WriteLine("The removed value: {0}", ch);
-            Console.ReadKey();
         }
     }
 }
