@@ -41,6 +41,12 @@
             this.btnSplitMethod = new System.Windows.Forms.Button();
             this.btnJoinMethod = new System.Windows.Forms.Button();
             this.btnInitDataAndCharArray = new System.Windows.Forms.Button();
+            this.btnCharCode = new System.Windows.Forms.Button();
+            this.btnEqualsMethod = new System.Windows.Forms.Button();
+            this.btnCompareToMethod = new System.Windows.Forms.Button();
+            this.btnCompareMethod = new System.Windows.Forms.Button();
+            this.btnEndsWithMethod = new System.Windows.Forms.Button();
+            this.btnStartsWith = new System.Windows.Forms.Button();
             this.groupBoxStrings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +58,7 @@
             this.groupBoxStrings.Controls.Add(this.label1);
             this.groupBoxStrings.Location = new System.Drawing.Point(12, 12);
             this.groupBoxStrings.Name = "groupBoxStrings";
-            this.groupBoxStrings.Size = new System.Drawing.Size(328, 79);
+            this.groupBoxStrings.Size = new System.Drawing.Size(384, 79);
             this.groupBoxStrings.TabIndex = 1;
             this.groupBoxStrings.TabStop = false;
             this.groupBoxStrings.Text = "String literals";
@@ -177,11 +183,76 @@
             this.btnInitDataAndCharArray.UseVisualStyleBackColor = true;
             this.btnInitDataAndCharArray.Click += new System.EventHandler(this.btnInitDataAndCharArray_Click);
             // 
+            // btnCharCode
+            // 
+            this.btnCharCode.Location = new System.Drawing.Point(321, 97);
+            this.btnCharCode.Name = "btnCharCode";
+            this.btnCharCode.Size = new System.Drawing.Size(75, 48);
+            this.btnCharCode.TabIndex = 10;
+            this.btnCharCode.Text = "\"a\" to character code";
+            this.btnCharCode.UseVisualStyleBackColor = true;
+            this.btnCharCode.Click += new System.EventHandler(this.btnCharCode_Click);
+            // 
+            // btnEqualsMethod
+            // 
+            this.btnEqualsMethod.Location = new System.Drawing.Point(321, 151);
+            this.btnEqualsMethod.Name = "btnEqualsMethod";
+            this.btnEqualsMethod.Size = new System.Drawing.Size(75, 38);
+            this.btnEqualsMethod.TabIndex = 11;
+            this.btnEqualsMethod.Text = "Equals method";
+            this.btnEqualsMethod.UseVisualStyleBackColor = true;
+            this.btnEqualsMethod.Click += new System.EventHandler(this.btnEqualsMethod_Click);
+            // 
+            // btnCompareToMethod
+            // 
+            this.btnCompareToMethod.Location = new System.Drawing.Point(321, 195);
+            this.btnCompareToMethod.Name = "btnCompareToMethod";
+            this.btnCompareToMethod.Size = new System.Drawing.Size(75, 34);
+            this.btnCompareToMethod.TabIndex = 12;
+            this.btnCompareToMethod.Text = "CompareTo method";
+            this.btnCompareToMethod.UseVisualStyleBackColor = true;
+            this.btnCompareToMethod.Click += new System.EventHandler(this.btnCompareToMethod_Click);
+            // 
+            // btnCompareMethod
+            // 
+            this.btnCompareMethod.Location = new System.Drawing.Point(406, 97);
+            this.btnCompareMethod.Name = "btnCompareMethod";
+            this.btnCompareMethod.Size = new System.Drawing.Size(75, 34);
+            this.btnCompareMethod.TabIndex = 13;
+            this.btnCompareMethod.Text = "Compare method";
+            this.btnCompareMethod.UseVisualStyleBackColor = true;
+            this.btnCompareMethod.Click += new System.EventHandler(this.btnCompareMethod_Click);
+            // 
+            // btnEndsWithMethod
+            // 
+            this.btnEndsWithMethod.Location = new System.Drawing.Point(406, 138);
+            this.btnEndsWithMethod.Name = "btnEndsWithMethod";
+            this.btnEndsWithMethod.Size = new System.Drawing.Size(75, 35);
+            this.btnEndsWithMethod.TabIndex = 14;
+            this.btnEndsWithMethod.Text = "EndsWith method";
+            this.btnEndsWithMethod.UseVisualStyleBackColor = true;
+            this.btnEndsWithMethod.Click += new System.EventHandler(this.btnEndsWithMethod_Click);
+            // 
+            // btnStartsWith
+            // 
+            this.btnStartsWith.Location = new System.Drawing.Point(406, 179);
+            this.btnStartsWith.Name = "btnStartsWith";
+            this.btnStartsWith.Size = new System.Drawing.Size(75, 35);
+            this.btnStartsWith.TabIndex = 15;
+            this.btnStartsWith.Text = "StartsWith method";
+            this.btnStartsWith.UseVisualStyleBackColor = true;
+            // 
             // Strings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 262);
+            this.ClientSize = new System.Drawing.Size(493, 262);
+            this.Controls.Add(this.btnStartsWith);
+            this.Controls.Add(this.btnEndsWithMethod);
+            this.Controls.Add(this.btnCompareMethod);
+            this.Controls.Add(this.btnCompareToMethod);
+            this.Controls.Add(this.btnEqualsMethod);
+            this.Controls.Add(this.btnCharCode);
             this.Controls.Add(this.btnInitDataAndCharArray);
             this.Controls.Add(this.btnJoinMethod);
             this.Controls.Add(this.btnSplitMethod);
@@ -215,6 +286,12 @@
         private System.Windows.Forms.Button btnSplitMethod;
         private System.Windows.Forms.Button btnJoinMethod;
         private System.Windows.Forms.Button btnInitDataAndCharArray;
+        private System.Windows.Forms.Button btnCharCode;
+        private System.Windows.Forms.Button btnEqualsMethod;
+        private System.Windows.Forms.Button btnCompareToMethod;
+        private System.Windows.Forms.Button btnCompareMethod;
+        private System.Windows.Forms.Button btnEndsWithMethod;
+        private System.Windows.Forms.Button btnStartsWith;
 
     }
 }

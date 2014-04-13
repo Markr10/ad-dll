@@ -74,5 +74,60 @@ namespace AD_Dll.Hoofdstuk_7
             Console.WriteLine("Words:");
             CustomStringMethods.printArrayWithWords(stringArray);
         }
+
+        public static void EqualsAndPrint(string firstString, string secondString)
+        {
+            printString("First string", firstString);
+            printString("Second string", secondString);
+            if (firstString.Equals(secondString))
+            {
+                Console.WriteLine("They are the same.");
+            }
+            else
+            {
+                Console.WriteLine("They are not the same.");
+            }
+        }
+
+        public static void CompareToAndPrint<T>(T firstObject, T secondObject) where T : IComparable
+        {
+            printString("First object", firstObject.ToString());
+            printString("Second object", secondObject.ToString());
+            Console.WriteLine("The output from CompareTo is: " + firstObject.CompareTo(secondObject));
+        }
+
+        public static void CompareAndPrint(string firstString, string secondString)
+        {
+            int compVal = String.Compare(firstString, secondString);
+            switch (compVal)
+            {
+                case 0:
+                    Console.WriteLine(firstString + " " + secondString + " are equal");
+                    break;
+                case 1:
+                    Console.WriteLine(firstString + " is less than " + secondString);
+                    break;
+                case 2:
+                    Console.WriteLine(firstString + " is greater than" + secondString);
+                    break;
+                default:
+                    Console.WriteLine("Can't compare");
+                    break;
+            }
+        }
+
+        public static void FindPluralNounsAndPrint(string[] nouns)
+        {
+            ArrayList pluralNouns = new ArrayList();
+            foreach (string noun in nouns)
+            {
+                if (noun.EndsWith("s"))
+                {
+                    pluralNouns.Add(noun);
+                }
+            }
+            Console.WriteLine("The following plural nouns are found in the given String array:");
+            printArrayListWithWords(pluralNouns);
+        }
     }
 }

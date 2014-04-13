@@ -120,5 +120,54 @@ namespace AD
             Console.WriteLine(joined);
             CloseConsole();
         }
+
+        private void btnCharCode_Click(object sender, EventArgs e)
+        {
+            int charCode;
+            charCode = (int)'a';
+
+            WriteFirstLine("The character code of \"a\" is: " + charCode.ToString(), "Character code of \"a\"");
+            CloseConsole();
+        }
+
+        private void btnEqualsMethod_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Equals method");
+            string s1 = "foobar";
+            string s2 = "foobar";
+            CustomStringMethods.EqualsAndPrint(s1, s2);
+            CloseConsole();
+        }
+
+        private void btnCompareToMethod_Click(object sender, EventArgs e)
+        {
+            ShowConsole("CompareTo method");
+            string s1 = "foobar";
+            string s2 = "foobar";
+            CustomStringMethods.CompareToAndPrint(s1, s2); // returns 0
+            s2 = "foofoo";
+            CustomStringMethods.CompareToAndPrint(s1, s2); // returns -1
+            s2 = "fooaar";
+            CustomStringMethods.CompareToAndPrint(s1, s2); // returns 1
+            CloseConsole();
+        }
+
+        private void btnCompareMethod_Click(object sender, EventArgs e)
+        {
+            string s1 = "foobar";
+            string s2 = "foobar";
+
+            ShowConsole("Compare method");
+            CustomStringMethods.CompareAndPrint(s1, s2);
+            CloseConsole();
+        }
+
+        private void btnEndsWithMethod_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Demonstration of EndsWith method");
+            string[] nouns = new string[] { "cat", "dog", "bird", "eggs", "bones" };
+            CustomStringMethods.FindPluralNounsAndPrint(nouns);
+            CloseConsole();
+        }
     }
 }
