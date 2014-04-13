@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AD_Dll.Hoofdstuk_2;
 
 namespace AD
 {
@@ -70,6 +71,15 @@ namespace AD
             {
                 aString = "now is the time for all good people ";
             }
+        }
+
+        private void btnSplitWords_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Split words");
+            CustomStringMethods.printString("Input String", aString);
+            Console.WriteLine("Words:");
+            CustomStringMethods.printArrayListWithWords(CustomStringMethods.SplitWords(aString));
+            CloseConsole();
         }
     }
 }

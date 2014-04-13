@@ -37,6 +37,7 @@
             this.btnTwoWords = new System.Windows.Forms.Button();
             this.btnShowSubString = new System.Windows.Forms.Button();
             this.btnChangeString = new System.Windows.Forms.Button();
+            this.btnSplitWords = new System.Windows.Forms.Button();
             this.groupBoxStrings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,15 +128,26 @@
             this.btnChangeString.Name = "btnChangeString";
             this.btnChangeString.Size = new System.Drawing.Size(91, 48);
             this.btnChangeString.TabIndex = 5;
-            this.btnChangeString.Text = "Change String for substring above methods";
+            this.btnChangeString.Text = "Change String for Substring for above methods";
             this.btnChangeString.UseVisualStyleBackColor = false;
             this.btnChangeString.Click += new System.EventHandler(this.btnChangeString_Click);
+            // 
+            // btnSplitWords
+            // 
+            this.btnSplitWords.Location = new System.Drawing.Point(189, 148);
+            this.btnSplitWords.Name = "btnSplitWords";
+            this.btnSplitWords.Size = new System.Drawing.Size(74, 48);
+            this.btnSplitWords.TabIndex = 6;
+            this.btnSplitWords.Text = "Split words";
+            this.btnSplitWords.UseVisualStyleBackColor = true;
+            this.btnSplitWords.Click += new System.EventHandler(this.btnSplitWords_Click);
             // 
             // Strings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnSplitWords);
             this.Controls.Add(this.btnChangeString);
             this.Controls.Add(this.btnShowSubString);
             this.Controls.Add(this.btnTwoWords);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Button btnTwoWords;
         private System.Windows.Forms.Button btnShowSubString;
         private System.Windows.Forms.Button btnChangeString;
+        private System.Windows.Forms.Button btnSplitWords;
 
     }
 }
