@@ -81,5 +81,21 @@ namespace AD
             CustomStringMethods.printArrayListWithWords(CustomStringMethods.SplitWords(aString));
             CloseConsole();
         }
+
+        private void btnSplitMethod_Click(object sender, EventArgs e)
+        {
+            string data = "Mike,McMillan,3000 W. Scenic,North Little Rock,AR,72118";
+            char[] delimiter = new char[] { ',' };
+            string[] sdata = data.Split(delimiter, data.Length);
+            
+            ShowConsole("Split method");
+            CustomStringMethods.printArrayWithSplitWords(data, sdata);
+
+            sdata = data.Split(delimiter, 2);
+            CustomMethods.printArray(sdata, "Split method with 2 as the maximum number of substrings to return, gives the following elements in the returned array:");
+            CloseConsole();
+        }
+
+
     }
 }

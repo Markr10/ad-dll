@@ -56,6 +56,23 @@ namespace AD_Dll.Hoofdstuk_7
                     Console.Write(" ");
                 }
             }
+            Console.WriteLine();
+        }
+
+        public static void printArrayWithWords<T>(T[] words)
+        {
+            for (int i = 0, length = (words.Length - 1); i < length; i++)
+            {
+                Console.Write("\"{0}\" ", words[i]);
+            }
+            Console.WriteLine("\"{0}\"", words[words.GetUpperBound(0)]);
+        }
+
+        public static void printArrayWithSplitWords(string inputString, string[] stringArray)
+        {
+            CustomStringMethods.printString("Input String", inputString);
+            Console.WriteLine("Words:");
+            CustomStringMethods.printArrayWithWords(stringArray);
         }
     }
 }

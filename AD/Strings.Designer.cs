@@ -38,6 +38,7 @@
             this.btnShowSubString = new System.Windows.Forms.Button();
             this.btnChangeString = new System.Windows.Forms.Button();
             this.btnSplitWords = new System.Windows.Forms.Button();
+            this.btnSplitMethod = new System.Windows.Forms.Button();
             this.groupBoxStrings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.groupBoxStrings.Controls.Add(this.label1);
             this.groupBoxStrings.Location = new System.Drawing.Point(12, 12);
             this.groupBoxStrings.Name = "groupBoxStrings";
-            this.groupBoxStrings.Size = new System.Drawing.Size(260, 79);
+            this.groupBoxStrings.Size = new System.Drawing.Size(328, 79);
             this.groupBoxStrings.TabIndex = 1;
             this.groupBoxStrings.TabStop = false;
             this.groupBoxStrings.Text = "String literals";
@@ -114,7 +115,7 @@
             // 
             // btnShowSubString
             // 
-            this.btnShowSubString.Location = new System.Drawing.Point(189, 97);
+            this.btnShowSubString.Location = new System.Drawing.Point(143, 97);
             this.btnShowSubString.Name = "btnShowSubString";
             this.btnShowSubString.Size = new System.Drawing.Size(74, 48);
             this.btnShowSubString.TabIndex = 4;
@@ -124,7 +125,7 @@
             // 
             // btnChangeString
             // 
-            this.btnChangeString.Location = new System.Drawing.Point(181, 202);
+            this.btnChangeString.Location = new System.Drawing.Point(135, 206);
             this.btnChangeString.Name = "btnChangeString";
             this.btnChangeString.Size = new System.Drawing.Size(91, 48);
             this.btnChangeString.TabIndex = 5;
@@ -134,7 +135,7 @@
             // 
             // btnSplitWords
             // 
-            this.btnSplitWords.Location = new System.Drawing.Point(189, 148);
+            this.btnSplitWords.Location = new System.Drawing.Point(143, 148);
             this.btnSplitWords.Name = "btnSplitWords";
             this.btnSplitWords.Size = new System.Drawing.Size(74, 48);
             this.btnSplitWords.TabIndex = 6;
@@ -142,11 +143,22 @@
             this.btnSplitWords.UseVisualStyleBackColor = true;
             this.btnSplitWords.Click += new System.EventHandler(this.btnSplitWords_Click);
             // 
+            // btnSplitMethod
+            // 
+            this.btnSplitMethod.Location = new System.Drawing.Point(236, 97);
+            this.btnSplitMethod.Name = "btnSplitMethod";
+            this.btnSplitMethod.Size = new System.Drawing.Size(75, 23);
+            this.btnSplitMethod.TabIndex = 7;
+            this.btnSplitMethod.Text = "Split method";
+            this.btnSplitMethod.UseVisualStyleBackColor = true;
+            this.btnSplitMethod.Click += new System.EventHandler(this.btnSplitMethod_Click);
+            // 
             // Strings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(352, 262);
+            this.Controls.Add(this.btnSplitMethod);
             this.Controls.Add(this.btnSplitWords);
             this.Controls.Add(this.btnChangeString);
             this.Controls.Add(this.btnShowSubString);
@@ -174,6 +186,7 @@
         private System.Windows.Forms.Button btnShowSubString;
         private System.Windows.Forms.Button btnChangeString;
         private System.Windows.Forms.Button btnSplitWords;
+        private System.Windows.Forms.Button btnSplitMethod;
 
     }
 }
