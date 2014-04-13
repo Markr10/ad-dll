@@ -47,6 +47,11 @@
             this.btnCompareMethod = new System.Windows.Forms.Button();
             this.btnEndsWithMethod = new System.Windows.Forms.Button();
             this.btnStartsWith = new System.Windows.Forms.Button();
+            this.btnInsertMethod = new System.Windows.Forms.Button();
+            this.btnOtherMethods = new System.Windows.Forms.Button();
+            this.btnPadMethods = new System.Windows.Forms.Button();
+            this.btnReplaceMethod = new System.Windows.Forms.Button();
+            this.btnRemoveMethod = new System.Windows.Forms.Button();
             this.groupBoxStrings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +63,7 @@
             this.groupBoxStrings.Controls.Add(this.label1);
             this.groupBoxStrings.Location = new System.Drawing.Point(12, 12);
             this.groupBoxStrings.Name = "groupBoxStrings";
-            this.groupBoxStrings.Size = new System.Drawing.Size(384, 79);
+            this.groupBoxStrings.Size = new System.Drawing.Size(328, 79);
             this.groupBoxStrings.TabIndex = 1;
             this.groupBoxStrings.TabStop = false;
             this.groupBoxStrings.Text = "String literals";
@@ -133,7 +138,7 @@
             // 
             // btnChangeString
             // 
-            this.btnChangeString.Location = new System.Drawing.Point(135, 206);
+            this.btnChangeString.Location = new System.Drawing.Point(135, 210);
             this.btnChangeString.Name = "btnChangeString";
             this.btnChangeString.Size = new System.Drawing.Size(91, 48);
             this.btnChangeString.TabIndex = 5;
@@ -154,7 +159,7 @@
             // btnSplitMethod
             // 
             this.btnSplitMethod.Enabled = false;
-            this.btnSplitMethod.Location = new System.Drawing.Point(236, 163);
+            this.btnSplitMethod.Location = new System.Drawing.Point(265, 163);
             this.btnSplitMethod.Name = "btnSplitMethod";
             this.btnSplitMethod.Size = new System.Drawing.Size(75, 23);
             this.btnSplitMethod.TabIndex = 8;
@@ -165,7 +170,7 @@
             // btnJoinMethod
             // 
             this.btnJoinMethod.Enabled = false;
-            this.btnJoinMethod.Location = new System.Drawing.Point(236, 192);
+            this.btnJoinMethod.Location = new System.Drawing.Point(265, 192);
             this.btnJoinMethod.Name = "btnJoinMethod";
             this.btnJoinMethod.Size = new System.Drawing.Size(75, 23);
             this.btnJoinMethod.TabIndex = 9;
@@ -175,7 +180,7 @@
             // 
             // btnInitDataAndCharArray
             // 
-            this.btnInitDataAndCharArray.Location = new System.Drawing.Point(236, 97);
+            this.btnInitDataAndCharArray.Location = new System.Drawing.Point(265, 97);
             this.btnInitDataAndCharArray.Name = "btnInitDataAndCharArray";
             this.btnInitDataAndCharArray.Size = new System.Drawing.Size(75, 60);
             this.btnInitDataAndCharArray.TabIndex = 7;
@@ -185,7 +190,7 @@
             // 
             // btnCharCode
             // 
-            this.btnCharCode.Location = new System.Drawing.Point(321, 97);
+            this.btnCharCode.Location = new System.Drawing.Point(370, 19);
             this.btnCharCode.Name = "btnCharCode";
             this.btnCharCode.Size = new System.Drawing.Size(75, 48);
             this.btnCharCode.TabIndex = 10;
@@ -195,7 +200,7 @@
             // 
             // btnEqualsMethod
             // 
-            this.btnEqualsMethod.Location = new System.Drawing.Point(321, 151);
+            this.btnEqualsMethod.Location = new System.Drawing.Point(370, 73);
             this.btnEqualsMethod.Name = "btnEqualsMethod";
             this.btnEqualsMethod.Size = new System.Drawing.Size(75, 38);
             this.btnEqualsMethod.TabIndex = 11;
@@ -205,7 +210,7 @@
             // 
             // btnCompareToMethod
             // 
-            this.btnCompareToMethod.Location = new System.Drawing.Point(321, 195);
+            this.btnCompareToMethod.Location = new System.Drawing.Point(370, 117);
             this.btnCompareToMethod.Name = "btnCompareToMethod";
             this.btnCompareToMethod.Size = new System.Drawing.Size(75, 34);
             this.btnCompareToMethod.TabIndex = 12;
@@ -215,7 +220,7 @@
             // 
             // btnCompareMethod
             // 
-            this.btnCompareMethod.Location = new System.Drawing.Point(406, 97);
+            this.btnCompareMethod.Location = new System.Drawing.Point(370, 157);
             this.btnCompareMethod.Name = "btnCompareMethod";
             this.btnCompareMethod.Size = new System.Drawing.Size(75, 34);
             this.btnCompareMethod.TabIndex = 13;
@@ -225,7 +230,7 @@
             // 
             // btnEndsWithMethod
             // 
-            this.btnEndsWithMethod.Location = new System.Drawing.Point(406, 138);
+            this.btnEndsWithMethod.Location = new System.Drawing.Point(370, 197);
             this.btnEndsWithMethod.Name = "btnEndsWithMethod";
             this.btnEndsWithMethod.Size = new System.Drawing.Size(75, 35);
             this.btnEndsWithMethod.TabIndex = 14;
@@ -235,18 +240,73 @@
             // 
             // btnStartsWith
             // 
-            this.btnStartsWith.Location = new System.Drawing.Point(406, 179);
+            this.btnStartsWith.Location = new System.Drawing.Point(451, 19);
             this.btnStartsWith.Name = "btnStartsWith";
             this.btnStartsWith.Size = new System.Drawing.Size(75, 35);
             this.btnStartsWith.TabIndex = 15;
             this.btnStartsWith.Text = "StartsWith method";
             this.btnStartsWith.UseVisualStyleBackColor = true;
+            this.btnStartsWith.Click += new System.EventHandler(this.btnStartsWith_Click);
+            // 
+            // btnInsertMethod
+            // 
+            this.btnInsertMethod.Location = new System.Drawing.Point(451, 60);
+            this.btnInsertMethod.Name = "btnInsertMethod";
+            this.btnInsertMethod.Size = new System.Drawing.Size(75, 35);
+            this.btnInsertMethod.TabIndex = 16;
+            this.btnInsertMethod.Text = "Insert method";
+            this.btnInsertMethod.UseVisualStyleBackColor = true;
+            this.btnInsertMethod.Click += new System.EventHandler(this.btnInsertMethod_Click);
+            // 
+            // btnOtherMethods
+            // 
+            this.btnOtherMethods.Location = new System.Drawing.Point(405, 238);
+            this.btnOtherMethods.Name = "btnOtherMethods";
+            this.btnOtherMethods.Size = new System.Drawing.Size(91, 20);
+            this.btnOtherMethods.TabIndex = 20;
+            this.btnOtherMethods.Text = "Other methods";
+            this.btnOtherMethods.UseVisualStyleBackColor = true;
+            // 
+            // btnPadMethods
+            // 
+            this.btnPadMethods.Location = new System.Drawing.Point(451, 182);
+            this.btnPadMethods.Name = "btnPadMethods";
+            this.btnPadMethods.Size = new System.Drawing.Size(75, 50);
+            this.btnPadMethods.TabIndex = 19;
+            this.btnPadMethods.Text = "PadLeft and PadRight methods";
+            this.btnPadMethods.UseVisualStyleBackColor = true;
+            this.btnPadMethods.Click += new System.EventHandler(this.btnPadMethods_Click);
+            // 
+            // btnReplaceMethod
+            // 
+            this.btnReplaceMethod.Location = new System.Drawing.Point(451, 141);
+            this.btnReplaceMethod.Name = "btnReplaceMethod";
+            this.btnReplaceMethod.Size = new System.Drawing.Size(75, 35);
+            this.btnReplaceMethod.TabIndex = 18;
+            this.btnReplaceMethod.Text = "Replace method";
+            this.btnReplaceMethod.UseVisualStyleBackColor = true;
+            this.btnReplaceMethod.Click += new System.EventHandler(this.btnReplaceMethod_Click);
+            // 
+            // btnRemoveMethod
+            // 
+            this.btnRemoveMethod.Location = new System.Drawing.Point(451, 101);
+            this.btnRemoveMethod.Name = "btnRemoveMethod";
+            this.btnRemoveMethod.Size = new System.Drawing.Size(75, 34);
+            this.btnRemoveMethod.TabIndex = 17;
+            this.btnRemoveMethod.Text = "Remove method";
+            this.btnRemoveMethod.UseVisualStyleBackColor = true;
+            this.btnRemoveMethod.Click += new System.EventHandler(this.btnRemoveMethod_Click);
             // 
             // Strings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 262);
+            this.ClientSize = new System.Drawing.Size(539, 262);
+            this.Controls.Add(this.btnOtherMethods);
+            this.Controls.Add(this.btnPadMethods);
+            this.Controls.Add(this.btnReplaceMethod);
+            this.Controls.Add(this.btnRemoveMethod);
+            this.Controls.Add(this.btnInsertMethod);
             this.Controls.Add(this.btnStartsWith);
             this.Controls.Add(this.btnEndsWithMethod);
             this.Controls.Add(this.btnCompareMethod);
@@ -292,6 +352,11 @@
         private System.Windows.Forms.Button btnCompareMethod;
         private System.Windows.Forms.Button btnEndsWithMethod;
         private System.Windows.Forms.Button btnStartsWith;
+        private System.Windows.Forms.Button btnInsertMethod;
+        private System.Windows.Forms.Button btnOtherMethods;
+        private System.Windows.Forms.Button btnPadMethods;
+        private System.Windows.Forms.Button btnReplaceMethod;
+        private System.Windows.Forms.Button btnRemoveMethod;
 
     }
 }

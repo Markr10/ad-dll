@@ -43,11 +43,11 @@ namespace AD
         private void btnTwoWords_Click(object sender, EventArgs e)
         {
             string inputString = "Hello, world!";
-            string[] firstTwoWordsArray = CustomStringMethods.getFirstTwoWordsOfAString(inputString);
+            string[] firstTwoWordsArray = CustomStringMethods.GetFirstTwoWordsOfAString(inputString);
             ShowConsole("First two words of a String");
-            CustomStringMethods.printString("Input String", inputString);
-            CustomStringMethods.printString("First word", firstTwoWordsArray[0]);
-            CustomStringMethods.printString("Second word", firstTwoWordsArray[1]);
+            CustomStringMethods.PrintString("Input String", inputString);
+            CustomStringMethods.PrintString("First word", firstTwoWordsArray[0]);
+            CustomStringMethods.PrintString("Second word", firstTwoWordsArray[1]);
             CloseConsole();
         }
 
@@ -56,10 +56,10 @@ namespace AD
             int startPosition = 0;
             int lengthSubstring = 3;
             ShowConsole("Show substring of a String");
-            CustomStringMethods.printString("Input String", aString);
+            CustomStringMethods.PrintString("Input String", aString);
             Console.WriteLine("Start position for Substring: " + startPosition.ToString());
             Console.WriteLine("Characters to pull for Substring: " +  lengthSubstring.ToString());
-            CustomStringMethods.printString("Substring", aString.Substring(startPosition, lengthSubstring));
+            CustomStringMethods.PrintString("Substring", aString.Substring(startPosition, lengthSubstring));
             CloseConsole();
         }
 
@@ -78,9 +78,9 @@ namespace AD
         private void btnSplitWords_Click(object sender, EventArgs e)
         {
             ShowConsole("Split words");
-            CustomStringMethods.printString("Input String", aString);
+            CustomStringMethods.PrintString("Input String", aString);
             Console.WriteLine("Words:");
-            CustomStringMethods.printArrayListWithWords(CustomStringMethods.SplitWords(aString));
+            CustomStringMethods.PrintArrayListWithWords(CustomStringMethods.SplitWords(aString));
             CloseConsole();
         }
 
@@ -98,7 +98,7 @@ namespace AD
             string[] sdata = data.Split(delimiter, data.Length);
             
             ShowConsole("Split method");
-            CustomStringMethods.printArrayWithSplitWords(data, sdata);
+            CustomStringMethods.PrintArrayWithSplitWords(data, sdata);
 
             sdata = data.Split(delimiter, 2);
             CustomMethods.printArray(sdata, "Split method with 2 as the maximum number of substrings to return, gives the following elements in the returned array:");
@@ -111,7 +111,7 @@ namespace AD
             sdata = data.Split(delimiter, data.Length);
 
             ShowConsole("Join method");
-            CustomStringMethods.printArrayWithSplitWords(data, sdata);
+            CustomStringMethods.PrintArrayWithSplitWords(data, sdata);
 
             string joined;
             joined = String.Join(",", sdata);
@@ -164,9 +164,84 @@ namespace AD
 
         private void btnEndsWithMethod_Click(object sender, EventArgs e)
         {
-            ShowConsole("Demonstration of EndsWith method");
+            ShowConsole("Demonstration of the EndsWith method");
             string[] nouns = new string[] { "cat", "dog", "bird", "eggs", "bones" };
-            CustomStringMethods.FindPluralNounsAndPrint(nouns);
+            CustomStringMethods.EndsWithAndPrint(nouns, "s", "plural nouns");
+            CloseConsole();
+        }
+
+        private void btnStartsWith_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Demonstration of the StartsWith method");
+            string[] words = new string[] { "triangle", "diagonal", "trimester", "bifocal", "triglycerides" };
+            CustomStringMethods.StartsWithAndPrint(words, "tri", "words that start with \"tri\"");
+            CloseConsole();
+        }
+
+        private void btnInsertMethod_Click(object sender, EventArgs e)
+        {
+            string s1 = "Hello, . Welcome to my class.";
+            string name = "Clayton";
+            int pos = s1.IndexOf(",");
+
+            ShowConsole("Demonstration of the Insert method");
+            CustomStringMethods.PrintString("Input  String", s1);
+            CustomStringMethods.PrintString("Insert String", name);
+            CustomStringMethods.InsertPrintAndReturn(s1, (pos + 2), name);
+            CloseConsole();
+        }
+
+        private void btnRemoveMethod_Click(object sender, EventArgs e)
+        {
+            string s1 = "Hello, . Welcome to my class.";
+            string name = "Ella";
+            int pos = s1.IndexOf(",");
+
+            ShowConsole("Demonstration of the Remove method");            
+            CustomStringMethods.PrintInsertAndRemove(s1, (pos + 2), name, name.Length);
+            name = "William Shakespeare";
+            CustomStringMethods.PrintInsertAndRemove(s1, (pos + 2), name, name.Length);
+            CloseConsole();
+        }
+
+        private void btnReplaceMethod_Click(object sender, EventArgs e)
+        {
+            string[] words = new string[] { "recieve", "decieve", "reciept" };
+            string stringToReplace = "cie";
+            string replacementString = "cei";
+
+            ShowConsole("Demonstration of the Replace method");
+            CustomStringMethods.PrintString("Characters to replace" , stringToReplace);
+            CustomStringMethods.PrintString("Replacement characters", replacementString);
+            Console.WriteLine();
+            CustomMethods.printArray(words, "Array before replacement:");
+            Console.WriteLine();
+            CustomStringMethods.ReplaceAndPrint(words, stringToReplace, replacementString);
+            CloseConsole();
+        }
+
+        private void btnPadMethods_Click(object sender, EventArgs e)
+        {
+            string s1 = "Hello";
+            string s2 = "world";
+            string s3 = "Goodbye";
+
+            ShowConsole("Demonstration of the PadLeft and PadRight methods");
+            Console.Write("Input Strings: ");
+            CustomStringMethods.PrintArrayWithWords(new string[] {s1, s2, s3});
+            
+            Console.WriteLine();
+            Console.WriteLine(s1.PadLeft(10));
+            Console.WriteLine(s2);
+            
+            Console.WriteLine();
+            Console.Write(s1.PadLeft(10));
+            Console.WriteLine(s2.PadLeft(10));
+            Console.Write(s3.PadLeft(10));
+            Console.WriteLine(s2.PadLeft(10));
+
+            Console.WriteLine();
+            
             CloseConsole();
         }
     }

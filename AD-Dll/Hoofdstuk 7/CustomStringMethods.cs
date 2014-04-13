@@ -9,7 +9,7 @@ namespace AD_Dll.Hoofdstuk_7
 {
     public class CustomStringMethods
     {
-        public static String[] getFirstTwoWordsOfAString(string stringWithTwoWords)
+        public static String[] GetFirstTwoWordsOfAString(string stringWithTwoWords)
         {
             int len = stringWithTwoWords.Length;
             int pos = stringWithTwoWords.IndexOf(" ");
@@ -20,7 +20,7 @@ namespace AD_Dll.Hoofdstuk_7
             return new string[] { firstWord, secondWord };
         }
 
-        public static void printString(string aboutStringText, string stringText)
+        public static void PrintString(string aboutStringText, string stringText)
         {
             Console.WriteLine("{0}: \"{1}\"", aboutStringText, stringText);
         }
@@ -46,7 +46,7 @@ namespace AD_Dll.Hoofdstuk_7
             return words;
         }
 
-        public static void printArrayListWithWords(ArrayList words)
+        public static void PrintArrayListWithWords(ArrayList words)
         {
             foreach (Object word in words)
             {
@@ -59,7 +59,7 @@ namespace AD_Dll.Hoofdstuk_7
             Console.WriteLine();
         }
 
-        public static void printArrayWithWords<T>(T[] words)
+        public static void PrintArrayWithWords<T>(T[] words)
         {
             for (int i = 0, length = (words.Length - 1); i < length; i++)
             {
@@ -68,17 +68,17 @@ namespace AD_Dll.Hoofdstuk_7
             Console.WriteLine("\"{0}\"", words[words.GetUpperBound(0)]);
         }
 
-        public static void printArrayWithSplitWords(string inputString, string[] stringArray)
+        public static void PrintArrayWithSplitWords(string inputString, string[] stringArray)
         {
-            CustomStringMethods.printString("Input String", inputString);
+            CustomStringMethods.PrintString("Input String", inputString);
             Console.WriteLine("Words:");
-            CustomStringMethods.printArrayWithWords(stringArray);
+            CustomStringMethods.PrintArrayWithWords(stringArray);
         }
 
         public static void EqualsAndPrint(string firstString, string secondString)
         {
-            printString("First string", firstString);
-            printString("Second string", secondString);
+            PrintString("First string", firstString);
+            PrintString("Second string", secondString);
             if (firstString.Equals(secondString))
             {
                 Console.WriteLine("They are the same.");
@@ -91,8 +91,8 @@ namespace AD_Dll.Hoofdstuk_7
 
         public static void CompareToAndPrint<T>(T firstObject, T secondObject) where T : IComparable
         {
-            printString("First object", firstObject.ToString());
-            printString("Second object", secondObject.ToString());
+            PrintString("First object", firstObject.ToString());
+            PrintString("Second object", secondObject.ToString());
             Console.WriteLine("The output from CompareTo is: " + firstObject.CompareTo(secondObject));
         }
 
@@ -116,18 +116,64 @@ namespace AD_Dll.Hoofdstuk_7
             }
         }
 
-        public static void FindPluralNounsAndPrint(string[] nouns)
+        public static void EndsWithAndPrint(string[] words, string value, string whatIsFound)
         {
-            ArrayList pluralNouns = new ArrayList();
-            foreach (string noun in nouns)
+            ArrayList wordsFound = new ArrayList();
+            foreach (string word in words)
             {
-                if (noun.EndsWith("s"))
+                if (word.EndsWith(value))
                 {
-                    pluralNouns.Add(noun);
+                    wordsFound.Add(word);
                 }
             }
-            Console.WriteLine("The following plural nouns are found in the given String array:");
-            printArrayListWithWords(pluralNouns);
+            Console.WriteLine("The following " + whatIsFound + " are found in the given String array:");
+            PrintArrayListWithWords(wordsFound);
+        }
+
+        public static void StartsWithAndPrint(string[] words, string value, string whatIsFound)
+        {
+            ArrayList wordsFound = new ArrayList();
+            foreach (string word in words)
+            {
+                if (word.StartsWith(value))
+                {
+                    wordsFound.Add(word);
+                }
+            }
+            Console.WriteLine("The following " + whatIsFound + " are found in the given String array:");
+            PrintArrayListWithWords(wordsFound);
+        }
+
+        public static String InsertPrintAndReturn(string stringToUse, int startIndex, string value)
+        {
+            stringToUse = stringToUse.Insert(startIndex, value);
+            PrintString("Output String", stringToUse);
+            return stringToUse;
+        }
+
+        public static String RemovePrintAndReturn(string stringToUse, int startIndex, int count)
+        {
+            stringToUse = stringToUse.Remove(startIndex, count);
+            PrintString("Output String", stringToUse);
+            return stringToUse;
+        }
+
+        public static String PrintInsertAndRemove(string stringToUse, int startIndex, string value, int count)
+        {
+            PrintString("Input  String", stringToUse);
+            PrintString("Insert String", value);
+            stringToUse = InsertPrintAndReturn(stringToUse, startIndex, value);
+            PrintString("Characters to remove", stringToUse.Substring(startIndex, count));
+            return RemovePrintAndReturn(stringToUse, startIndex, count);
+        }
+
+        public static void ReplaceAndPrint(string[] words, string stringToReplace, string replacementString)
+        {
+            for (int i = 0; i < words.Length; i++)
+            {
+                words[i] = words[i].Replace(stringToReplace, replacementString);
+            }
+            AD_Dll.Hoofdstuk_2.CustomMethods.printArray(words, "Array after replacement:");
         }
     }
 }
