@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_5
 {
-    public class Queue 
+    public class Queue
     {
-        public static Queue()
+        static Queue()
         {
             Queue<string> q = new Queue<string>();
 
