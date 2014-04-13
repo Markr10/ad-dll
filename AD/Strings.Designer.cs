@@ -39,6 +39,8 @@
             this.btnChangeString = new System.Windows.Forms.Button();
             this.btnSplitWords = new System.Windows.Forms.Button();
             this.btnSplitMethod = new System.Windows.Forms.Button();
+            this.btnJoinMethod = new System.Windows.Forms.Button();
+            this.btnInitDataAndCharArray = new System.Windows.Forms.Button();
             this.groupBoxStrings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,19 +147,43 @@
             // 
             // btnSplitMethod
             // 
-            this.btnSplitMethod.Location = new System.Drawing.Point(236, 97);
+            this.btnSplitMethod.Enabled = false;
+            this.btnSplitMethod.Location = new System.Drawing.Point(236, 163);
             this.btnSplitMethod.Name = "btnSplitMethod";
             this.btnSplitMethod.Size = new System.Drawing.Size(75, 23);
-            this.btnSplitMethod.TabIndex = 7;
+            this.btnSplitMethod.TabIndex = 8;
             this.btnSplitMethod.Text = "Split method";
             this.btnSplitMethod.UseVisualStyleBackColor = true;
             this.btnSplitMethod.Click += new System.EventHandler(this.btnSplitMethod_Click);
+            // 
+            // btnJoinMethod
+            // 
+            this.btnJoinMethod.Enabled = false;
+            this.btnJoinMethod.Location = new System.Drawing.Point(236, 192);
+            this.btnJoinMethod.Name = "btnJoinMethod";
+            this.btnJoinMethod.Size = new System.Drawing.Size(75, 23);
+            this.btnJoinMethod.TabIndex = 9;
+            this.btnJoinMethod.Text = "Join method";
+            this.btnJoinMethod.UseVisualStyleBackColor = true;
+            this.btnJoinMethod.Click += new System.EventHandler(this.btnJoinMethod_Click);
+            // 
+            // btnInitDataAndCharArray
+            // 
+            this.btnInitDataAndCharArray.Location = new System.Drawing.Point(236, 97);
+            this.btnInitDataAndCharArray.Name = "btnInitDataAndCharArray";
+            this.btnInitDataAndCharArray.Size = new System.Drawing.Size(75, 60);
+            this.btnInitDataAndCharArray.TabIndex = 7;
+            this.btnInitDataAndCharArray.Text = "Initialize data for the following buttons";
+            this.btnInitDataAndCharArray.UseVisualStyleBackColor = true;
+            this.btnInitDataAndCharArray.Click += new System.EventHandler(this.btnInitDataAndCharArray_Click);
             // 
             // Strings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(352, 262);
+            this.Controls.Add(this.btnInitDataAndCharArray);
+            this.Controls.Add(this.btnJoinMethod);
             this.Controls.Add(this.btnSplitMethod);
             this.Controls.Add(this.btnSplitWords);
             this.Controls.Add(this.btnChangeString);
@@ -187,6 +213,8 @@
         private System.Windows.Forms.Button btnChangeString;
         private System.Windows.Forms.Button btnSplitWords;
         private System.Windows.Forms.Button btnSplitMethod;
+        private System.Windows.Forms.Button btnJoinMethod;
+        private System.Windows.Forms.Button btnInitDataAndCharArray;
 
     }
 }

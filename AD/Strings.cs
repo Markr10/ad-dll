@@ -15,6 +15,8 @@ namespace AD
     public partial class Strings : FormConsole
     {
         private string aString;
+        private string data;
+        private char[] delimiter;
 
         public Strings() : base(false)
         {
@@ -82,10 +84,17 @@ namespace AD
             CloseConsole();
         }
 
+        private void btnInitDataAndCharArray_Click(object sender, EventArgs e)
+        {
+            data = "Mike,McMillan,3000 W. Scenic,North Little Rock,AR,72118";
+            delimiter = new char[] { ',' };
+
+            btnSplitMethod.Enabled = btnJoinMethod.Enabled = true;
+            btnInitDataAndCharArray.Enabled = false;
+        }
+
         private void btnSplitMethod_Click(object sender, EventArgs e)
         {
-            string data = "Mike,McMillan,3000 W. Scenic,North Little Rock,AR,72118";
-            char[] delimiter = new char[] { ',' };
             string[] sdata = data.Split(delimiter, data.Length);
             
             ShowConsole("Split method");
@@ -96,6 +105,20 @@ namespace AD
             CloseConsole();
         }
 
+        private void btnJoinMethod_Click(object sender, EventArgs e)
+        {
+            string[] sdata;
+            sdata = data.Split(delimiter, data.Length);
 
+            ShowConsole("Join method");
+            CustomStringMethods.printArrayWithSplitWords(data, sdata);
+
+            string joined;
+            joined = String.Join(",", sdata);
+
+            Console.WriteLine("Joined string:");
+            Console.WriteLine(joined);
+            CloseConsole();
+        }
     }
 }
