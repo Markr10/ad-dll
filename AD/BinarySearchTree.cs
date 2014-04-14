@@ -57,7 +57,7 @@ namespace AD
 
         private void btnInOrder_Click(object sender, EventArgs e)
         {
-            
+            ShowConsole("In order");
             if (waarden == "int")
             {
                 iBST.InOrder(iBST.root);
