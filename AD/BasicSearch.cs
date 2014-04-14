@@ -20,10 +20,12 @@ namespace AD
 
         private void btnShowSeqSearch_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("Enter 10 letters for the array: ", "Sequential search");
+            ShowConsole("Sequential search");
+
+            Console.WriteLine("Enter 10 letters for the array separated by [Enter]: ");
             string[] searchArray = new string[10];
 
-            for (int i = 0; i < searchArray.Length; i++)
+            for (int i = 0; i < searchArray.Length - 1; i++)
             {
                 searchArray[i] = Console.ReadLine();
             }
@@ -31,15 +33,17 @@ namespace AD
             Console.WriteLine("Enter a letter to search for: ");
             string searchLetter = Console.ReadLine();
                         
-            WriteLastLine(Search<string>.linear(searchArray, searchLetter).ToString());
+            Console.WriteLine(Search<string>.linear(searchArray, searchLetter));
+            CloseConsole();
         }
 
         private void btnShowBinSearch_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("Enter 10 numbers for the array: ", "Binary search");
+            ShowConsole("Binary search");           
+            Console.WriteLine("Enter 10 numbers for the array separated by [Enter]: ");
             int[] searchArray = new int[10];
 
-            for (int i = 0; i < searchArray.Length; i++)
+            for (int i = 0; i < searchArray.Length - 1; i++)
             {
                     if(!Int32.TryParse(Console.ReadLine(), out searchArray[i]))
                     {
@@ -54,15 +58,15 @@ namespace AD
             {
                 Console.WriteLine("Numbers only");
             }
-
             Array.Sort(searchArray);
             Console.WriteLine("Array sorted: ");
-            for (int i = 0; i < searchArray.Length; i++)
+            for (int i = 0; i < searchArray.Length - 1; i++)
             {
                 Console.WriteLine(searchArray[i]);
             }
-
-            WriteLastLine(Search<int>.binary(searchArray, searchNumber).ToString());
+            Console.WriteLine(Search<int>.binary(searchArray, searchNumber));
+            CloseConsole();
+            
         }
     }
 }
