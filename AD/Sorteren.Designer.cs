@@ -85,7 +85,7 @@
             this.label1.Location = new System.Drawing.Point(59, 189);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 8;
+            this.label1.TabIndex = 12;
             this.label1.Text = "Output:";
             // 
             // label2
@@ -94,7 +94,7 @@
             this.label2.Location = new System.Drawing.Point(59, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 10;
+            this.label2.TabIndex = 11;
             this.label2.Text = "Input:";
             // 
             // random
@@ -102,7 +102,7 @@
             this.random.Location = new System.Drawing.Point(259, 13);
             this.random.Name = "random";
             this.random.Size = new System.Drawing.Size(129, 23);
-            this.random.TabIndex = 12;
+            this.random.TabIndex = 3;
             this.random.Text = "Random getal";
             this.random.UseVisualStyleBackColor = true;
             this.random.Click += new System.EventHandler(this.random_Click);
