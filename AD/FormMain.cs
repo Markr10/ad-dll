@@ -155,5 +155,10 @@ namespace AD
         {
             new StringBuilderForm().Show();
         }
+
+        private void btnHashTable_Click(object sender, EventArgs e)
+        {
+            new HashTableForm().Show();
+        }
     }
 }
