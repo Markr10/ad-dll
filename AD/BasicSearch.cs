@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AD_Dll.Hoofdstuk_4;
+using AD_Dll;
 
 namespace AD
 {
     public partial class BasicSearch : FormConsole
     {
+        private Object thisLock = new Object();
+        private ProcessTimer t = new ProcessTimer();
+
         public BasicSearch() : base(false)
         {
             InitializeComponent();
@@ -30,8 +34,16 @@ namespace AD
 
             Console.WriteLine("Enter a letter to search for: ");
             string searchLetter = Console.ReadLine();
-                        
-            WriteLastLine(Search<string>.linear(searchArray, searchLetter).ToString());
+            lock (thisLock)
+            {
+                t.Start();
+                WriteLastLine(Search<string>.linear(searchArray, searchLetter).ToString());
+                t.Stop();
+            }
+            
+            ShowConsole("timing");
+            Console.WriteLine("Time in microseconds to perform BasicSearch: " + t.Duration(1).ToString());
+            CloseConsole();
         }
 
         private void btnShowBinSearch_Click(object sender, EventArgs e)
@@ -62,7 +74,16 @@ namespace AD
                 Console.WriteLine(searchArray[i]);
             }
 
-            WriteLastLine(Search<int>.binary(searchArray, searchNumber).ToString());
+            lock (thisLock)
+            {
+                t.Start();
+                WriteLastLine(Search<int>.binary(searchArray, searchNumber).ToString());
+                t.Stop();
+            }
+
+            ShowConsole("timing");
+            Console.WriteLine("Time in microseconds to perform BinarySearch: " + t.Duration(1).ToString());
+            CloseConsole();
         }
     }
 }
