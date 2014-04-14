@@ -266,6 +266,7 @@
             this.btnOtherMethods.TabIndex = 20;
             this.btnOtherMethods.Text = "Other methods";
             this.btnOtherMethods.UseVisualStyleBackColor = true;
+            this.btnOtherMethods.Click += new System.EventHandler(this.btnOtherMethods_Click);
             // 
             // btnPadMethods
             // 

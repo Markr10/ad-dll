@@ -226,14 +226,23 @@ namespace AD
             string s2 = "world";
             string s3 = "Goodbye";
 
+            string[,] names = new string[,]
+            {
+                {"1504", "Mary", "Ella", "Steve", "Bob"},
+                {"1133", "Elizabeth", "Alex", "David", "Joe"},
+                {"2624", "Joel", "Chris", "Craig", "Bill"}
+            };
+
+
             ShowConsole("Demonstration of the PadLeft and PadRight methods");
-            Console.Write("Input Strings: ");
-            CustomStringMethods.PrintArrayWithWords(new string[] {s1, s2, s3});
-            
+            CustomStringMethods.PrintString("Input Strings", s1, s2, s3);
+
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine(s1.PadLeft(10));
             Console.WriteLine(s2);
-            
+
+            Console.WriteLine();
             Console.WriteLine();
             Console.Write(s1.PadLeft(10));
             Console.WriteLine(s2.PadLeft(10));
@@ -241,7 +250,59 @@ namespace AD
             Console.WriteLine(s2.PadLeft(10));
 
             Console.WriteLine();
+            Console.WriteLine();
+            CustomMethods.print2DArrayWithSpaces(names);
+            Console.WriteLine();
+            CustomStringMethods.print2DArrayPadRight(names, 10);
+
+            CloseConsole();
+        }
+
+        private void btnOtherMethods_Click(object sender, EventArgs e)
+        {
+            string s1, s2, s3 = String.Empty;
+
+            ShowConsole("Demonstration of some other methods of the class String");
+
+            Console.WriteLine("Concat method");
+            s1 = "hello";
+            s2 = "world";
+            s3 = "";
+            CustomStringMethods.PrintString("Input Strings", s1, s2, s3);
+            s3 = String.Concat(s1, " ", s2);
+            CustomStringMethods.PrintString("Output String", s3);
             
+            Console.WriteLine();
+            Console.WriteLine();
+            s1 = "hello";
+            Console.WriteLine("ToUpper method");
+            CustomStringMethods.PrintString("Input  String", s1);
+            s1 = s1.ToUpper();
+            CustomStringMethods.PrintString("Output String", s1);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            s1 = "WORLD";
+            Console.WriteLine("ToLower method");
+            CustomStringMethods.PrintString("Input  String", s1);
+            CustomStringMethods.PrintString("Output String", s1.ToLower());
+
+            Console.WriteLine();
+            Console.WriteLine();
+            string[] names = new string[] { " David", " Raymond", "Mike ", "Bernica " };
+            Console.WriteLine("Trim and TrimEnd methods");
+            CustomStringMethods.PrintString("Input  Strings", names);
+            CustomStringMethods.trimVals(names);
+            CustomStringMethods.PrintString("Output Strings", names);
+
+            Console.WriteLine();
+            string[] htmlComments = new string[] { "<!-- Start Page Number Function -->", "<!-- Get user name and password -->",
+                "<!-- End Title page -->", "<!-- End script -->" };
+            char[] commentChars = new char[] { '<', '!', '-', '>' };
+            CustomMethods.printArray(htmlComments, "Input:");
+            CustomStringMethods.trimVals(htmlComments, commentChars);
+            CustomMethods.printArray(htmlComments, "Output:", "Comment");
+
             CloseConsole();
         }
     }

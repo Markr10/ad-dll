@@ -25,6 +25,12 @@ namespace AD_Dll.Hoofdstuk_7
             Console.WriteLine("{0}: \"{1}\"", aboutStringText, stringText);
         }
 
+        public static void PrintString(string aboutStringText, params string[] strings)
+        {
+            Console.Write("{0}: ", aboutStringText);
+            PrintArrayWithWords(strings);
+        }
+
         public static ArrayList SplitWords(string aString)
         {
             int pos;
@@ -65,7 +71,10 @@ namespace AD_Dll.Hoofdstuk_7
             {
                 Console.Write("\"{0}\" ", words[i]);
             }
-            Console.WriteLine("\"{0}\"", words[words.GetUpperBound(0)]);
+            if (words.Length != 0)
+            {
+                Console.WriteLine("\"{0}\"", words[words.GetUpperBound(0)]);
+            }
         }
 
         public static void PrintArrayWithSplitWords(string inputString, string[] stringArray)
@@ -174,6 +183,44 @@ namespace AD_Dll.Hoofdstuk_7
                 words[i] = words[i].Replace(stringToReplace, replacementString);
             }
             AD_Dll.Hoofdstuk_2.CustomMethods.printArray(words, "Array after replacement:");
+        }
+
+        public static void print2DArrayPadRight(string[,] array, int totalWidth)
+        {
+            for (int row = 0, lengthRow = array.GetLength(0); row < lengthRow; row++)
+            {
+                for (int column = 0, lengthColumn = array.GetLength(1); column < lengthColumn; column++)
+                {
+                    if (array[row, column] == null)
+                    {
+                        Console.WriteLine("null");
+                    }
+                    else
+                    {
+                        Console.Write(array[row, column].PadRight(totalWidth));
+                    }
+
+                    if ((column + 1) != lengthColumn)
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void trimVals(string[] arr, params Char[] trimChars)
+        {
+            if (trimChars.Length == 0)
+            {
+                trimChars = new char[] { ' ' };
+            }
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = arr[i].Trim(trimChars);
+                arr[i] = arr[i].TrimEnd(trimChars);
+            }
         }
     }
 }
