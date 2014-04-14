@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AD_Dll.Hoofdstuk_11
+{
+    public class LinkedList
+    {
+        public static void Main()
+        {
+            LinkedListNode<string> node = new LinkedListNode<string>("Mike");
+            LinkedList<string> names = new LinkedList<string>();
+            names.AddFirst(node);
+            LinkedListNode<string> node1 = new LinkedListNode<string>("David");
+            names.AddAfter(node, node1);
+            LinkedListNode<string> node2 = new LinkedListNode<string>("Raymond");
+            names.AddAfter(node1, node2);
+            LinkedListNode<string> node3 = new LinkedListNode<string>("Johan");
+            names.AddAfter(node1, node3);
+            LinkedListNode<string> node4 = new LinkedListNode<string>(null);
+
+            LinkedListNode<string> aNode = names.First;
+            while (aNode != null)
+            {
+                Console.WriteLine(aNode.Value);
+                aNode = aNode.Next;
+            }
+
+            Console.WriteLine();
+
+            LinkedList<int> nums = new LinkedList<int>();
+            nums.AddLast(11);
+            nums.AddLast(6);
+            nums.AddFirst(9);
+            nums.AddLast(7);
+            LinkedListNode<int> intnode = nums.Find(6);
+            nums.AddBefore(intnode, 5);
+            foreach (int num in nums)
+            {
+                Console.WriteLine(num);
+            }
+        }
+    }
+}
