@@ -187,5 +187,19 @@ namespace AD
                 stringObject += "a";
             }
         }
+
+        private void btnCharsProperty_Click(object sender, EventArgs e)
+        {
+            ShowConsole("Chars property");
+            StringBuilder stBuff = new StringBuilder("Ronald Knuth");
+            CustomStringMethods.PrintString("Input  String", stBuff.ToString());
+            if (stBuff[0] != 'D')
+            {
+                stBuff[0] = 'D';
+            }
+            CustomStringMethods.PrintString("Output String", stBuff.ToString());
+
+            CloseConsole();
+        }
     }
 }

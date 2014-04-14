@@ -37,11 +37,12 @@
             this.btnReplaceMethod = new System.Windows.Forms.Button();
             this.btnToStringMethod = new System.Windows.Forms.Button();
             this.btnTiming = new System.Windows.Forms.Button();
+            this.btnCharsProperty = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(13, 13);
+            this.btnCreate.Location = new System.Drawing.Point(12, 12);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(83, 48);
             this.btnCreate.TabIndex = 0;
@@ -52,7 +53,7 @@
             // btnShow
             // 
             this.btnShow.Enabled = false;
-            this.btnShow.Location = new System.Drawing.Point(13, 68);
+            this.btnShow.Location = new System.Drawing.Point(12, 66);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(83, 60);
             this.btnShow.TabIndex = 1;
@@ -62,79 +63,90 @@
             // 
             // btnAppendMethod
             // 
-            this.btnAppendMethod.Location = new System.Drawing.Point(102, 12);
+            this.btnAppendMethod.Location = new System.Drawing.Point(101, 52);
             this.btnAppendMethod.Name = "btnAppendMethod";
             this.btnAppendMethod.Size = new System.Drawing.Size(83, 34);
-            this.btnAppendMethod.TabIndex = 2;
+            this.btnAppendMethod.TabIndex = 3;
             this.btnAppendMethod.Text = "Append Method";
             this.btnAppendMethod.UseVisualStyleBackColor = true;
             this.btnAppendMethod.Click += new System.EventHandler(this.btnAppendMethod_Click);
             // 
             // btnFormatString
             // 
-            this.btnFormatString.Location = new System.Drawing.Point(102, 52);
+            this.btnFormatString.Location = new System.Drawing.Point(101, 92);
             this.btnFormatString.Name = "btnFormatString";
             this.btnFormatString.Size = new System.Drawing.Size(83, 34);
-            this.btnFormatString.TabIndex = 3;
+            this.btnFormatString.TabIndex = 4;
             this.btnFormatString.Text = "Format StringBuilder";
             this.btnFormatString.UseVisualStyleBackColor = true;
             this.btnFormatString.Click += new System.EventHandler(this.btnFormatString_Click);
             // 
             // btnInsertMethod
             // 
-            this.btnInsertMethod.Location = new System.Drawing.Point(102, 92);
+            this.btnInsertMethod.Location = new System.Drawing.Point(101, 132);
             this.btnInsertMethod.Name = "btnInsertMethod";
             this.btnInsertMethod.Size = new System.Drawing.Size(83, 34);
-            this.btnInsertMethod.TabIndex = 4;
+            this.btnInsertMethod.TabIndex = 5;
             this.btnInsertMethod.Text = "Insert Method";
             this.btnInsertMethod.UseVisualStyleBackColor = true;
             this.btnInsertMethod.Click += new System.EventHandler(this.btnInsertMethod_Click);
             // 
             // btnRemoveMethod
             // 
-            this.btnRemoveMethod.Location = new System.Drawing.Point(101, 132);
+            this.btnRemoveMethod.Location = new System.Drawing.Point(101, 172);
             this.btnRemoveMethod.Name = "btnRemoveMethod";
-            this.btnRemoveMethod.Size = new System.Drawing.Size(84, 34);
-            this.btnRemoveMethod.TabIndex = 5;
+            this.btnRemoveMethod.Size = new System.Drawing.Size(83, 34);
+            this.btnRemoveMethod.TabIndex = 6;
             this.btnRemoveMethod.Text = "Remove Method";
             this.btnRemoveMethod.UseVisualStyleBackColor = true;
             this.btnRemoveMethod.Click += new System.EventHandler(this.btnRemoveMethod_Click);
             // 
             // btnReplaceMethod
             // 
-            this.btnReplaceMethod.Location = new System.Drawing.Point(101, 172);
+            this.btnReplaceMethod.Location = new System.Drawing.Point(101, 212);
             this.btnReplaceMethod.Name = "btnReplaceMethod";
-            this.btnReplaceMethod.Size = new System.Drawing.Size(84, 34);
-            this.btnReplaceMethod.TabIndex = 6;
+            this.btnReplaceMethod.Size = new System.Drawing.Size(83, 34);
+            this.btnReplaceMethod.TabIndex = 7;
             this.btnReplaceMethod.Text = "Replace Method";
             this.btnReplaceMethod.UseVisualStyleBackColor = true;
             this.btnReplaceMethod.Click += new System.EventHandler(this.btnReplaceMethod_Click);
             // 
             // btnToStringMethod
             // 
-            this.btnToStringMethod.Location = new System.Drawing.Point(101, 212);
+            this.btnToStringMethod.Location = new System.Drawing.Point(101, 252);
             this.btnToStringMethod.Name = "btnToStringMethod";
-            this.btnToStringMethod.Size = new System.Drawing.Size(84, 34);
-            this.btnToStringMethod.TabIndex = 7;
+            this.btnToStringMethod.Size = new System.Drawing.Size(83, 34);
+            this.btnToStringMethod.TabIndex = 8;
             this.btnToStringMethod.Text = "ToString Method";
             this.btnToStringMethod.UseVisualStyleBackColor = true;
             this.btnToStringMethod.Click += new System.EventHandler(this.btnToStringMethod_Click);
             // 
             // btnTiming
             // 
-            this.btnTiming.Location = new System.Drawing.Point(192, 13);
+            this.btnTiming.Location = new System.Drawing.Point(190, 12);
             this.btnTiming.Name = "btnTiming";
             this.btnTiming.Size = new System.Drawing.Size(75, 23);
-            this.btnTiming.TabIndex = 8;
+            this.btnTiming.TabIndex = 9;
             this.btnTiming.Text = "Timing";
             this.btnTiming.UseVisualStyleBackColor = true;
             this.btnTiming.Click += new System.EventHandler(this.btnTiming_Click);
+            // 
+            // btnCharsProperty
+            // 
+            this.btnCharsProperty.Location = new System.Drawing.Point(101, 12);
+            this.btnCharsProperty.Name = "btnCharsProperty";
+            this.btnCharsProperty.Size = new System.Drawing.Size(83, 34);
+            this.btnCharsProperty.TabIndex = 2;
+            this.btnCharsProperty.Text = "Chars property";
+            this.btnCharsProperty.UseVisualStyleBackColor = true;
+            this.btnCharsProperty.Click += new System.EventHandler(this.btnCharsProperty_Click);
             // 
             // StringBuilderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 296);
+            this.Controls.Add(this.btnCharsProperty);
             this.Controls.Add(this.btnTiming);
             this.Controls.Add(this.btnToStringMethod);
             this.Controls.Add(this.btnReplaceMethod);
@@ -161,5 +173,6 @@
         private System.Windows.Forms.Button btnReplaceMethod;
         private System.Windows.Forms.Button btnToStringMethod;
         private System.Windows.Forms.Button btnTiming;
+        private System.Windows.Forms.Button btnCharsProperty;
     }
 }
