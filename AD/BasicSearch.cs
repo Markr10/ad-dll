@@ -24,7 +24,9 @@ namespace AD
 
         private void btnShowSeqSearch_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("Enter 10 letters for the array: ", "Sequential search");
+            ShowConsole("Sequential search");
+
+            Console.WriteLine("Enter 10 letters for the array separated by [Enter]: ");
             string[] searchArray = new string[10];
 
             for (int i = 0; i < searchArray.Length; i++)
@@ -48,7 +50,8 @@ namespace AD
 
         private void btnShowBinSearch_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("Enter 10 numbers for the array: ", "Binary search");
+            ShowConsole("Binary search");           
+            Console.WriteLine("Enter 10 numbers for the array separated by [Enter]: ");
             int[] searchArray = new int[10];
 
             for (int i = 0; i < searchArray.Length; i++)
