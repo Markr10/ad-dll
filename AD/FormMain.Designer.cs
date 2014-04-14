@@ -44,47 +44,47 @@
             // 
             // btnTimer
             // 
-            this.btnTimer.Location = new System.Drawing.Point(12, 8);
+            this.btnTimer.Location = new System.Drawing.Point(12, 12);
             this.btnTimer.Name = "btnTimer";
-            this.btnTimer.Size = new System.Drawing.Size(82, 27);
-            this.btnTimer.TabIndex = 2;
+            this.btnTimer.Size = new System.Drawing.Size(81, 27);
+            this.btnTimer.TabIndex = 0;
             this.btnTimer.Text = "Timer";
             this.btnTimer.UseVisualStyleBackColor = true;
             this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
             // 
             // btnSorteren
             // 
-            this.btnSorteren.Location = new System.Drawing.Point(12, 41);
+            this.btnSorteren.Location = new System.Drawing.Point(12, 45);
             this.btnSorteren.Name = "btnSorteren";
-            this.btnSorteren.Size = new System.Drawing.Size(82, 27);
-            this.btnSorteren.TabIndex = 4;
+            this.btnSorteren.Size = new System.Drawing.Size(81, 27);
+            this.btnSorteren.TabIndex = 1;
             this.btnSorteren.Text = "Sorteren";
             this.btnSorteren.UseVisualStyleBackColor = true;
             this.btnSorteren.Click += new System.EventHandler(this.btnSorteren_Click);
             // 
             // btnGenerics
             // 
-            this.btnGenerics.Location = new System.Drawing.Point(12, 74);
+            this.btnGenerics.Location = new System.Drawing.Point(12, 78);
             this.btnGenerics.Name = "btnGenerics";
-            this.btnGenerics.Size = new System.Drawing.Size(82, 27);
-            this.btnGenerics.TabIndex = 5;
+            this.btnGenerics.Size = new System.Drawing.Size(81, 27);
+            this.btnGenerics.TabIndex = 2;
             this.btnGenerics.Text = "Generics";
             this.btnGenerics.UseVisualStyleBackColor = true;
             this.btnGenerics.Click += new System.EventHandler(this.btnGenerics_Click);
             // 
             // btnArrayAndArrayLists
             // 
-            this.btnArrayAndArrayLists.Location = new System.Drawing.Point(12, 107);
+            this.btnArrayAndArrayLists.Location = new System.Drawing.Point(12, 111);
             this.btnArrayAndArrayLists.Name = "btnArrayAndArrayLists";
-            this.btnArrayAndArrayLists.Size = new System.Drawing.Size(82, 36);
-            this.btnArrayAndArrayLists.TabIndex = 6;
+            this.btnArrayAndArrayLists.Size = new System.Drawing.Size(81, 36);
+            this.btnArrayAndArrayLists.TabIndex = 3;
             this.btnArrayAndArrayLists.Text = "Array and ArrayLists";
             this.btnArrayAndArrayLists.UseVisualStyleBackColor = true;
             this.btnArrayAndArrayLists.Click += new System.EventHandler(this.btnArrayAndArrayLists_Click);
             // 
             // btnBST
             // 
-            this.btnBST.Location = new System.Drawing.Point(100, 8);
+            this.btnBST.Location = new System.Drawing.Point(99, 12);
             this.btnBST.Name = "btnBST";
             this.btnBST.Size = new System.Drawing.Size(81, 36);
             this.btnBST.TabIndex = 7;
@@ -94,37 +94,37 @@
             // 
             // btnStacksQueues
             // 
-            this.btnStacksQueues.Location = new System.Drawing.Point(12, 215);
+            this.btnStacksQueues.Location = new System.Drawing.Point(12, 219);
             this.btnStacksQueues.Name = "btnStacksQueues";
-            this.btnStacksQueues.Size = new System.Drawing.Size(82, 36);
-            this.btnStacksQueues.TabIndex = 7;
+            this.btnStacksQueues.Size = new System.Drawing.Size(81, 36);
+            this.btnStacksQueues.TabIndex = 6;
             this.btnStacksQueues.Text = "Stacks and Queue";
             this.btnStacksQueues.UseVisualStyleBackColor = true;
             this.btnStacksQueues.Click += new System.EventHandler(this.btnStacksQueues_Click);
             // 
             // btnCSet1
             // 
-            this.btnCSet1.Location = new System.Drawing.Point(12, 149);
+            this.btnCSet1.Location = new System.Drawing.Point(12, 153);
             this.btnCSet1.Name = "btnCSet1";
-            this.btnCSet1.Size = new System.Drawing.Size(82, 27);
-            this.btnCSet1.TabIndex = 7;
+            this.btnCSet1.Size = new System.Drawing.Size(81, 27);
+            this.btnCSet1.TabIndex = 4;
             this.btnCSet1.Text = "CSet1";
             this.btnCSet1.UseVisualStyleBackColor = true;
             this.btnCSet1.Click += new System.EventHandler(this.btnCSet1_Click);
             // 
             // btnCset2
             // 
-            this.btnCset2.Location = new System.Drawing.Point(12, 182);
+            this.btnCset2.Location = new System.Drawing.Point(12, 186);
             this.btnCset2.Name = "btnCset2";
-            this.btnCset2.Size = new System.Drawing.Size(82, 27);
-            this.btnCset2.TabIndex = 8;
+            this.btnCset2.Size = new System.Drawing.Size(81, 27);
+            this.btnCset2.TabIndex = 5;
             this.btnCset2.Text = "CSet2";
             this.btnCset2.UseVisualStyleBackColor = true;
             this.btnCset2.Click += new System.EventHandler(this.btnCset2_Click);
             // 
             // btnBasicSearch
             // 
-            this.btnBasicSearch.Location = new System.Drawing.Point(100, 50);
+            this.btnBasicSearch.Location = new System.Drawing.Point(99, 54);
             this.btnBasicSearch.Name = "btnBasicSearch";
             this.btnBasicSearch.Size = new System.Drawing.Size(81, 34);
             this.btnBasicSearch.TabIndex = 8;
@@ -134,7 +134,7 @@
             // 
             // btnStrings
             // 
-            this.btnStrings.Location = new System.Drawing.Point(100, 90);
+            this.btnStrings.Location = new System.Drawing.Point(99, 94);
             this.btnStrings.Name = "btnStrings";
             this.btnStrings.Size = new System.Drawing.Size(81, 27);
             this.btnStrings.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             // btnStringBuilder
             // 
-            this.btnStringBuilder.Location = new System.Drawing.Point(100, 123);
+            this.btnStringBuilder.Location = new System.Drawing.Point(99, 127);
             this.btnStringBuilder.Name = "btnStringBuilder";
             this.btnStringBuilder.Size = new System.Drawing.Size(81, 27);
             this.btnStringBuilder.TabIndex = 10;
@@ -154,9 +154,9 @@
             // 
             // btnHashTable
             // 
-            this.btnHashTable.Location = new System.Drawing.Point(101, 157);
+            this.btnHashTable.Location = new System.Drawing.Point(99, 160);
             this.btnHashTable.Name = "btnHashTable";
-            this.btnHashTable.Size = new System.Drawing.Size(80, 28);
+            this.btnHashTable.Size = new System.Drawing.Size(81, 28);
             this.btnHashTable.TabIndex = 11;
             this.btnHashTable.Text = "HashTable";
             this.btnHashTable.UseVisualStyleBackColor = true;

@@ -45,6 +45,11 @@ namespace AD
             };
 
             btnShowArrays.Enabled = btnShowInfoArrays.Enabled = true;
+
+            if (btnCreateArrays.Text != "Reinitialize and refill Student Arrays")
+            {
+                btnCreateArrays.Text = "Reinitialize and refill Student Arrays";
+            }
         }
 
         private void btnShowArrays_Click(object sender, EventArgs e)
@@ -102,6 +107,11 @@ namespace AD
             }
 
             btnShowMDArrays.Enabled = btnShowInfoMDArrays.Enabled = true;
+
+            if (btnCreateMDArrays.Text != "Reinitialize and refill multidimensional Arrays")
+            {
+                btnCreateMDArrays.Text = "Reinitialize and refill multidimensional Arrays";
+            }
         }
 
         private void btnShowMDArrays_Click(object sender, EventArgs e)
@@ -202,6 +212,11 @@ namespace AD
             btnGetPositionArrayList.Enabled = btnAverageArrayList.Enabled =
                 btnRemoveItemsArrayList.Enabled = btnShowInformationArrayList.Enabled =
                 btnDemoALRangeMethods.Enabled = btnDemoALToArrayMethod.Enabled = true;
+
+            if (btnCreateArrayLists.Text != "Reinitialize and refill Arraylists")
+            {
+                btnCreateArrayLists.Text = "Reinitialize and refill Arraylists";
+            }
         }
 
         private void btnGetPositionArrayList_Click(object sender, EventArgs e)
@@ -255,6 +270,7 @@ namespace AD
             names.InsertRange(0, newNames);
             names.AddRange(moreNames);
 
+            PauseConsole();
             Console.WriteLine();
             CustomMethods.printArrayList(names, "The new list of names: ");
             CloseConsole();
@@ -266,7 +282,7 @@ namespace AD
         {
             ArrayList someNames = new ArrayList(names.GetRange(2, 4));
             ShowConsole("Demonstration of the GetRange method from ArrayList");
-            CustomMethods.printArrayList(someNames, "someNames sub-ArrayList: ");
+            CustomMethods.printArrayList(someNames, "someNames sub ArrayList: ");
             CloseConsole();
         }
 
