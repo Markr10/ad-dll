@@ -38,6 +38,7 @@
             this.btnCset2 = new System.Windows.Forms.Button();
             this.btnBasicSearch = new System.Windows.Forms.Button();
             this.btnStrings = new System.Windows.Forms.Button();
+            this.btnStringBuilder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTimer
@@ -140,11 +141,22 @@
             this.btnStrings.UseVisualStyleBackColor = true;
             this.btnStrings.Click += new System.EventHandler(this.btnStrings_Click);
             // 
+            // btnStringBuilder
+            // 
+            this.btnStringBuilder.Location = new System.Drawing.Point(100, 123);
+            this.btnStringBuilder.Name = "btnStringBuilder";
+            this.btnStringBuilder.Size = new System.Drawing.Size(81, 27);
+            this.btnStringBuilder.TabIndex = 10;
+            this.btnStringBuilder.Text = "StringBuilder";
+            this.btnStringBuilder.UseVisualStyleBackColor = true;
+            this.btnStringBuilder.Click += new System.EventHandler(this.btnStringBuilder_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(189, 263);
+            this.Controls.Add(this.btnStringBuilder);
             this.Controls.Add(this.btnStrings);
             this.Controls.Add(this.btnBasicSearch);
             this.Controls.Add(this.btnBST);
@@ -173,5 +185,6 @@
         private System.Windows.Forms.Button btnCset2;
         private System.Windows.Forms.Button btnBasicSearch;
         private System.Windows.Forms.Button btnStrings;
+        private System.Windows.Forms.Button btnStringBuilder;
     }
 }

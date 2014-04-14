@@ -94,6 +94,12 @@
     <Compile Include="StacksAndQueues.Designer.cs">
       <DependentUpon>StacksAndQueues.cs</DependentUpon>
     </Compile>
+    <Compile Include="StringBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringBuilderForm.Designer.cs">
+      <DependentUpon>StringBuilderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Strings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StacksAndQueues.resx">
       <DependentUpon>StacksAndQueues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringBuilderForm.resx">
+      <DependentUpon>StringBuilderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Strings.resx">
       <DependentUpon>Strings.cs</DependentUpon>

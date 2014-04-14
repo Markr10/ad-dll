@@ -150,5 +150,10 @@ namespace AD
         {
             new Strings().Show();
         }
+
+        private void btnStringBuilder_Click(object sender, EventArgs e)
+        {
+            new StringBuilderForm().Show();
+        }
     }
 }
