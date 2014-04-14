@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,12 +26,20 @@ namespace AD
         {
             ShowConsole("BetterHash");
             string[] betterHash = hTable.getHashTable("BetterHash");
-            foreach(string key in )
+            foreach(string name in betterHash)
             {
-                if (!(name == ""))
-                {
-                    Console.WriteLine(name);
-                }
+                Console.WriteLine(name);
+            }
+            CloseConsole();
+        }
+
+        private void btnSimpleHash_Click(object sender, EventArgs e)
+        {
+            ShowConsole("SimpleHash");
+            string[] simpleHash = hTable.getHashTable("SimpleHash");
+            foreach (string name in simpleHash)
+            {
+                Console.WriteLine(name);
             }
             CloseConsole();
         }
