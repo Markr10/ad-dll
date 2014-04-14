@@ -40,6 +40,7 @@
             this.btnStrings = new System.Windows.Forms.Button();
             this.btnStringBuilder = new System.Windows.Forms.Button();
             this.btnHashTable = new System.Windows.Forms.Button();
+            this.btnLinkedList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTimer
@@ -162,11 +163,22 @@
             this.btnHashTable.UseVisualStyleBackColor = true;
             this.btnHashTable.Click += new System.EventHandler(this.btnHashTable_Click);
             // 
+            // btnLinkedList
+            // 
+            this.btnLinkedList.Location = new System.Drawing.Point(99, 194);
+            this.btnLinkedList.Name = "btnLinkedList";
+            this.btnLinkedList.Size = new System.Drawing.Size(81, 23);
+            this.btnLinkedList.TabIndex = 12;
+            this.btnLinkedList.Text = "LinkedList";
+            this.btnLinkedList.UseVisualStyleBackColor = true;
+            this.btnLinkedList.Click += new System.EventHandler(this.btnLinkedList_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(189, 263);
+            this.Controls.Add(this.btnLinkedList);
             this.Controls.Add(this.btnHashTable);
             this.Controls.Add(this.btnStringBuilder);
             this.Controls.Add(this.btnStrings);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.Button btnStrings;
         private System.Windows.Forms.Button btnStringBuilder;
         private System.Windows.Forms.Button btnHashTable;
+        private System.Windows.Forms.Button btnLinkedList;
     }
 }

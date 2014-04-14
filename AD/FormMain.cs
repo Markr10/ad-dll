@@ -9,13 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AD_Dll.Hoofdstuk_1;
+using AD_Dll.Hoofdstuk_11;
 using AD_Dll.Hoofdstuk_13;
+
 
 namespace AD
 {
     public partial class FormMain : FormConsole
     {
-        public FormMain() : base(true)
+        public FormMain()
+            : base(true)
         {
             InitializeComponent();
         }
@@ -50,7 +53,7 @@ namespace AD
 
         private void btnArrayAndArrayLists_Click(object sender, EventArgs e)
         {
-           new ArrayAndArrayLists().Show();
+            new ArrayAndArrayLists().Show();
         }
 
         private void btnStacksQueues_Click(object sender, EventArgs e)
@@ -159,6 +162,13 @@ namespace AD
         private void btnHashTable_Click(object sender, EventArgs e)
         {
             new HashTableForm().Show();
+        }
+
+        private void btnLinkedList_Click(object sender, EventArgs e)
+        {
+            ShowConsole("LinkedList");
+            LinkedList.Main();
+            CloseConsole();
         }
     }
 }
