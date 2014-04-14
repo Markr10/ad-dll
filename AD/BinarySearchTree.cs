@@ -57,7 +57,7 @@ namespace AD
 
         private void btnInOrder_Click(object sender, EventArgs e)
         {
-            ShowConsole("In order");
+            ShowConsole("Binary Search Tree: In Order Search");
             if (waarden == "int")
             {
                 iBST.InOrder(iBST.root);
