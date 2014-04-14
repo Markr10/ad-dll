@@ -152,7 +152,7 @@ namespace AD
                     t.Stop();
                 }
 
-                Console.WriteLine("Time in nanoseconds to build StringBuilder object for " + size + " elements: " + t.Duration(1).ToString());
+                Console.WriteLine("Time in microseconds to build StringBuilder object for " + size + " elements: " + t.Duration(1).ToString());
 
                 lock (thisLock)
                 {
@@ -161,7 +161,7 @@ namespace AD
                     t.Stop();
                 }
 
-                Console.WriteLine("Time in nanoseconds to build String object for " + size + " elements: " + t.Duration(1).ToString());
+                Console.WriteLine("Time in microseconds to build String object for " + size + " elements: " + t.Duration(1).ToString());
                 Console.WriteLine();
                 size *= 10;
             }
