@@ -75,6 +75,19 @@ namespace AD
         }
 
         /// <summary>
+        /// Pauzeert de console totdat de gebruiker een toets indrukt.
+        /// </summary>
+        /// <remarks>
+        /// Voegt van te voren een lege lijn in.
+        /// </remarks>
+        protected void PauseConsole()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Please press any key to continue...");
+            Console.ReadKey();
+        }
+
+        /// <summary>
         /// Zorgt ervoor dat de gebruiker terug kan gaan naar het vorige venster en
         /// de console verborgen wordt.
         /// </summary>
@@ -83,9 +96,7 @@ namespace AD
         /// </remarks>
         protected void CloseConsole()
         {
-            Console.WriteLine();
-            Console.WriteLine("Please press any key to continue...");
-            Console.ReadKey();
+            PauseConsole();
             this.Show();
             Program.setConsoleWindowVisibility(false);
 

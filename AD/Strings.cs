@@ -281,6 +281,9 @@ namespace AD
             CustomStringMethods.PrintString("Output String", s1);
 
             Console.WriteLine();
+            PauseConsole();
+
+            Console.WriteLine();
             Console.WriteLine();
             s1 = "WORLD";
             Console.WriteLine("ToLower method");
@@ -303,6 +306,7 @@ namespace AD
             CustomStringMethods.trimVals(htmlComments, commentChars);
             CustomMethods.printArray(htmlComments, "Output:", "Comment");
 
+            Console.WriteLine();
             CloseConsole();
         }
     }

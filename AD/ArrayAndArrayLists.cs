@@ -108,6 +108,7 @@ namespace AD
         {
             WriteFirstLine("grades array:", "Multidimensional Arrays");
             CustomMethods.print2DArray<int>(grades);
+            PauseConsole();
             Console.WriteLine();
             Console.WriteLine("sales array:");
             CustomMethods.print2DArray<double>(sales);
