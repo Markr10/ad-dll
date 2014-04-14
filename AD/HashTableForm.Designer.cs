@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             this.btnBetterHash = new System.Windows.Forms.Button();
+            this.btnSimpleHash = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBetterHash
             // 
-            this.btnBetterHash.Location = new System.Drawing.Point(63, 40);
+            this.btnBetterHash.Location = new System.Drawing.Point(148, 12);
             this.btnBetterHash.Name = "btnBetterHash";
-            this.btnBetterHash.Size = new System.Drawing.Size(134, 32);
+            this.btnBetterHash.Size = new System.Drawing.Size(124, 43);
             this.btnBetterHash.TabIndex = 0;
             this.btnBetterHash.Text = "Get BetterHASH";
             this.btnBetterHash.UseVisualStyleBackColor = true;
             this.btnBetterHash.Click += new System.EventHandler(this.btnBetterHash_Click);
+            // 
+            // btnSimpleHash
+            // 
+            this.btnSimpleHash.Location = new System.Drawing.Point(12, 12);
+            this.btnSimpleHash.Name = "btnSimpleHash";
+            this.btnSimpleHash.Size = new System.Drawing.Size(124, 43);
+            this.btnSimpleHash.TabIndex = 1;
+            this.btnSimpleHash.Text = "Get SimpleHASH";
+            this.btnSimpleHash.UseVisualStyleBackColor = true;
+            this.btnSimpleHash.Click += new System.EventHandler(this.btnSimpleHash_Click);
             // 
             // HashTableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnSimpleHash);
             this.Controls.Add(this.btnBetterHash);
             this.Name = "HashTableForm";
             this.Text = "HashTable";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnBetterHash;
+        private System.Windows.Forms.Button btnSimpleHash;
     }
 }
