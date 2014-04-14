@@ -39,6 +39,7 @@
             this.btnBasicSearch = new System.Windows.Forms.Button();
             this.btnStrings = new System.Windows.Forms.Button();
             this.btnStringBuilder = new System.Windows.Forms.Button();
+            this.btnHashTable = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTimer
@@ -151,11 +152,22 @@
             this.btnStringBuilder.UseVisualStyleBackColor = true;
             this.btnStringBuilder.Click += new System.EventHandler(this.btnStringBuilder_Click);
             // 
+            // btnHashTable
+            // 
+            this.btnHashTable.Location = new System.Drawing.Point(101, 157);
+            this.btnHashTable.Name = "btnHashTable";
+            this.btnHashTable.Size = new System.Drawing.Size(80, 28);
+            this.btnHashTable.TabIndex = 11;
+            this.btnHashTable.Text = "HashTable";
+            this.btnHashTable.UseVisualStyleBackColor = true;
+            this.btnHashTable.Click += new System.EventHandler(this.btnHashTable_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(189, 263);
+            this.Controls.Add(this.btnHashTable);
             this.Controls.Add(this.btnStringBuilder);
             this.Controls.Add(this.btnStrings);
             this.Controls.Add(this.btnBasicSearch);
@@ -186,5 +198,6 @@
         private System.Windows.Forms.Button btnBasicSearch;
         private System.Windows.Forms.Button btnStrings;
         private System.Windows.Forms.Button btnStringBuilder;
+        private System.Windows.Forms.Button btnHashTable;
     }
 }
