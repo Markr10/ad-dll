@@ -25,7 +25,7 @@ namespace AD_Dll.Hoofdstuk_10
 
         public void clear()
         {
-            this.names = new string[10007];
+            this.names = new string[29];
         }
 
         public string[] getHashTable(string nameHash)
@@ -41,6 +41,11 @@ namespace AD_Dll.Hoofdstuk_10
                 else if (nameHash.Equals("BetterHash"))
                 {
                     hashVal = BetterHash(name, names);
+                }
+                else if (nameHash.Equals("BucketHash"))
+                {
+                    BucketHash bHash = new BucketHash();
+                    hashVal = bHash.Hash(name);
                 }
                 else
                 {
@@ -74,7 +79,7 @@ namespace AD_Dll.Hoofdstuk_10
             return (int)tot;
         }
 
-        static bool InHash(string s, string[] arr)
+        public static bool InHash(string s, string[] arr)
         {
             int hval = BetterHash(s, arr);
             if (arr[hval] == s)

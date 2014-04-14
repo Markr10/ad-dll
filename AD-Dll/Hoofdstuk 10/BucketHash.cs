@@ -19,6 +19,7 @@ namespace AD_Dll.Hoofdstuk_10
                 data[i] = new ArrayList(4);
             }
         }
+
         public int Hash(string s)
         {
             long tot = 0;
@@ -36,6 +37,7 @@ namespace AD_Dll.Hoofdstuk_10
             }
             return (int)tot;
         }
+
         public void Insert(string item)
         {
             int hash_value;
@@ -45,6 +47,7 @@ namespace AD_Dll.Hoofdstuk_10
                 data[hash_value].Add(item);
             }
         }
+
         public void Remove(string item)
         {
             int hash_value;
