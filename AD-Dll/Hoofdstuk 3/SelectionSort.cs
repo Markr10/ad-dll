@@ -4,28 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/**
- * Wybren Jongstra
- * A class to sort an array using the SelectionSort method
- */
-
 namespace AD_Dll.Hoofdstuk_3
 {
+    /// <summary>
+    /// Wybren Jongstra
+    /// Deze klasse sorteert een array door het gebruik van de SelectionSort methode
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class SelectionSort<T> where T : IComparable
     {
         string result;
 
+        /// <summary>
+        /// Lege constructor
+        /// </summary>
         public SelectionSort()
         {
 
         }
 
+        /// <summary>
+        /// Sorteert een array volgens de SelectionSort methode.
+        /// De gesorteerde nummers worden tijdelijk opgeslagen in temp.
+        /// </summary>
+        /// <param name="array">De array die gesorteerd moet worden</param>
+        /// <returns>Gesorteerde array</returns>
         public string Start(T[] array)
         {
             T temp;
             int min_key;
 
-            //Sorting array by placing the sorted numbers in temp
             for (int j = 0; j < array.Length - 1; j++)
             {
                 min_key = j;

@@ -5,18 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/**
- * Wybren Jongstra
- * A class to explain the working of Queues
- */
-
 namespace AD_Dll.Hoofdstuk_5
 {
+    /// <summary>
+    /// Wybren Jongstra
+    /// Deze klasse verduidelijkt de werking van Queues
+    /// </summary>
     public class Queue
     {
+        /// <summary>
+        /// In de constructor wordt een Queue aangemaakt.
+        /// Vervolgens wordt de Queue gevuld (push).
+        /// Er worden daarna nog eens 2 items toegevoegd.
+        /// Tenslotte worden er nog 3 items verwijderd (remove).
+        /// </summary>
         static Queue()
         {
-            //Fill the Queue
             Queue<string> q = new Queue<string>();
 
             q.Enqueue("A");
@@ -31,7 +35,6 @@ namespace AD_Dll.Hoofdstuk_5
             }
             Console.WriteLine();
 
-            //Add 'v' and 'h' to the Queue
             q.Enqueue("V");
             q.Enqueue("H");
             Console.WriteLine("Current queue: ");
@@ -41,7 +44,6 @@ namespace AD_Dll.Hoofdstuk_5
             }
             Console.WriteLine();
 
-            //Remove an item of Queue
             Console.WriteLine("Removing some values ");
             string ch = (string) q.Dequeue();
             Console.WriteLine("The removed value: {0}", ch);
