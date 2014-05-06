@@ -13,6 +13,9 @@ namespace AD
 {
     public partial class HashTableForm : FormConsole
     {
+        /*
+         * Bij het laden van de form gelijk een nieuwe Hashtable aanmaken met test-waarden
+         */
         private HashTable hTable;
         public HashTableForm() : base(false)
         {
@@ -22,6 +25,9 @@ namespace AD
             
         }
 
+        /*
+         * Een betere Hash techniek laten zien op het scherm
+         */
         private void btnBetterHash_Click(object sender, EventArgs e)
         {
             ShowConsole("BetterHash");
@@ -33,6 +39,9 @@ namespace AD
             CloseConsole();
         }
 
+        /*
+         * Een simpele Hash techniek laten zien
+         */
         private void btnSimpleHash_Click(object sender, EventArgs e)
         {
             ShowConsole("SimpleHash");
