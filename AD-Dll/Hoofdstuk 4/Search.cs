@@ -8,8 +8,13 @@ namespace AD_Dll.Hoofdstuk_4
 {
     public class Search<T> where T : IComparable<T>
     {
-       
-        public static int linear(T[] a, T v) //lineare zoekfuntie
+       /// <summary>
+        /// lineare zoekfuntie
+       /// </summary>
+       /// <param name="a">array</param>
+       /// <param name="v">wat je zoekt</param>
+       /// <returns>index</returns>
+        public static int linear(T[] a, T v) 
         {
             for (int i = 0; i < a.Length; ++i)
             {
@@ -22,7 +27,13 @@ namespace AD_Dll.Hoofdstuk_4
             return -1; //niet gevonden, return -1
         }
 
-        public static int binary(T[] a, T v) //binaire zoekfunctie
+        /// <summary>
+        /// //binaire zoekfunctie
+        /// </summary>
+        /// <param name="a">array</param>
+        /// <param name="v">wat je zoekt</param>
+        /// <returns>index</returns>
+        public static int binary(T[] a, T v) 
         {
             int low = 0;
             int high = a.Length - 1;
