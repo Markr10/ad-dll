@@ -26,6 +26,9 @@ namespace AD_Dll.Hoofdstuk_12
             return Data.ToString();
         }
 
+        /*
+         * De node laten zien
+         */
         public void DisplayNode()
         {
             Console.Write(Data + " ");

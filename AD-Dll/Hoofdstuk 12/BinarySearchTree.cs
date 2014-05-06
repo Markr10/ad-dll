@@ -8,7 +8,9 @@ namespace AD_Dll.Hoofdstuk_12
 {
     public class BinarySearchTree<T> where T : IComparable<T>
     {
-
+        /*
+         * waarden initialiseren
+         */
         public Node<T> root;
 
         public BinarySearchTree()
@@ -16,6 +18,11 @@ namespace AD_Dll.Hoofdstuk_12
             root = null;
         }
 
+        /*
+         * Nieuwe waarde toevoegen aan de search tree
+         * hierin wordt tevens bepaald waar deze waarde zal worden geplaatst
+         * zodat er een mooie binary search tree onstaat
+         */
         public void Insert(T i)
         {
             Node<T> newNode = new Node<T>();
@@ -53,6 +60,9 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
+        /*
+         * waarden sorteren in order
+         */
         public void InOrder(Node<T> theRoot)
         {
             if (theRoot != null)
@@ -63,6 +73,9 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
+        /*
+         * waarden sorteren in pre order
+         */
         public void PreOrder(Node<T> theRoot)
         {
             if (!(theRoot == null))
@@ -73,6 +86,9 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
+        /*
+         * waarden sorteren in post order
+         */
         public void PostOrder(Node<T> theRoot)
         {
             if (!(theRoot == null))
@@ -83,6 +99,9 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
+        /*
+         * minimum bepalen en returnen
+         */
         public T FindMin()
         {
             Node<T> current = root;
@@ -93,6 +112,9 @@ namespace AD_Dll.Hoofdstuk_12
             return current.Data;
         }
 
+        /*
+         * maximum bepalen en returnen
+         */
         public T FindMax()
         {
             Node<T> current = root;
@@ -103,6 +125,10 @@ namespace AD_Dll.Hoofdstuk_12
             return current.Data;
         }
 
+        /*
+         * een opgegeven waarde in de search tree zoeken en returnen als 
+         * deze gevonden is
+         */
         public Node<T> Find(T key)
         {
             Node<T> current = root;
@@ -124,6 +150,9 @@ namespace AD_Dll.Hoofdstuk_12
             return current;
         }
 
+        /*
+         * Alleen op toepassing om te kijken waar een bepaalde node zich bevindt.
+         */
         public Node<T> GetSuccessor(Node<T> delNode)
         {
             Node<T> successorParent = delNode;
@@ -143,6 +172,9 @@ namespace AD_Dll.Hoofdstuk_12
             return successor;
         }
 
+        /*
+         * Het verwijderen van een node in de search tree.
+         */
         public bool Delete(T key)
         {
             Node<T> current = root;

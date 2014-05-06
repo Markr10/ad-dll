@@ -9,6 +9,9 @@ namespace AD_Dll.Hoofdstuk_10
     //class HashTable<T> where T : IComparable<T>
     public class HashTable
     {
+        /*
+         * waarden initialiseren
+         */
         private string[] names;
         private string name;
         private string[] someNames;
@@ -23,11 +26,18 @@ namespace AD_Dll.Hoofdstuk_10
             this.someNames = someNames;
         }
 
+        /*
+         * Maak de hashtable leeg
+         */
         public void clear()
         {
             this.names = new string[29];
         }
 
+        /*
+         * kijken welke hashtable er aangemaakt moet worden (SimpleHash, BetterHash of BucketHash)
+         * en maak deze aan en return de waarden
+         */
         public string[] getHashTable(string nameHash)
         {
             clear();
@@ -56,6 +66,9 @@ namespace AD_Dll.Hoofdstuk_10
             return names;
         }
 
+        /*
+         * stukje voor het aanmaken van een simple hash
+         */
         public static int SimpleHash(string s, string[] arr)
         {
             int tot = 0;
@@ -66,6 +79,9 @@ namespace AD_Dll.Hoofdstuk_10
             return tot % arr.GetUpperBound(0);
         }
 
+        /*
+         * stukje voor het aanmaken van een better hash
+         */
         public static int BetterHash(string s, string[] arr)
         {
             long tot = 0;
@@ -79,6 +95,9 @@ namespace AD_Dll.Hoofdstuk_10
             return (int)tot;
         }
 
+        /*
+         * Zoeken in de hashtable
+         */
         public static bool InHash(string s, string[] arr)
         {
             int hval = BetterHash(s, arr);
