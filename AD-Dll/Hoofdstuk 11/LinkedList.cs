@@ -10,8 +10,9 @@ namespace AD_Dll.Hoofdstuk_11
     {
         public static void Main()
         {
-            LinkedListNode<string> node = new LinkedListNode<string>("Mike");
-            LinkedList<string> names = new LinkedList<string>();
+            //LinkedList aanmaken, items aanmaken en items toevoegen
+            LinkedListNode<string> node = new LinkedListNode<string>("Mike"); 
+            LinkedList<string> names = new LinkedList<string>(); 
             names.AddFirst(node);
             LinkedListNode<string> node1 = new LinkedListNode<string>("David");
             names.AddAfter(node, node1);
@@ -21,25 +22,25 @@ namespace AD_Dll.Hoofdstuk_11
             names.AddAfter(node1, node3);
             LinkedListNode<string> node4 = new LinkedListNode<string>(null);
 
-            LinkedListNode<string> aNode = names.First;
-            while (aNode != null)
+            LinkedListNode<string> aNode = names.First; //eerste item
+            while (aNode != null) //gaat langs alle items
             {
-                Console.WriteLine(aNode.Value);
-                aNode = aNode.Next;
+                Console.WriteLine(aNode.Value); //display item
+                aNode = aNode.Next; //pak volgende item
             }
 
-            Console.WriteLine();
+            Console.WriteLine(); //witregel
 
-            LinkedList<int> nums = new LinkedList<int>();
-            nums.AddLast(11);
+            LinkedList<int> nums = new LinkedList<int>(); //nieuwe LinkedList
+            nums.AddLast(11); //items toevoegen
             nums.AddLast(6);
             nums.AddFirst(9);
             nums.AddLast(7);
-            LinkedListNode<int> intnode = nums.Find(6);
+            LinkedListNode<int> intnode = nums.Find(6); 
             nums.AddBefore(intnode, 5);
             foreach (int num in nums)
             {
-                Console.WriteLine(num);
+                Console.WriteLine(num); //laat alle items zien
             }
         }
     }
