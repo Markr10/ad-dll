@@ -8,11 +8,22 @@ namespace AD_Dll.Hoofdstuk_1
 {
     public class Student : IComparable<Student>
     {
+        /// <summary>
+        /// Raymon Bunt
+        /// student class maakt een student aan
+        /// </summary>
+        
 
         public String Name { get; set; }
         public int Age { get; set; }
         public int StudentID{ get; set;}
 
+
+        /// <summary>
+        /// vergelijkt een student met een andere student
+        /// </summary>
+        /// <param name="other">de andere student</param>
+        /// <returns>als de studentID van this.StudentID groter is dan de other dan returnt hij 1 anders 0</returns>
         public int CompareTo(Student other)
         {
             //return de studentID
@@ -34,8 +45,11 @@ namespace AD_Dll.Hoofdstuk_1
             return this.Name.ToString() + ", " + this.StudentID;
         }
 
-        #region Static methods
-
+        
+        /// <summary>
+        /// maakt een randomStudent aan
+        /// </summary>
+        /// <returns>nieuwe student</returns>
         public static Student getRandomStudent()
         {
             return new Student()
@@ -46,7 +60,7 @@ namespace AD_Dll.Hoofdstuk_1
             };
         }
 
-        #endregion
+        
     }
 
 }
