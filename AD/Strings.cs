@@ -26,7 +26,7 @@ namespace AD
 
         private void btnShowString_Click(object sender, EventArgs e)
         {
-            if(btnShowString.Text == "Show a String")
+            if (btnShowString.Text == "Show a String")
             {
                 string name = "Jennifer Ingram";
                 MessageBox.Show(name, "A String");
@@ -58,7 +58,7 @@ namespace AD
             ShowConsole("Show substring of a String");
             CustomStringMethods.PrintString("Input String", aString);
             Console.WriteLine("Start position for Substring: " + startPosition.ToString());
-            Console.WriteLine("Characters to pull for Substring: " +  lengthSubstring.ToString());
+            Console.WriteLine("Characters to pull for Substring: " + lengthSubstring.ToString());
             CustomStringMethods.PrintString("Substring", aString.Substring(startPosition, lengthSubstring));
             CloseConsole();
         }
@@ -96,12 +96,12 @@ namespace AD
         private void btnSplitMethod_Click(object sender, EventArgs e)
         {
             string[] sdata = data.Split(delimiter, data.Length);
-            
+
             ShowConsole("Split method");
             CustomStringMethods.PrintArrayWithSplitWords(data, sdata);
 
             sdata = data.Split(delimiter, 2);
-            CustomMethods.printArray(sdata, "Split method with 2 as the maximum number of substrings to return, gives the following elements in the returned array:");
+            CustomArrayMethods.printArray(sdata, "Split method with 2 as the maximum number of substrings to return, gives the following elements in the returned array:");
             CloseConsole();
         }
 
@@ -197,7 +197,7 @@ namespace AD
             string name = "Ella";
             int pos = s1.IndexOf(",");
 
-            ShowConsole("Demonstration of the Remove method");            
+            ShowConsole("Demonstration of the Remove method");
             CustomStringMethods.PrintInsertAndRemove(s1, (pos + 2), name, name.Length);
             name = "William Shakespeare";
             CustomStringMethods.PrintInsertAndRemove(s1, (pos + 2), name, name.Length);
@@ -211,10 +211,10 @@ namespace AD
             string replacementString = "cei";
 
             ShowConsole("Demonstration of the Replace method");
-            CustomStringMethods.PrintString("Characters to replace" , stringToReplace);
+            CustomStringMethods.PrintString("Characters to replace", stringToReplace);
             CustomStringMethods.PrintString("Replacement characters", replacementString);
             Console.WriteLine();
-            CustomMethods.printArray(words, "Array before replacement:");
+            CustomArrayMethods.printArray(words, "Array before replacement:");
             Console.WriteLine();
             CustomStringMethods.ReplaceAndPrint(words, stringToReplace, replacementString);
             CloseConsole();
@@ -251,7 +251,7 @@ namespace AD
 
             Console.WriteLine();
             Console.WriteLine();
-            CustomMethods.print2DArrayWithSpaces(names);
+            CustomMultidimensionalArrayMethods.print2DArrayWithSpaces(names);
             Console.WriteLine();
             CustomStringMethods.print2DArrayPadRight(names, 10);
 
@@ -271,8 +271,7 @@ namespace AD
             CustomStringMethods.PrintString("Input Strings", s1, s2, s3);
             s3 = String.Concat(s1, " ", s2);
             CustomStringMethods.PrintString("Output String", s3);
-            
-            Console.WriteLine();
+
             Console.WriteLine();
             s1 = "hello";
             Console.WriteLine("ToUpper method");
@@ -280,10 +279,8 @@ namespace AD
             s1 = s1.ToUpper();
             CustomStringMethods.PrintString("Output String", s1);
 
-            Console.WriteLine();
             PauseConsole();
 
-            Console.WriteLine();
             Console.WriteLine();
             s1 = "WORLD";
             Console.WriteLine("ToLower method");
@@ -291,22 +288,27 @@ namespace AD
             CustomStringMethods.PrintString("Output String", s1.ToLower());
 
             Console.WriteLine();
-            Console.WriteLine();
             string[] names = new string[] { " David", " Raymond", "Mike ", "Bernica " };
-            Console.WriteLine("Trim and TrimEnd methods");
+            Console.WriteLine("Trim method");
             CustomStringMethods.PrintString("Input  Strings", names);
             CustomStringMethods.trimVals(names);
             CustomStringMethods.PrintString("Output Strings", names);
 
             Console.WriteLine();
+            string[] otherNames = new string[] { " Lamont", " Doris", "Olympia ", "Maybelle " };
+            Console.WriteLine("TrimEnd method");
+            CustomStringMethods.PrintString("Input  Strings", otherNames);
+            CustomStringMethods.trimEndVals(otherNames);
+            CustomStringMethods.PrintString("Output Strings", otherNames);
+
+            Console.WriteLine();
             string[] htmlComments = new string[] { "<!-- Start Page Number Function -->", "<!-- Get user name and password -->",
                 "<!-- End Title page -->", "<!-- End script -->" };
             char[] commentChars = new char[] { '<', '!', '-', '>' };
-            CustomMethods.printArray(htmlComments, "Input:");
+            CustomArrayMethods.printArray(htmlComments, "Input:");
             CustomStringMethods.trimVals(htmlComments, commentChars);
-            CustomMethods.printArray(htmlComments, "Output:", "Comment");
+            CustomArrayMethods.printArray(htmlComments, "Output:", "Comment");
 
-            Console.WriteLine();
             CloseConsole();
         }
     }
