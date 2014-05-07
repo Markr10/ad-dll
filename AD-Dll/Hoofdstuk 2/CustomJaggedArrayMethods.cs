@@ -8,7 +8,7 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Zelfgemaakte methode(s) die gebruikt maken van jagged arrays.
+    /// Methodes die gebruik maken van jagged arrays.
     /// </summary>
     public class CustomJaggedArrayMethods
     {

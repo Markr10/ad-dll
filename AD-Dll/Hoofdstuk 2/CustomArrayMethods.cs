@@ -8,7 +8,7 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Zelfgemaakte methode(s) die gebruikt maken van arrays.
+    /// Methodes die gebruik maken van arrays.
     /// </summary>
     public class CustomArrayMethods
     {
@@ -32,6 +32,22 @@ namespace AD_Dll.Hoofdstuk_2
                 {
                     Console.WriteLine("null");
                 }
+            }
+        }
+
+        /// <summary>
+        /// Print een array.
+        /// </summary>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array.</typeparam>
+        /// <param name="array">De array die geprint moet worden.</param>
+        /// <param name="firstLine">De tekst die geprint moet worden voordat de array mag worden geprint.</param>
+        /// <param name="stringForEachItem">De tekst die voor elk item moet worden geprint.</param>
+        public static void printArray<T>(T[] array, string firstLine, string stringForEachItem)
+        {
+            Console.WriteLine(firstLine);
+            foreach (object item in array)
+            {
+                Console.WriteLine(stringForEachItem + ": " + item.ToString());
             }
         }
 

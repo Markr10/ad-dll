@@ -9,7 +9,7 @@ namespace AD_Dll.Hoofdstuk_7
 {
     /// <summary>
     /// Mark Roelans
-    /// Zelfgemaakte methode(s) die gebruikt maken van String objecten of iets doen met strings.
+    /// Methodes die gebruik maken van String objecten of iets doen met strings.
     /// </summary>
     public class CustomStringMethods
     {

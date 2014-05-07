@@ -8,7 +8,7 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Zelfgemaakte methode(s) die gebruikt maken van multidimensionale arrays.
+    /// Methodes die gebruik maken van multidimensionale arrays.
     /// </summary>
     public class CustomMultidimensionalArrayMethods
     {
@@ -72,6 +72,35 @@ namespace AD_Dll.Hoofdstuk_2
                         Console.WriteLine(array[row, column].ToString());
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Print een tweedimensionale array waarbij de verschillende items worden gescheiden door spaties.
+        /// </summary>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de tweedimensionale array.</typeparam>
+        /// <param name="array">De tweedimensionale array die geprint moet worden.</param>
+        public static void print2DArrayWithSpaces<T>(T[,] array)
+        {
+            for (int row = 0, lengthRow = array.GetLength(0); row < lengthRow; row++)
+            {
+                for (int column = 0, lengthColumn = array.GetLength(1); column < lengthColumn; column++)
+                {
+                    if (array[row, column] == null)
+                    {
+                        Console.WriteLine("null");
+                    }
+                    else
+                    {
+                        Console.Write(array[row, column].ToString());
+                    }
+
+                    if ((column + 1) != lengthColumn)
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
             }
         }
     }

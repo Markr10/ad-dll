@@ -251,7 +251,7 @@ namespace AD
 
             Console.WriteLine();
             Console.WriteLine();
-            CustomMethods.print2DArrayWithSpaces(names);
+            CustomMultidimensionalArrayMethods.print2DArrayWithSpaces(names);
             Console.WriteLine();
             CustomStringMethods.print2DArrayPadRight(names, 10);
 
@@ -307,7 +307,7 @@ namespace AD
             char[] commentChars = new char[] { '<', '!', '-', '>' };
             CustomArrayMethods.printArray(htmlComments, "Input:");
             CustomStringMethods.trimVals(htmlComments, commentChars);
-            CustomMethods.printArray(htmlComments, "Output:", "Comment");
+            CustomArrayMethods.printArray(htmlComments, "Output:", "Comment");
 
             CloseConsole();
         }

@@ -55,7 +55,6 @@
     <Compile Include="Hoofdstuk 2\CustomArrayListMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomJaggedArrayMethods.cs" />
-    <Compile Include="Hoofdstuk 2\CustomMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomMultidimensionalArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomParameterArrayMethods.cs" />
     <Compile Include="Hoofdstuk 3\BubbleSort.cs" />
@@ -64,7 +63,7 @@
     <Compile Include="Hoofdstuk 4\Search.cs" />
     <Compile Include="Hoofdstuk 5\Queue.cs" />
     <Compile Include="Hoofdstuk 5\Stacks.cs" />
-    <Compile Include="Hoofdstuk 7\CustomStringBuilderMethods.cs" />
+    <Compile Include="Hoofdstuk 7\CustomStringBuilderMethod.cs" />
     <Compile Include="Hoofdstuk 7\CustomStringMethods.cs" />
     <Compile Include="Other.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

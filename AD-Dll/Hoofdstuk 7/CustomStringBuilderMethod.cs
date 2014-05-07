@@ -8,9 +8,9 @@ namespace AD_Dll.Hoofdstuk_7
 {
     /// <summary>
     /// Mark Roelans
-    /// Zelfgemaakte methode(s) die gebruikt maken van StringBuilder objecten.
+    /// Methode die gebruik maken van StringBuilder objecten.
     /// </summary>
-    public class CustomStringBuilderMethods
+    public class CustomStringBuilderMethod
     {
         /// <summary>
         /// Print informatie over een StringBuilder object.

@@ -9,7 +9,7 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Zelfgemaakte methode(s) die gebruikt maken van ArrayList objecten.
+    /// Methodes die gebruik maken van ArrayList objecten.
     /// </summary>
     public class CustomArrayListMethods
     {
