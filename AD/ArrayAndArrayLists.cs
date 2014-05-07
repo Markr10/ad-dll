@@ -55,7 +55,7 @@ namespace AD
         private void btnShowArrays_Click(object sender, EventArgs e)
         {
             ShowConsole("Student Arrays");
-            CustomMethods.printArray<Student>(students, "students array:");
+            CustomArrayMethods.printArray<Student>(students, "students array:");
             Console.WriteLine();
             Console.WriteLine("studentsOtherSchool array:");
             for (int i = 0; i <= studentsOtherSchool.GetUpperBound(0); i++)
@@ -75,9 +75,9 @@ namespace AD
         private void btnShowInfoArrays_Click(object sender, EventArgs e)
         {
             ShowConsole("Information about the Student Arrays");
-            CustomMethods.printInfoAboutArray(students, "students array");
+            CustomArrayMethods.printInfoAboutArray(students, "students array");
             Console.WriteLine();
-            CustomMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
+            CustomArrayMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
             CloseConsole();
         }
 
@@ -290,7 +290,7 @@ namespace AD
         {
             Object[] arrNames = names.ToArray();
             ShowConsole("Demonstration of the ToArray method from ArrayList");
-            CustomMethods.printArray<Object>(arrNames, "Names from an array: ");
+            CustomArrayMethods.printArray<Object>(arrNames, "Names from an array: ");
             CloseConsole();
         }
     }

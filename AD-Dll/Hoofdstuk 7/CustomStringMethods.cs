@@ -278,7 +278,7 @@ namespace AD_Dll.Hoofdstuk_7
             {
                 words[i] = words[i].Replace(stringToReplace, replacementString);
             }
-            AD_Dll.Hoofdstuk_2.CustomMethods.printArray(words, "Array after replacement:");
+            AD_Dll.Hoofdstuk_2.CustomArrayMethods.printArray(words, "Array after replacement:");
         }
 
         /// <summary>

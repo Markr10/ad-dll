@@ -101,7 +101,7 @@ namespace AD
             CustomStringMethods.PrintArrayWithSplitWords(data, sdata);
 
             sdata = data.Split(delimiter, 2);
-            CustomMethods.printArray(sdata, "Split method with 2 as the maximum number of substrings to return, gives the following elements in the returned array:");
+            CustomArrayMethods.printArray(sdata, "Split method with 2 as the maximum number of substrings to return, gives the following elements in the returned array:");
             CloseConsole();
         }
 
@@ -214,7 +214,7 @@ namespace AD
             CustomStringMethods.PrintString("Characters to replace", stringToReplace);
             CustomStringMethods.PrintString("Replacement characters", replacementString);
             Console.WriteLine();
-            CustomMethods.printArray(words, "Array before replacement:");
+            CustomArrayMethods.printArray(words, "Array before replacement:");
             Console.WriteLine();
             CustomStringMethods.ReplaceAndPrint(words, stringToReplace, replacementString);
             CloseConsole();
@@ -305,7 +305,7 @@ namespace AD
             string[] htmlComments = new string[] { "<!-- Start Page Number Function -->", "<!-- Get user name and password -->",
                 "<!-- End Title page -->", "<!-- End script -->" };
             char[] commentChars = new char[] { '<', '!', '-', '>' };
-            CustomMethods.printArray(htmlComments, "Input:");
+            CustomArrayMethods.printArray(htmlComments, "Input:");
             CustomStringMethods.trimVals(htmlComments, commentChars);
             CustomMethods.printArray(htmlComments, "Output:", "Comment");
 
