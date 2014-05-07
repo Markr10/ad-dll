@@ -96,7 +96,7 @@ namespace AD_Dll.Hoofdstuk_7
         /// <summary>
         /// Print een array met woorden.
         /// </summary>
-        /// <typeparam name="T">Het type gegevens die zijn opgeslagen in de array.</typeparam>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array.</typeparam>
         /// <param name="words">Een array waarvan de toString methode een woord is.</param>
         public static void PrintArrayWithWords<T>(T[] words)
         {
@@ -145,7 +145,7 @@ namespace AD_Dll.Hoofdstuk_7
         /// Vergelijkt twee objecten met elkaar door middel van de CompareTo methode en
         /// en print hierover informatie.
         /// </summary>
-        /// <typeparam name="T">Het type gegevens die zijn opgeslagen in de objecten.</typeparam>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de objecten.</typeparam>
         /// <param name="firstObject">Het eerste object dat vergeleken moet worden.</param>
         /// <param name="secondObject">Het tweede object dat vergeleken moet worden.</param>
         public static void CompareToAndPrint<T>(T firstObject, T secondObject) where T : IComparable

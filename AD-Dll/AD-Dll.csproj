@@ -53,6 +53,7 @@
     <Compile Include="Hoofdstuk 1\MassiveMeasurement.cs" />
     <Compile Include="Hoofdstuk 1\Student.cs" />
     <Compile Include="Hoofdstuk 2\CustomArrayMethods.cs" />
+    <Compile Include="Hoofdstuk 2\CustomJaggedArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomMultidimensionalArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomParameterArrayMethods.cs" />

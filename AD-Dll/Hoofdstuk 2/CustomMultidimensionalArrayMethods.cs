@@ -54,7 +54,7 @@ namespace AD_Dll.Hoofdstuk_2
         /// <summary>
         /// Print een tweedimensionale array.
         /// </summary>
-        /// <typeparam name="T">Het type gegevens die zijn opgeslagen in de tweedimensionale array.</typeparam>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de tweedimensionale array.</typeparam>
         /// <param name="array">De tweedimensionale array die geprint moet worden.</param>
         public static void print2DArray<T>(T[,] array)
         {

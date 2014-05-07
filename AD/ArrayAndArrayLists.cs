@@ -163,10 +163,10 @@ namespace AD
             jagged[7][3] = 26;
             jagged[7][4] = 19;
             jagged[7][5] = 45;
-            CustomMethods.fillJaggedArrayRows(jagged, 1, 7, 10, 100, 1, 10);
-            CustomMethods.fillJaggedArrayRows(jagged, 8, 12, 10, 100, 1, 10);
+            CustomJaggedArrayMethods.fillJaggedArrayRows(jagged, 1, 7, 10, 100, 1, 10);
+            CustomJaggedArrayMethods.fillJaggedArrayRows(jagged, 8, 12, 10, 100, 1, 10);
             ShowConsole("Jagged Array");
-            CustomMethods.printJaggedArray<int>(jagged);
+            CustomJaggedArrayMethods.printJaggedArray<int>(jagged);
             CloseConsole();
         }
 
@@ -190,7 +190,7 @@ namespace AD
             sales[1][5] = 38;
             sales[1][6] = 42;
             ShowConsole("Average sales with jagged Array");
-            CustomMethods.calculateAndPrintAverages(sales, "sales for month", 2);
+            CustomJaggedArrayMethods.calculateAndPrintAverages(sales, "sales for month", 2);
             CloseConsole();
         }
 
