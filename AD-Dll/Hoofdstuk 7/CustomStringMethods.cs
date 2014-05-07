@@ -252,10 +252,8 @@ namespace AD_Dll.Hoofdstuk_7
         /// Voegt een string binnen een string in, verwijderd een deel van de nieuwe string en print hierover informatie.
         /// </summary>
         /// <param name="stringToUse">De string die gebruikt moet worden.</param>
-        /// <param name="startIndex">
-        /// De index van de plaats waar de string ingevoegd moet worden en
-        /// de index van de plaats waar begonnen moet worden met het verwijderden.
-        /// </param>
+        /// <param name="startIndex">De index van de plaats waar de string ingevoegd moet worden en
+        /// de index van de plaats waar begonnen moet worden met het verwijderden.</param>
         /// <param name="value">De string die ingevoegd moet worden.</param>
         /// <param name="count">Het aantal karakters dat verwijderd moet worden.</param>
         /// <returns>De string met de ingevoegde string en waaruit een deel verwijderd is.</returns>
@@ -316,10 +314,8 @@ namespace AD_Dll.Hoofdstuk_7
         /// Trimt strings in een array op bepaalde waarden.
         /// </summary>
         /// <param name="arr">De string array die getrimt moet worden.</param>
-        /// <param name="trimChars">
-        /// De karakters waarop getrimt moet worden.
-        /// Indien er geen karakters zijn opgegeven wordt een spatie als trim karakter gebruikt.
-        /// </param>
+        /// <param name="trimChars">De karakters waarop getrimt moet worden.
+        /// Indien er geen karakters zijn opgegeven wordt een spatie als trim karakter gebruikt.</param>
         public static void trimVals(string[] arr, params char[] trimChars)
         {
             if (trimChars.Length == 0)
@@ -337,10 +333,8 @@ namespace AD_Dll.Hoofdstuk_7
         /// Trimt het einde van strings in een array op bepaalde waarden.
         /// </summary>
         /// <param name="arr">De string array die getrimt moet worden.</param>
-        /// <param name="trimChars">
-        /// De karakters waarop getrimt moet worden.
-        /// Indien er geen karakters zijn opgegeven wordt een spatie als trim karakter gebruikt.
-        /// </param>
+        /// <param name="trimChars">De karakters waarop getrimt moet worden.
+        /// Indien er geen karakters zijn opgegeven wordt een spatie als trim karakter gebruikt.</param>
         public static void trimEndVals(string[] arr, params char[] trimChars)
         {
             if (trimChars.Length == 0)
