@@ -52,6 +52,7 @@
     <Compile Include="Hoofdstuk 1\Generics.cs" />
     <Compile Include="Hoofdstuk 1\MassiveMeasurement.cs" />
     <Compile Include="Hoofdstuk 1\Student.cs" />
+    <Compile Include="Hoofdstuk 2\CustomArrayListMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomJaggedArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomMethods.cs" />

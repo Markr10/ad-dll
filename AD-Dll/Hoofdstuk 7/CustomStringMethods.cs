@@ -142,8 +142,7 @@ namespace AD_Dll.Hoofdstuk_7
         }
 
         /// <summary>
-        /// Vergelijkt twee objecten met elkaar door middel van de CompareTo methode en
-        /// en print hierover informatie.
+        /// Vergelijkt twee objecten met elkaar door middel van de CompareTo methode en print hierover informatie.
         /// </summary>
         /// <typeparam name="T">Het type gegevens dat is opgeslagen in de objecten.</typeparam>
         /// <param name="firstObject">Het eerste object dat vergeleken moet worden.</param>

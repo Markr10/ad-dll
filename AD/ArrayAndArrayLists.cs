@@ -229,16 +229,16 @@ namespace AD
         private void btnAverageArrayList_Click(object sender, EventArgs e)
         {
             ShowConsole("Average grade in ArrayList");
-            CustomMethods.calculateAndPrintAverages(gradesAL, "grade", 2);
+            CustomArrayListMethods.calculateAndPrintAverages(gradesAL, "grade", 2);
             CloseConsole();
         }
 
         private void btnRemoveItemsArrayList_Click(object sender, EventArgs e)
         {
             ShowConsole("Remove Items for ArrayList");
-            CustomMethods.removeAndPrint(gradesAL, 54);
-            CustomMethods.removeAtAndPrint(gradesAL, (Object)70);
-            CustomMethods.removeAtAndPrint(gradesAL, 2);
+            CustomArrayListMethods.removeAndPrint(gradesAL, 54);
+            CustomArrayListMethods.removeAtAndPrint(gradesAL, (Object)70);
+            CustomArrayListMethods.removeAtAndPrint(gradesAL, 2);
             CloseConsole();
         }
 
@@ -253,7 +253,7 @@ namespace AD
         private void btnDemoALRangeMethods_Click(object sender, EventArgs e)
         {
             ShowConsole("Demonstration of the AddRange and InsertRange methods from ArrayList");
-            CustomMethods.printArrayList(names, "The original list of names: ");
+            CustomArrayListMethods.printArrayList(names, "The original list of names: ");
 
             string[] newNames = new string[]
             {
@@ -272,7 +272,7 @@ namespace AD
 
             PauseConsole();
             Console.WriteLine();
-            CustomMethods.printArrayList(names, "The new list of names: ");
+            CustomArrayListMethods.printArrayList(names, "The new list of names: ");
             CloseConsole();
 
             btnDemoALGetRangeMethod.Enabled = true;
@@ -282,7 +282,7 @@ namespace AD
         {
             ArrayList someNames = new ArrayList(names.GetRange(2, 4));
             ShowConsole("Demonstration of the GetRange method from ArrayList");
-            CustomMethods.printArrayList(someNames, "someNames sub ArrayList: ");
+            CustomArrayListMethods.printArrayList(someNames, "someNames sub ArrayList: ");
             CloseConsole();
         }
 

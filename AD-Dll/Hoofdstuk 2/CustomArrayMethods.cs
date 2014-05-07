@@ -17,7 +17,7 @@ namespace AD_Dll.Hoofdstuk_2
         /// </summary>
         /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array.</typeparam>
         /// <param name="arrayToPrint">De array die geprint moet worden.</param>
-        /// <param name="firstLine">De tekst die afgedrukt moet worden voordat de array mag worden afgedrukt.</param>
+        /// <param name="firstLine">De tekst die geprint moet worden voordat de array mag worden geprint.</param>
         public static void printArray<T>(T[] arrayToPrint, string firstLine)
         {
             Console.WriteLine(firstLine);
