@@ -8,9 +8,11 @@ namespace AD_Dll.Hoofdstuk_11
 {
     public class LinkedList
     {
+        /// <summary>
+        /// LinkedList aanmaken, items aanmaken, items toevoegen en items weergeven
+        /// </summary>
         public static void Main()
-        {
-            //LinkedList aanmaken, items aanmaken en items toevoegen
+        {           
             LinkedListNode<string> node = new LinkedListNode<string>("Mike"); 
             LinkedList<string> names = new LinkedList<string>(); 
             names.AddFirst(node);
