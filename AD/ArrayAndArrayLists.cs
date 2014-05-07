@@ -139,12 +139,12 @@ namespace AD
 
         private void btnSumNums_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("The sum of 1, 2, 3 is: " + CustomMethods.sumNums(1, 2, 3).ToString(), "Sum numbers");
+            WriteFirstLine("The sum of 1, 2, 3 is: " + CustomParameterArrayMethods.sumNums(1, 2, 3).ToString(), "Sum numbers");
             
             int[] numbersOneTillTen = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            CustomMethods.sumNumsAndPrint(numbersOneTillTen);
-            
-            CustomMethods.sumNumsAndPrint(Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101),
+            CustomParameterArrayMethods.sumNumsAndPrint(numbersOneTillTen);
+
+            CustomParameterArrayMethods.sumNumsAndPrint(Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101),
                 Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101));
             
             CloseConsole();

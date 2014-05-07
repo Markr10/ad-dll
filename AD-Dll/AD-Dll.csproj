@@ -55,6 +55,7 @@
     <Compile Include="Hoofdstuk 2\CustomArrayMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomMethods.cs" />
     <Compile Include="Hoofdstuk 2\CustomMultidimensionalArrayMethods.cs" />
+    <Compile Include="Hoofdstuk 2\CustomParameterArrayMethods.cs" />
     <Compile Include="Hoofdstuk 3\BubbleSort.cs" />
     <Compile Include="Hoofdstuk 3\InsertionSort.cs" />
     <Compile Include="Hoofdstuk 3\SelectionSort.cs" />

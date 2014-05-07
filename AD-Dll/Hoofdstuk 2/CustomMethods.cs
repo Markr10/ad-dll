@@ -9,37 +9,6 @@ namespace AD_Dll.Hoofdstuk_2
 {
     public class CustomMethods
     {
-        #region Custom Parameter Array Methods
-
-        public static int sumNums(params int[] nums)
-        {
-            int sum = 0;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                sum += nums[i];
-            }
-            return sum;
-        }
-
-        public static void sumNumsAndPrint(params int[] nums)
-        {
-            Console.Write("The sum of ");
-            int sum = 0;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                Console.Write(nums[i]);
-                if ((i + 1) != nums.Length)
-                {
-                    Console.Write(", ");
-                }
-
-                sum += nums[i];
-            }
-            Console.WriteLine(" is: " + sum.ToString());
-        }
-
-        #endregion
-
         #region Custom Jagged Array Methods
 
         /// <summary>
