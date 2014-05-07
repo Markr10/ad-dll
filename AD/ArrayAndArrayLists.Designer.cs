@@ -251,7 +251,7 @@
             this.Controls.Add(this.btnCreateArrays);
             this.Controls.Add(this.btnSumNums);
             this.Name = "ArrayAndArrayLists";
-            this.Text = "ArrayandArrayLists";
+            this.Text = "ArrayAndArrayLists";
             this.ResumeLayout(false);
 
         }
