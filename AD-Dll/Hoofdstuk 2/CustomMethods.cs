@@ -9,60 +9,6 @@ namespace AD_Dll.Hoofdstuk_2
 {
     public class CustomMethods
     {
-        #region Custom Multidimensional Array Methods
-
-        public static void calculateAndPrintAverages(int[,] arrayWithNumbers)
-        {
-            int lengthColumn = arrayWithNumbers.GetLength(1);
-            double total;
-            for (int row = 0, lengthRow = arrayWithNumbers.GetLength(0); row < lengthRow; row++)
-            {
-                total = 0;
-                for (int column = 0; column < lengthColumn; column++)
-                {
-                    total += arrayWithNumbers[row, column];
-                }
-                Console.WriteLine("Average of row " + row + " is: " + (total / lengthColumn));
-            }
-        }
-
-        public static void calculateAndPrintAverages(double[,] arrayWithNumbers)
-        {
-            int lengthColumn = arrayWithNumbers.GetLength(1);
-            double total;
-
-            for (int row = 0, lengthRow = arrayWithNumbers.GetLength(0); row < lengthRow; row++)
-            {
-                total = 0;
-                for (int column = 0; column < lengthColumn; column++)
-                {
-                    total += arrayWithNumbers[row, column];
-                }
-                Console.WriteLine("Average of row " + row + " is: " + (total / lengthColumn));
-            }
-        }
-
-        public static void print2DArray<T>(T[,] array)
-        {
-            for (int row = 0, lengthRow = array.GetLength(0); row < lengthRow; row++)
-            {
-                for (int column = 0, lengthColumn = array.GetLength(1); column < lengthColumn; column++)
-                {
-                    Console.Write("[" + row.ToString() + "," + column.ToString() + "]: ");
-                    if (array[row, column] == null)
-                    {
-                        Console.WriteLine("null");
-                    }
-                    else
-                    {
-                        Console.WriteLine(array[row, column].ToString());
-                    }
-                }
-            }
-        }
-
-        #endregion
-
         #region Custom Parameter Array Methods
 
         public static int sumNums(params int[] nums)

@@ -117,11 +117,11 @@ namespace AD
         private void btnShowMDArrays_Click(object sender, EventArgs e)
         {
             WriteFirstLine("grades array:", "Multidimensional Arrays");
-            CustomMethods.print2DArray<int>(grades);
+            CustomMultidimensionalArrayMethods.print2DArray<int>(grades);
             PauseConsole();
             Console.WriteLine();
             Console.WriteLine("sales array:");
-            CustomMethods.print2DArray<double>(sales);
+            CustomMultidimensionalArrayMethods.print2DArray<double>(sales);
             CloseConsole();
         }
 
@@ -129,11 +129,11 @@ namespace AD
         {
             WriteFirstLine("grades array:", "Information about multidimensional Arrays");
             Console.WriteLine("The first item of the grades array is: {0}", grades.GetValue(0, 0));
-            CustomMethods.calculateAndPrintAverages(grades);
+            CustomMultidimensionalArrayMethods.calculateAndPrintAverages(grades);
             Console.WriteLine();
             Console.WriteLine("sales array:");
             Console.WriteLine("The first item of the sales array is: {0}", sales[0, 0]);
-            CustomMethods.calculateAndPrintAverages(sales);
+            CustomMultidimensionalArrayMethods.calculateAndPrintAverages(sales);
             CloseConsole();
         }
 
