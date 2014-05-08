@@ -3,6 +3,9 @@ using System.Collections;
 
 namespace AD_Dll.Hoofdstuk_10
 {
+    /// <summary>
+    /// Reinier Gombert
+    /// </summary>
     public class BucketHash
     {
         private const int SIZE = 101;
