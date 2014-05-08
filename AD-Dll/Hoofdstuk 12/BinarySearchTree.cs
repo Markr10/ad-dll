@@ -10,7 +10,7 @@ namespace AD_Dll.Hoofdstuk_12
     /// Reinier Gombert
     /// BinarySearchTree klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class BinarySearchTree<T> where T : IComparable<T>
     {
         // variabelen declareren

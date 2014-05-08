@@ -11,7 +11,7 @@ namespace AD_Dll.Hoofdstuk_13
     /// Raymon Bunt
     /// Set klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class CSet<T>
     {
         private Dictionary<int, T> data;

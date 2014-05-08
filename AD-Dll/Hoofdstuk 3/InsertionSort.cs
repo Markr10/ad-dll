@@ -10,7 +10,7 @@ namespace AD_Dll.Hoofdstuk_3
     /// Wybren Jongstra
     /// Deze klasse sorteert een array door het gebruik van de InsertionSort methode
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class InsertionSort<T> where T : IComparable
     {
         string result;

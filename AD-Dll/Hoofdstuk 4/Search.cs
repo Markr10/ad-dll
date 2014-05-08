@@ -10,7 +10,7 @@ namespace AD_Dll.Hoofdstuk_4
     /// Thomas Oldengarm
     /// Search klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class Search<T> where T : IComparable<T>
     {
        /// <summary>
