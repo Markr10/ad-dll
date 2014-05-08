@@ -6,23 +6,30 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_12
 {
+    /// <summary>
+    /// Reinier Gombert
+    /// BinarySearchTree klasse
+    /// </summary>
+    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse.</typeparam>
     public class BinarySearchTree<T> where T : IComparable<T>
     {
-        /*
-         * waarden initialiseren
-         */
+        // variabelen declareren
         public Node<T> root;
 
+        /// <summary>
+        /// BinarySearchTree constructor
+        /// </summary>
         public BinarySearchTree()
         {
             root = null;
         }
 
-        /*
-         * Nieuwe waarde toevoegen aan de search tree
-         * hierin wordt tevens bepaald waar deze waarde zal worden geplaatst
-         * zodat er een mooie binary search tree onstaat
-         */
+        /// <summary>
+        /// Nieuwe waarde toevoegen aan de search tree
+        /// hierin wordt tevens bepaald waar deze waarde zal worden geplaatst
+        /// zodat er een mooie binary search tree onstaat
+        /// </summary>
+        /// <param name="i">De waarde die toegevoegd moet worden</param>
         public void Insert(T i)
         {
             Node<T> newNode = new Node<T>();
@@ -60,9 +67,10 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        /*
-         * waarden sorteren in order
-         */
+        /// <summary>
+        /// Waarden sorteren in order
+        /// </summary>
+        /// <param name="theRoot">De root node</param>
         public void InOrder(Node<T> theRoot)
         {
             if (theRoot != null)
@@ -73,12 +81,13 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        /*
-         * waarden sorteren in pre order
-         */
+        /// <summary>
+        /// Waarden sorteren in pre order
+        /// </summary>
+        /// <param name="theRoot">De root node</param>
         public void PreOrder(Node<T> theRoot)
         {
-            if (!(theRoot == null))
+            if (theRoot != null)
             {
                 theRoot.DisplayNode();
                 PreOrder(theRoot.Left);
@@ -86,12 +95,13 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        /*
-         * waarden sorteren in post order
-         */
+        /// <summary>
+        /// Waarden sorteren in post order
+        /// </summary>
+        /// <param name="theRoot">De root node</param>
         public void PostOrder(Node<T> theRoot)
         {
-            if (!(theRoot == null))
+            if (theRoot != null)
             {
                 PostOrder(theRoot.Left);
                 PostOrder(theRoot.Right);
@@ -99,36 +109,40 @@ namespace AD_Dll.Hoofdstuk_12
             }
         }
 
-        /*
-         * minimum bepalen en returnen
-         */
+        /// <summary>
+        /// Minimum bepalen en returnen
+        /// </summary>
+        /// <returns>Het minimum</returns>
         public T FindMin()
         {
             Node<T> current = root;
-            while (!(current.Left == null))
+            while (current.Left != null)
             {
                 current = current.Left;
             }
             return current.Data;
         }
 
-        /*
-         * maximum bepalen en returnen
-         */
+        /// <summary>
+        /// Maximum bepalen en returnen
+        /// </summary>
+        /// <returns>Het maximum</returns>
         public T FindMax()
         {
             Node<T> current = root;
-            while (!(current.Right == null))
+            while (current.Right != null)
             {
                 current = current.Right;
             }
             return current.Data;
         }
 
-        /*
-         * een opgegeven waarde in de search tree zoeken en returnen als 
-         * deze gevonden is
-         */
+        /// <summary>
+        /// Een opgegeven waarde in de search tree zoeken en returnen als 
+        /// deze gevonden is
+        /// </summary>
+        /// <param name="key">De gezochte waarde</param>
+        /// <returns>De gevonden waarde. Null als er geen waarde gevonden is</returns>
         public Node<T> Find(T key)
         {
             Node<T> current = root;
@@ -142,6 +156,7 @@ namespace AD_Dll.Hoofdstuk_12
                 {
                     current = current.Right;
                 }
+
                 if (current == null)
                 {
                     return null;
@@ -150,36 +165,44 @@ namespace AD_Dll.Hoofdstuk_12
             return current;
         }
 
-        /*
-         * Alleen op toepassing om te kijken waar een bepaalde node zich bevindt.
-         */
+        /// <summary>
+        /// Alleen van toepassing om te kijken waar een bepaalde node zich bevindt.
+        /// </summary>
+        /// <param name="delNode">De gezochte node</param>
+        /// <returns>De successor</returns>
         public Node<T> GetSuccessor(Node<T> delNode)
         {
             Node<T> successorParent = delNode;
             Node<T> successor = delNode;
             Node<T> current = delNode.Right;
-            while (!(current == null))
+
+            while (current != null)
             {
                 successorParent = current;
                 successor = current;
                 current = current.Left;
             }
-            if (!(successor == delNode.Right))
+
+            if (successor != delNode.Right)
             {
                 successorParent.Left = successor.Right;
                 successor.Right = delNode.Right;
             }
+
             return successor;
         }
 
-        /*
-         * Het verwijderen van een node in de search tree.
-         */
+        /// <summary>
+        /// Het verwijderen van een node in de search tree
+        /// </summary>
+        /// <param name="key">De te verwijderen waarde</param>
+        /// <returns>Of de node verwijderd is</returns>
         public bool Delete(T key)
         {
             Node<T> current = root;
             Node<T> parent = root;
             bool isLeftChild = true;
+
             while (current.Data.CompareTo(key) != 0)
             {
                 parent = current;
@@ -193,11 +216,13 @@ namespace AD_Dll.Hoofdstuk_12
                     isLeftChild = false;
                     current = current.Right;
                 }
+
                 if (current == null)
                 {
                     return false;
                 }
             }
+
             if ((current.Left == null) && (current.Right == null))
             {
                 if (current == root)
