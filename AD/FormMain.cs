@@ -69,10 +69,12 @@ namespace AD
         private void btnCSet1_Click(object sender, EventArgs e)
         {
             ShowConsole("CSet1");
+            //maak nieuwe cset aan
             CSet<string> setA = new CSet<string>();
             CSet<string> setB = new CSet<string>();
             CSet<string> setC = new CSet<string>();
 
+            //voeg strings toe aan cset
             setA.Add("Milk");
             setA.Add("Eggs");
             setA.Add("Bacon");

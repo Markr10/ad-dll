@@ -40,17 +40,17 @@ namespace AD
             ShowConsole("Information about StringBuilders");
             StringBuilder stBuff = new StringBuilder("Ken Thompson");
 
-            CustomStringBuilderMethods.PrintInfo(stBuff, "stBuff");
-            CustomStringBuilderMethods.PrintInfo(stBuff1, "stBuff1");
+            CustomStringBuilderMethod.PrintInfo(stBuff, "stBuff");
+            CustomStringBuilderMethod.PrintInfo(stBuff1, "stBuff1");
             PauseConsole();
             Console.WriteLine();
-            CustomStringBuilderMethods.PrintInfo(stBuff2, "stBuff2");
-            CustomStringBuilderMethods.PrintInfo(stBuff3, "stBuff3");
+            CustomStringBuilderMethod.PrintInfo(stBuff2, "stBuff2");
+            CustomStringBuilderMethod.PrintInfo(stBuff3, "stBuff3");
 
             stBuff.Length = 10;
             stBuff.EnsureCapacity(25);
             Console.WriteLine("stBuff with new properties:");
-            CustomStringBuilderMethods.PrintInfo(stBuff, "stBuff");
+            CustomStringBuilderMethod.PrintInfo(stBuff, "stBuff");
 
             CloseConsole();
         }

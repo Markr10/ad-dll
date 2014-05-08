@@ -6,18 +6,22 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-/**
- * Wybren Jongstra
- * A class to explain the working of Stacks
- */
-
 namespace AD_Dll.Hoofdstuk_5
 {
+    /// <summary>
+    /// Wybren Jongstra
+    /// Deze klasse verduidelijkt de werking van Stacks
+    /// </summary>
     public class Stacks
     {
+        /// <summary>
+        /// In de constructor wordt een Stack aangemaakt.
+        /// Vervolgens wordt de Stack gevuld (push).
+        /// Er wordt daarna gekeken welke waarde als eerste in de stack staat (peek).
+        /// Tenslotte worden er nog 3 items verwijderd (remove).
+        /// </summary>
         static Stacks()
         {
-            //Fill the Stack
             Stack<char> st = new Stack<char>();
 
             st.Push('A');
@@ -32,7 +36,6 @@ namespace AD_Dll.Hoofdstuk_5
             }
             Console.WriteLine();
 
-            //Add 'v' and 'h' to the stack
             st.Push('V');
             st.Push('H');
             Console.WriteLine("The next poppable value in stack: {0}", st.Peek());
@@ -43,7 +46,6 @@ namespace AD_Dll.Hoofdstuk_5
             }
             Console.WriteLine();
 
-            //Remove 3 items out the Stack
             Console.WriteLine("Removing values ");
             st.Pop();
             st.Pop();

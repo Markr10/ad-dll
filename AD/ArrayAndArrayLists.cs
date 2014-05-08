@@ -55,7 +55,7 @@ namespace AD
         private void btnShowArrays_Click(object sender, EventArgs e)
         {
             ShowConsole("Student Arrays");
-            CustomMethods.printArray<Student>(students, "students array:");
+            CustomArrayMethods.printArray<Student>(students, "students array:");
             Console.WriteLine();
             Console.WriteLine("studentsOtherSchool array:");
             for (int i = 0; i <= studentsOtherSchool.GetUpperBound(0); i++)
@@ -75,9 +75,9 @@ namespace AD
         private void btnShowInfoArrays_Click(object sender, EventArgs e)
         {
             ShowConsole("Information about the Student Arrays");
-            CustomMethods.printInfoAboutArray(students, "students array");
+            CustomArrayMethods.printInfoAboutArray(students, "students array");
             Console.WriteLine();
-            CustomMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
+            CustomArrayMethods.printInfoAboutArray(studentsOtherSchool, "studentsOtherSchool array");
             CloseConsole();
         }
 
@@ -117,11 +117,11 @@ namespace AD
         private void btnShowMDArrays_Click(object sender, EventArgs e)
         {
             WriteFirstLine("grades array:", "Multidimensional Arrays");
-            CustomMethods.print2DArray<int>(grades);
+            CustomMultidimensionalArrayMethods.print2DArray<int>(grades);
             PauseConsole();
             Console.WriteLine();
             Console.WriteLine("sales array:");
-            CustomMethods.print2DArray<double>(sales);
+            CustomMultidimensionalArrayMethods.print2DArray<double>(sales);
             CloseConsole();
         }
 
@@ -129,22 +129,22 @@ namespace AD
         {
             WriteFirstLine("grades array:", "Information about multidimensional Arrays");
             Console.WriteLine("The first item of the grades array is: {0}", grades.GetValue(0, 0));
-            CustomMethods.calculateAndPrintAverages(grades);
+            CustomMultidimensionalArrayMethods.calculateAndPrintAverages(grades);
             Console.WriteLine();
             Console.WriteLine("sales array:");
             Console.WriteLine("The first item of the sales array is: {0}", sales[0, 0]);
-            CustomMethods.calculateAndPrintAverages(sales);
+            CustomMultidimensionalArrayMethods.calculateAndPrintAverages(sales);
             CloseConsole();
         }
 
         private void btnSumNums_Click(object sender, EventArgs e)
         {
-            WriteFirstLine("The sum of 1, 2, 3 is: " + CustomMethods.sumNums(1, 2, 3).ToString(), "Sum numbers");
+            WriteFirstLine("The sum of 1, 2, 3 is: " + CustomParameterArrayMethods.sumNums(1, 2, 3).ToString(), "Sum numbers");
             
             int[] numbersOneTillTen = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            CustomMethods.sumNumsAndPrint(numbersOneTillTen);
-            
-            CustomMethods.sumNumsAndPrint(Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101),
+            CustomParameterArrayMethods.sumNumsAndPrint(numbersOneTillTen);
+
+            CustomParameterArrayMethods.sumNumsAndPrint(Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101),
                 Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101));
             
             CloseConsole();
@@ -163,10 +163,10 @@ namespace AD
             jagged[7][3] = 26;
             jagged[7][4] = 19;
             jagged[7][5] = 45;
-            CustomMethods.fillJaggedArrayRows(jagged, 1, 7, 10, 100, 1, 10);
-            CustomMethods.fillJaggedArrayRows(jagged, 8, 12, 10, 100, 1, 10);
+            CustomJaggedArrayMethods.fillJaggedArrayRows(jagged, 1, 7, 10, 100, 1, 10);
+            CustomJaggedArrayMethods.fillJaggedArrayRows(jagged, 8, 12, 10, 100, 1, 10);
             ShowConsole("Jagged Array");
-            CustomMethods.printJaggedArray<int>(jagged);
+            CustomJaggedArrayMethods.printJaggedArray<int>(jagged);
             CloseConsole();
         }
 
@@ -190,7 +190,7 @@ namespace AD
             sales[1][5] = 38;
             sales[1][6] = 42;
             ShowConsole("Average sales with jagged Array");
-            CustomMethods.calculateAndPrintAverages(sales, "sales for month", 2);
+            CustomJaggedArrayMethods.calculateAndPrintAverages(sales, "sales for month", 2);
             CloseConsole();
         }
 
@@ -229,16 +229,16 @@ namespace AD
         private void btnAverageArrayList_Click(object sender, EventArgs e)
         {
             ShowConsole("Average grade in ArrayList");
-            CustomMethods.calculateAndPrintAverages(gradesAL, "grade", 2);
+            CustomArrayListMethods.calculateAndPrintAverages(gradesAL, "grade", 2);
             CloseConsole();
         }
 
         private void btnRemoveItemsArrayList_Click(object sender, EventArgs e)
         {
             ShowConsole("Remove Items for ArrayList");
-            CustomMethods.removeAndPrint(gradesAL, 54);
-            CustomMethods.removeAtAndPrint(gradesAL, (Object)70);
-            CustomMethods.removeAtAndPrint(gradesAL, 2);
+            CustomArrayListMethods.removeAndPrint(gradesAL, 54);
+            CustomArrayListMethods.removeAtAndPrint(gradesAL, (Object)70);
+            CustomArrayListMethods.removeAtAndPrint(gradesAL, 2);
             CloseConsole();
         }
 
@@ -253,7 +253,7 @@ namespace AD
         private void btnDemoALRangeMethods_Click(object sender, EventArgs e)
         {
             ShowConsole("Demonstration of the AddRange and InsertRange methods from ArrayList");
-            CustomMethods.printArrayList(names, "The original list of names: ");
+            CustomArrayListMethods.printArrayList(names, "The original list of names: ");
 
             string[] newNames = new string[]
             {
@@ -272,7 +272,7 @@ namespace AD
 
             PauseConsole();
             Console.WriteLine();
-            CustomMethods.printArrayList(names, "The new list of names: ");
+            CustomArrayListMethods.printArrayList(names, "The new list of names: ");
             CloseConsole();
 
             btnDemoALGetRangeMethod.Enabled = true;
@@ -282,7 +282,7 @@ namespace AD
         {
             ArrayList someNames = new ArrayList(names.GetRange(2, 4));
             ShowConsole("Demonstration of the GetRange method from ArrayList");
-            CustomMethods.printArrayList(someNames, "someNames sub ArrayList: ");
+            CustomArrayListMethods.printArrayList(someNames, "someNames sub ArrayList: ");
             CloseConsole();
         }
 
@@ -290,7 +290,7 @@ namespace AD
         {
             Object[] arrNames = names.ToArray();
             ShowConsole("Demonstration of the ToArray method from ArrayList");
-            CustomMethods.printArray<Object>(arrNames, "Names from an array: ");
+            CustomArrayMethods.printArray<Object>(arrNames, "Names from an array: ");
             CloseConsole();
         }
     }

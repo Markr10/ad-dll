@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_7
 {
-    public class CustomStringBuilderMethods
+    /// <summary>
+    /// Mark Roelans
+    /// Methode die gebruik maken van StringBuilder objecten.
+    /// </summary>
+    public class CustomStringBuilderMethod
     {
+        /// <summary>
+        /// Print informatie over een StringBuilder object.
+        /// </summary>
+        /// <param name="stBuff">Het StringBuilder object waarover informatie moet worden uitgeprint.</param>
+        /// <param name="name">De naam van het StringBuilder object.</param>
         public static void PrintInfo(StringBuilder stBuff, string name)
         {
             Console.WriteLine("Length of {0}: {1}", name, stBuff.Length);
