@@ -9,12 +9,13 @@ namespace AD_Dll.Hoofdstuk_11
     public class LinkedList
     {
         /// <summary>
+        /// Thomas Oldengarm
         /// LinkedList aanmaken, items aanmaken, items toevoegen en items weergeven
         /// </summary>
         public static void Main()
-        {           
-            LinkedListNode<string> node = new LinkedListNode<string>("Mike"); 
-            LinkedList<string> names = new LinkedList<string>(); 
+        {
+            LinkedListNode<string> node = new LinkedListNode<string>("Mike");
+            LinkedList<string> names = new LinkedList<string>();
             names.AddFirst(node);
             LinkedListNode<string> node1 = new LinkedListNode<string>("David");
             names.AddAfter(node, node1);
@@ -38,7 +39,7 @@ namespace AD_Dll.Hoofdstuk_11
             nums.AddLast(6);
             nums.AddFirst(9);
             nums.AddLast(7);
-            LinkedListNode<int> intnode = nums.Find(6); 
+            LinkedListNode<int> intnode = nums.Find(6);
             nums.AddBefore(intnode, 5);
             foreach (int num in nums)
             {
