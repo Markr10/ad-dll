@@ -11,6 +11,10 @@ namespace AD_Dll.Hoofdstuk_10
     {
         private const int SIZE = 101;
         ArrayList[] data;
+        /// <summary>
+        /// De constructor zorgt er hier voor dat er een arraylist gevuld wordt
+        /// met meerdere arraylists
+        /// </summary>
         public BucketHash()
         {
             data = new ArrayList[SIZE];
@@ -19,7 +23,11 @@ namespace AD_Dll.Hoofdstuk_10
                 data[i] = new ArrayList(4);
             }
         }
-
+        /// <summary>
+        /// behandeld een in te voeren waarde om te gaan hashen
+        /// </summary>
+        /// <param name="s">een string die ingevoerd wordt om te verwerken</param>
+        /// <returns>totaal van de hashwaarde(index) waar de ingevoerde string is verwerkt</returns>
         public int Hash(string s)
         {
             long tot = 0;
@@ -38,6 +46,10 @@ namespace AD_Dll.Hoofdstuk_10
             return (int)tot;
         }
 
+        /// <summary>
+        /// invoeren waarde in hash
+        /// </summary>
+        /// <param name="item">in te voeren waarde</param>
         public void Insert(string item)
         {
             int hash_value;
@@ -48,6 +60,10 @@ namespace AD_Dll.Hoofdstuk_10
             }
         }
 
+        /// <summary>
+        /// de te verwijderen item
+        /// </summary>
+        /// <param name="item">item</param>
         public void Remove(string item)
         {
             int hash_value;
