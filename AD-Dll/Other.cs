@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 
 namespace AD_Dll
 {
+    /// <summary>
+    /// Methodes die niet specifiek bij een hoofdstuk horen.
+    /// </summary>
     public class Other
     {
         public static readonly Random rndObj = new Random();
 
         /// <summary>
-        /// Generates a random string with the given length.
+        /// Generates a random string with the given length
         /// </summary>
-        /// <param name="length">The length of the string.</param>
-        /// <returns>A random string.</returns>
+        /// <param name="length">The length of the string</param>
+        /// <returns>A random string</returns>
         public static string getRandomString(int length)
         {
             StringBuilder builder = new StringBuilder();
