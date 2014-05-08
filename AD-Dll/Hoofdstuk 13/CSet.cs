@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace AD_Dll.Hoofdstuk_13
 {
@@ -11,7 +6,7 @@ namespace AD_Dll.Hoofdstuk_13
     /// Raymon Bunt
     /// Set klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class CSet<T>
     {
         private Dictionary<int, T> data;

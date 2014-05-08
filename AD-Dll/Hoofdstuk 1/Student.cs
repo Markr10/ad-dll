@@ -1,32 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_1
 {
+    /// <summary>
+    /// Raymon Bunt
+    /// Een Student klasse om een student aan te maken
+    /// </summary>
     public class Student : IComparable<Student>
     {
-        /// <summary>
-        /// Raymon Bunt
-        /// student class maakt een student aan
-        /// </summary>
-        
-
         public String Name { get; set; }
         public int Age { get; set; }
-        public int StudentID{ get; set;}
-
+        public int StudentID { get; set; }
 
         /// <summary>
-        /// vergelijkt een student met een andere student
+        /// Vergelijkt een student met een andere student
         /// </summary>
-        /// <param name="other">de andere student</param>
-        /// <returns>als de studentID van this.StudentID groter is dan de other dan returnt hij 1 anders 0</returns>
+        /// <param name="other">De andere student</param>
+        /// <returns>Wanneer studentID van this.StudentID groter is dan other wordt 1 gereturned anders 0</returns>
         public int CompareTo(Student other)
         {
-            //return de studentID
+            // return de studentID
             if (this.StudentID > other.StudentID)
             {
                 return 1;
@@ -35,8 +28,6 @@ namespace AD_Dll.Hoofdstuk_1
             {
                 return 0;
             }
-            //return other.StudentID.CompareTo(this.StudentID);
-            
         }
 
         public override string ToString()
@@ -45,11 +36,10 @@ namespace AD_Dll.Hoofdstuk_1
             return this.Name.ToString() + ", " + this.StudentID;
         }
 
-        
         /// <summary>
-        /// maakt een randomStudent aan
+        /// Maakt een randomStudent aan
         /// </summary>
-        /// <returns>nieuwe student</returns>
+        /// <returns>Een nieuwe student</returns>
         public static Student getRandomStudent()
         {
             return new Student()
@@ -59,8 +49,5 @@ namespace AD_Dll.Hoofdstuk_1
                 StudentID = Other.rndObj.Next(180000, 400001)
             };
         }
-
-        
     }
-
 }

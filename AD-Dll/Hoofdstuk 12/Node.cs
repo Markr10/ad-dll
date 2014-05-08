@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_12
 {
@@ -11,7 +6,7 @@ namespace AD_Dll.Hoofdstuk_12
     /// Reinier Gombert
     /// Node klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class Node<T> where T : IComparable<T>
     {
         public T Data;

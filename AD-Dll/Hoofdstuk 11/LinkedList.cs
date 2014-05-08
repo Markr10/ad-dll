@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_11
 {
+    /// <summary>
+    /// Thomas Oldengarm
+    /// LinkedList klasse
+    /// </summary>
     public class LinkedList
     {
         /// <summary>
-        /// Thomas Oldengarm
         /// LinkedList aanmaken, items aanmaken, items toevoegen en items weergeven
         /// </summary>
         public static void Main()
@@ -25,17 +25,17 @@ namespace AD_Dll.Hoofdstuk_11
             names.AddAfter(node1, node3);
             LinkedListNode<string> node4 = new LinkedListNode<string>(null);
 
-            LinkedListNode<string> aNode = names.First; //eerste item
-            while (aNode != null) //gaat langs alle items
+            LinkedListNode<string> aNode = names.First; // eerste item
+            while (aNode != null) // gaat langs alle items
             {
-                Console.WriteLine(aNode.Value); //display item
-                aNode = aNode.Next; //pak volgende item
+                Console.WriteLine(aNode.Value); // display item
+                aNode = aNode.Next; // pak volgende item
             }
 
-            Console.WriteLine(); //witregel
+            Console.WriteLine(); // witregel
 
-            LinkedList<int> nums = new LinkedList<int>(); //nieuwe LinkedList
-            nums.AddLast(11); //items toevoegen
+            LinkedList<int> nums = new LinkedList<int>(); // nieuwe LinkedList
+            nums.AddLast(11); // items toevoegen
             nums.AddLast(6);
             nums.AddFirst(9);
             nums.AddLast(7);
@@ -43,7 +43,7 @@ namespace AD_Dll.Hoofdstuk_11
             nums.AddBefore(intnode, 5);
             foreach (int num in nums)
             {
-                Console.WriteLine(num); //laat alle items zien
+                Console.WriteLine(num); // laat alle items zien
             }
         }
     }

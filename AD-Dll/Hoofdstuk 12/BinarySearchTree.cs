@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AD_Dll.Hoofdstuk_12
 {
@@ -10,7 +6,7 @@ namespace AD_Dll.Hoofdstuk_12
     /// Reinier Gombert
     /// BinarySearchTree klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
+    /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class BinarySearchTree<T> where T : IComparable<T>
     {
         // variabelen declareren
