@@ -8,15 +8,15 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Methodes die gebruik maken van parameter arrays.
+    /// Methodes die gebruik maken van parameter arrays
     /// </summary>
     public class CustomParameterArrayMethods
     {
         /// <summary>
-        /// Telt de waarden van de parameters op en returned het resultaat.
+        /// Telt de waarden van de parameters op en returned het resultaat
         /// </summary>
-        /// <param name="nums">De getallen die opgeteld moeten worden.</param>
-        /// <returns>Het totaal van de opgetelde parameters.</returns>
+        /// <param name="nums">De getallen die opgeteld moeten worden</param>
+        /// <returns>Het totaal van de opgetelde parameters</returns>
         public static int sumNums(params int[] nums)
         {
             int sum = 0;
@@ -28,9 +28,9 @@ namespace AD_Dll.Hoofdstuk_2
         }
 
         /// <summary>
-        /// Telt de waarden van de parameters op en print het resultaat.
+        /// Telt de waarden van de parameters op en print het resultaat
         /// </summary>
-        /// <param name="nums">De getallen die opgeteld moeten worden.</param>
+        /// <param name="nums">De getallen die opgeteld moeten worden</param>
         public static void sumNumsAndPrint(params int[] nums)
         {
             Console.Write("The sum of ");

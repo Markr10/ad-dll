@@ -8,16 +8,16 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Methodes die gebruik maken van arrays.
+    /// Methodes die gebruik maken van arrays
     /// </summary>
     public class CustomArrayMethods
     {
         /// <summary>
         /// Print een array.
         /// </summary>
-        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array.</typeparam>
-        /// <param name="arrayToPrint">De array die geprint moet worden.</param>
-        /// <param name="firstLine">De tekst die geprint moet worden voordat de array mag worden geprint.</param>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array</typeparam>
+        /// <param name="arrayToPrint">De array die geprint moet worden</param>
+        /// <param name="firstLine">De tekst die geprint moet worden voordat de array mag worden geprint</param>
         public static void printArray<T>(T[] arrayToPrint, string firstLine)
         {
             Console.WriteLine(firstLine);
@@ -38,10 +38,10 @@ namespace AD_Dll.Hoofdstuk_2
         /// <summary>
         /// Print een array.
         /// </summary>
-        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array.</typeparam>
-        /// <param name="array">De array die geprint moet worden.</param>
-        /// <param name="firstLine">De tekst die geprint moet worden voordat de array mag worden geprint.</param>
-        /// <param name="stringForEachItem">De tekst die voor elk item moet worden geprint.</param>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de array</typeparam>
+        /// <param name="array">De array die geprint moet worden</param>
+        /// <param name="firstLine">De tekst die geprint moet worden voordat de array mag worden geprint</param>
+        /// <param name="stringForEachItem">De tekst die voor elk item moet worden geprint</param>
         public static void printArray<T>(T[] array, string firstLine, string stringForEachItem)
         {
             Console.WriteLine(firstLine);
@@ -53,9 +53,9 @@ namespace AD_Dll.Hoofdstuk_2
 
         /// <summary>
         /// Print een zin naar de console waarin staat of het type van een item een array type is en
-        /// van welk type het item precies is.
+        /// van welk type het item precies is
         /// </summary>
-        /// <param name="typeOfItem">Het type van een item.</param>
+        /// <param name="typeOfItem">Het type van een item</param>
         public static void printIsArrayTypeAndType(Type typeOfItem)
         {
             if (typeOfItem.IsArray)
@@ -70,12 +70,12 @@ namespace AD_Dll.Hoofdstuk_2
         }
 
         /// <summary>
-        /// Print informatie over de gegeven array naar de console.
+        /// Print informatie over de gegeven array naar de console
         /// </summary>
         /// <param name="array">De array die gebruikt wordt bij
-        /// het bepalen van de benodigde gegevens.</param>
+        /// het bepalen van de benodigde gegevens</param>
         /// <param name="nameOfArray">De naam van de array die gebruikt moet worden in
-        /// de teksten die worden geprint.</param>
+        /// de teksten die worden geprint</param>
         public static void printInfoAboutArray(Array array, string nameOfArray)
         {
             Console.WriteLine(nameOfArray + ":");
@@ -85,12 +85,12 @@ namespace AD_Dll.Hoofdstuk_2
         }
 
         /// <summary>
-        /// Print informatie over de array dimensies naar de console.
+        /// Print informatie over de array dimensies naar de console
         /// </summary>
         /// <param name="array">De array die gebruikt wordt bij
-        /// het bepalen van de benodigde gegevens.</param>
+        /// het bepalen van de benodigde gegevens</param>
         /// <param name="nameOfArray">De naam van de array die gebruikt moet worden in
-        /// de teksten die worden geprint.</param>
+        /// de teksten die worden geprint</param>
         public static void printArrayDimensions(Array array, string nameOfArray)
         {
             if (array.Rank > 1)

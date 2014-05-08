@@ -8,14 +8,14 @@ namespace AD_Dll.Hoofdstuk_2
 {
     /// <summary>
     /// Mark Roelans
-    /// Methodes die gebruik maken van multidimensionale arrays.
+    /// Methodes die gebruik maken van multidimensionale arrays
     /// </summary>
     public class CustomMultidimensionalArrayMethods
     {
         /// <summary>
-        /// Berekend per rij het gemiddelde en print dat.
+        /// Berekend per rij het gemiddelde en print dat
         /// </summary>
-        /// <param name="arrayWithNumbers">De array waarvan de gemiddelden moeten worden berekend.</param>
+        /// <param name="arrayWithNumbers">De array waarvan de gemiddelden moeten worden berekend</param>
         public static void calculateAndPrintAverages(int[,] arrayWithNumbers)
         {
             int lengthColumn = arrayWithNumbers.GetLength(1);
@@ -32,9 +32,9 @@ namespace AD_Dll.Hoofdstuk_2
         }
 
         /// <summary>
-        /// Berekend per rij het gemiddelde en print dat.
+        /// Berekend per rij het gemiddelde en print dat
         /// </summary>
-        /// <param name="arrayWithNumbers">De array waarvan de gemiddelden moeten worden berekend.</param>
+        /// <param name="arrayWithNumbers">De array waarvan de gemiddelden moeten worden berekend</param>
         public static void calculateAndPrintAverages(double[,] arrayWithNumbers)
         {
             int lengthColumn = arrayWithNumbers.GetLength(1);
@@ -52,10 +52,10 @@ namespace AD_Dll.Hoofdstuk_2
         }
 
         /// <summary>
-        /// Print een tweedimensionale array.
+        /// Print een tweedimensionale array
         /// </summary>
-        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de tweedimensionale array.</typeparam>
-        /// <param name="array">De tweedimensionale array die geprint moet worden.</param>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de tweedimensionale array</typeparam>
+        /// <param name="array">De tweedimensionale array die geprint moet worden</param>
         public static void print2DArray<T>(T[,] array)
         {
             for (int row = 0, lengthRow = array.GetLength(0); row < lengthRow; row++)
@@ -76,10 +76,10 @@ namespace AD_Dll.Hoofdstuk_2
         }
 
         /// <summary>
-        /// Print een tweedimensionale array waarbij de verschillende items worden gescheiden door spaties.
+        /// Print een tweedimensionale array waarbij de verschillende items worden gescheiden door spaties
         /// </summary>
-        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de tweedimensionale array.</typeparam>
-        /// <param name="array">De tweedimensionale array die geprint moet worden.</param>
+        /// <typeparam name="T">Het type gegevens dat is opgeslagen in de tweedimensionale array</typeparam>
+        /// <param name="array">De tweedimensionale array die geprint moet worden</param>
         public static void print2DArrayWithSpaces<T>(T[,] array)
         {
             for (int row = 0, lengthRow = array.GetLength(0); row < lengthRow; row++)
