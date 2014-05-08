@@ -8,7 +8,7 @@ namespace AD_Dll.Hoofdstuk_10
 {
     /// <summary>
     /// Reinier Gombert
-    /// Een klasse om een demonstratie te geven van hoe hash functies werken.
+    /// Een klasse om een demonstratie te geven van hoe hash functies werken
     /// </summary>
     public class HashTable
     {

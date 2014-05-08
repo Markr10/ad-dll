@@ -10,7 +10,7 @@ namespace AD_Dll.Hoofdstuk_12
     /// Reinier Gombert
     /// BinarySearchTree klasse
     /// </summary>
-    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse.</typeparam>
+    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
     public class BinarySearchTree<T> where T : IComparable<T>
     {
         // variabelen declareren
@@ -25,8 +25,8 @@ namespace AD_Dll.Hoofdstuk_12
         }
 
         /// <summary>
-        /// Nieuwe waarde toevoegen aan de search tree
-        /// hierin wordt tevens bepaald waar deze waarde zal worden geplaatst
+        /// Nieuwe waarde toevoegen aan de search tree.
+        /// Hierin wordt tevens bepaald waar deze waarde zal worden geplaatst
         /// zodat er een mooie binary search tree onstaat
         /// </summary>
         /// <param name="i">De waarde die toegevoegd moet worden</param>
