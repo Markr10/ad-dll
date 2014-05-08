@@ -22,7 +22,7 @@ namespace AD_Dll.Hoofdstuk_12
         /// Standaard constructor
         /// </summary>
         /// <remarks>De constructor van deze klasse is standaard leeg</remarks>
-        public Node(){}
+        public Node() { }
 
         /// <summary>
         /// Aangepaste ToString methode
@@ -41,6 +41,4 @@ namespace AD_Dll.Hoofdstuk_12
             Console.Write(Data + " ");
         }
     }
-
-    
 }
