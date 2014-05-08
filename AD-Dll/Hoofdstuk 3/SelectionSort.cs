@@ -10,25 +10,23 @@ namespace AD_Dll.Hoofdstuk_3
     /// Wybren Jongstra
     /// Deze klasse sorteert een array door het gebruik van de SelectionSort methode
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
     public class SelectionSort<T> where T : IComparable
     {
         string result;
 
         /// <summary>
-        /// Lege constructor
+        /// Standaard constructor
         /// </summary>
-        public SelectionSort()
-        {
-
-        }
+        /// <remarks>De constructor van deze klasse is standaard leeg</remarks>
+        public SelectionSort() {}
 
         /// <summary>
         /// Sorteert een array volgens de SelectionSort methode.
-        /// De gesorteerde nummers worden tijdelijk opgeslagen in temp.
+        /// De gesorteerde nummers worden tijdelijk opgeslagen in temp
         /// </summary>
         /// <param name="array">De array die gesorteerd moet worden</param>
-        /// <returns>Gesorteerde array</returns>
+        /// <returns>De gesorteerde array</returns>
         public string Start(T[] array)
         {
             T temp;
