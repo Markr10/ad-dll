@@ -9,16 +9,16 @@ namespace AD_Dll.Hoofdstuk_13
 {
     /// <summary>
     /// Raymon Bunt
-    /// Set class
+    /// Set klasse
     /// </summary>
-    /// <typeparam name="T">Generic</typeparam>
+    /// <typeparam name="T">Het type gegevens dat is opgeslagen in de klasse</typeparam>
     public class CSet<T>
     {
         private Dictionary<int, T> data;
         private int count;
 
         /// <summary>
-        /// constructor maakt dictionary aan en een count variabele
+        /// Constructor maakt dictionary aan en een count variabele
         /// </summary>
         public CSet()
         {
@@ -27,9 +27,9 @@ namespace AD_Dll.Hoofdstuk_13
         }
 
         /// <summary>
-        /// item toevoegen
+        /// Item toevoegen
         /// </summary>
-        /// <param name="item">het item dat je gaat toevoegen</param>
+        /// <param name="item">Item dat toevoegd moet worden</param>
         public void Add(T item)
         {
             if (!(data.ContainsValue(item)))
@@ -41,61 +41,69 @@ namespace AD_Dll.Hoofdstuk_13
         }
 
         /// <summary>
-        /// item verwijderen
+        /// Item verwijderen
         /// </summary>
-        /// <param name="key">de key van de value die je wilt verwijderen</param>
+        /// <param name="key">De key van de value die verwijderd moet worden</param>
         public void Remove(int key)
         {
             data.Remove(key);
         }
 
         /// <summary>
-        /// de lengte van de set opvragen
+        /// De lengte van de set opvragen
         /// </summary>
-        /// <returns>int</returns>
+        /// <returns>De lengte van de set</returns>
         public int Size()
         {
             return data.Count;
         }
 
         /// <summary>
-        /// union methode, twee sets samenvoegen
+        /// Union methode, twee sets samenvoegen
         /// </summary>
-        /// <param name="aSet">is de set die je wilt gaan samenvoegen</param>
-        /// <returns>een samengevoegde set</returns>
+        /// <param name="aSet">De set die samengevoegd moet worden</param>
+        /// <returns>Een samengevoegde set</returns>
         public CSet<T> Union(CSet<T> aSet)
         {
             CSet<T> tempSet = new CSet<T>();
             foreach (T tObject in data.Values)
+            {
                 tempSet.Add(tObject);
+            }
             foreach (T tObject in aSet.data.Values)
+            {
                 if (!(this.data.ContainsValue(tObject)))
+                {
                     tempSet.Add(tObject);
+                }
+            }
             return tempSet;
         }
 
 
         /// <summary>
-        /// intersection methode, deze methode zoekt de overeenkomsten
+        /// Intersection methode, deze methode zoekt de overeenkomsten
         /// </summary>
-        /// <param name="aSet">is de set die je wilt gaan checken op overeenkomsten</param>
-        /// <returns>de overeenkomsten</returns>
+        /// <param name="aSet">De set die gecheckt moet worden op overeenkomsten</param>
+        /// <returns>De overeenkomsten</returns>
         public CSet<T> Intersection(CSet<T> aSet)
         {
             CSet<T> tempSet = new CSet<T>();
             foreach (T tObject in data.Values)
+            {
                 if (aSet.data.ContainsValue(tObject))
                 {
                     tempSet.Add((T)tObject);
                 }
+            }
             return tempSet;
         }
 
         /// <summary>
         /// isSubset methode, checkt of de set ook in een andere set bestaat
         /// </summary>
-        /// <param name="aSet">is de set die je wilt gaan checken</param>
-        /// <returns>True of False</returns>
+        /// <param name="aSet">De set die gecheckt moet worden</param>
+        /// <returns>true of false</returns>
         public bool isSubset(CSet<T> aSet)
         {
             if (this.Size() > aSet.Size())
@@ -118,8 +126,8 @@ namespace AD_Dll.Hoofdstuk_13
         /// <summary>
         /// Difference methode kijkt naar de verschillen in de sets
         /// </summary>
-        /// <param name="aSet">de set die je wilt gaan checken</param>
-        /// <returns>de verschillen tussen de sets</returns>
+        /// <param name="aSet">De set die gecheckt moet worden</param>
+        /// <returns>De verschillen tussen de sets</returns>
         public CSet<T> Difference(CSet<T> aSet)
         {
             CSet<T> tempSet = new CSet<T>();
@@ -134,6 +142,10 @@ namespace AD_Dll.Hoofdstuk_13
             return tempSet;
         }
 
+        /// <summary>
+        /// Aangepaste ToString methode
+        /// </summary>
+        /// <returns>De String voor de ToString methode</returns>
         public override string ToString()
         {
             string s = "";
@@ -142,10 +154,9 @@ namespace AD_Dll.Hoofdstuk_13
             {
                 s += data[key] + " ";
             }
-            
+
             return s;
         }
 
     }
-
 }
