@@ -15,7 +15,7 @@ namespace AD_Dll.Hoofdstuk_3
         /// Standaard constructor
         /// </summary>
         /// <remarks>De constructor van deze klasse is standaard leeg</remarks>
-        public SelectionSort() {}
+        public SelectionSort() { }
 
         /// <summary>
         /// Sorteert een array volgens de SelectionSort methode.

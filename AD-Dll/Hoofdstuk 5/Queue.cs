@@ -41,9 +41,9 @@ namespace AD_Dll.Hoofdstuk_5
             Console.WriteLine();
 
             Console.WriteLine("Removing some values ");
-            string ch = (string) q.Dequeue();
+            string ch = (string)q.Dequeue();
             Console.WriteLine("The removed value: {0}", ch);
-            ch = (string) q.Dequeue();
+            ch = (string)q.Dequeue();
             Console.WriteLine("The removed value: {0}", ch);
         }
     }

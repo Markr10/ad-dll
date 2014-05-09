@@ -9,13 +9,13 @@ namespace AD_Dll.Hoofdstuk_4
     /// <typeparam name="T">Het type gegevens dat wordt opgeslagen in het object</typeparam>
     public class Search<T> where T : IComparable<T>
     {
-       /// <summary>
-       /// Lineare zoekfuntie
-       /// </summary>
-       /// <param name="a">De array waarin gezocht moet worden</param>
-       /// <param name="v">Het item wat gezocht moet worden</param>
-       /// <returns>De index van het item in de array. -1 als het item niet gevonden is</returns>
-        public static int linear(T[] a, T v) 
+        /// <summary>
+        /// Lineare zoekfuntie
+        /// </summary>
+        /// <param name="a">De array waarin gezocht moet worden</param>
+        /// <param name="v">Het item wat gezocht moet worden</param>
+        /// <returns>De index van het item in de array. -1 als het item niet gevonden is</returns>
+        public static int linear(T[] a, T v)
         {
             for (int i = 0; i < a.Length; ++i)
             {
@@ -34,7 +34,7 @@ namespace AD_Dll.Hoofdstuk_4
         /// <param name="a">De array waarin gezocht moet worden</param>
         /// <param name="v">Het item wat gezocht moet worden</param>
         /// <returns>De index van het item in de array. -1 als het item niet gevonden is</returns>
-        public static int binary(T[] a, T v) 
+        public static int binary(T[] a, T v)
         {
             int low = 0;
             int high = a.Length - 1;
