@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using AD_Dll;
 using AD_Dll.Hoofdstuk_7;
-using AD_Dll;
+using System;
+using System.Text;
 
 namespace AD
 {
@@ -17,12 +10,15 @@ namespace AD
         private StringBuilder stBuff1;
         private StringBuilder stBuff2;
         private StringBuilder stBuff3;
-        private Object thisLock = new Object();
-        private ProcessTimer t = new ProcessTimer();
+        private Object thisLock;
+        private ProcessTimer t;
 
         public StringBuilderForm() : base(false)
         {
             InitializeComponent();
+
+            thisLock = new Object();
+            t = new ProcessTimer();
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
@@ -58,6 +54,7 @@ namespace AD
         private void btnAppendMethod_Click(object sender, EventArgs e)
         {
             ShowConsole("Append method");
+
             StringBuilder stBuff = new StringBuilder();
             String[] words = new string[] { "now ", "is ", "the ", "time ", "for ", "all ", "good ",
                 "men ", "to ", "come ", "to ", "the ", "aid ", "of ", "their ", "party" };
@@ -73,8 +70,8 @@ namespace AD
         private void btnFormatString_Click(object sender, EventArgs e)
         {
             ShowConsole("Format StringBuilder");
+
             StringBuilder stBuff = new StringBuilder();
-            Console.WriteLine();
             stBuff.AppendFormat("Your order is for {0000} widgets.", 234);
             stBuff.AppendFormat("\nWe have {0000} widgets left.", 12);
             Console.WriteLine(stBuff);
@@ -127,6 +124,7 @@ namespace AD
         private void btnToStringMethod_Click(object sender, EventArgs e)
         {
             ShowConsole("ToString method");
+
             StringBuilder stBuff = new StringBuilder("HELLO WORLD");
             string st = stBuff.ToString();
             st = st.ToLower();
@@ -191,6 +189,7 @@ namespace AD
         private void btnCharsProperty_Click(object sender, EventArgs e)
         {
             ShowConsole("Chars property");
+
             StringBuilder stBuff = new StringBuilder("Ronald Knuth");
             CustomStringMethods.PrintString("Input  String", stBuff.ToString());
             if (stBuff[0] != 'D')

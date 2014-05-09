@@ -123,7 +123,7 @@
             // 
             // btnTiming
             // 
-            this.btnTiming.Location = new System.Drawing.Point(190, 12);
+            this.btnTiming.Location = new System.Drawing.Point(197, 12);
             this.btnTiming.Name = "btnTiming";
             this.btnTiming.Size = new System.Drawing.Size(75, 23);
             this.btnTiming.TabIndex = 9;

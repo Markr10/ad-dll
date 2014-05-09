@@ -1,25 +1,21 @@
-﻿using System;
-using AD_Dll;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using AD_Dll.Hoofdstuk_1;
+﻿using AD_Dll;
 using AD_Dll.Hoofdstuk_3;
+using System;
+using System.Windows.Forms;
 
 namespace AD
 {
     public partial class Sorteren : Form
     {
-        private ProcessTimer t = new ProcessTimer();
+        private ProcessTimer t;
+        private Object thisLock;
 
         public Sorteren()
         {
             InitializeComponent();
+
+            t = new ProcessTimer();
+            thisLock = new Object();
         }
 
         private int[] getArray()
@@ -27,28 +23,30 @@ namespace AD
             string text = textBox1.Text;
             string[] textArray = text.Split();
             int[] intArray = new int[textArray.Length];
+
             for (int i = 0; i < textArray.Length; i++)
             {
                 int.TryParse(textArray[i], out intArray[i]);
             }
+
             return intArray;
         }
-        private Object thisLock = new Object();
 
         private void BubbleSort_Click(object sender, EventArgs e)
         {
             inputArray.Clear();
             inputArray.Text = textBox1.Text.ToString();
-            lock(thisLock)
+
+            lock (thisLock)
             {
-            t.Start();
-            for (int times = 0; times < 99; times++)
-            {
-                outputArray.Text = new BubbleSort<int>().Start(getArray());
+                t.Start();
+                for (int times = 0; times < 99; times++)
+                {
+                    outputArray.Text = new BubbleSort<int>().Start(getArray());
+                }
+                t.Stop();
             }
-            t.Stop();
-            }
-            
+
             textBox2.Text = t.Duration(1).ToString();
         }
 
@@ -56,12 +54,14 @@ namespace AD
         {
             inputArray.Clear();
             inputArray.Text = textBox1.Text.ToString();
+
             t.Start();
             for (int times = 0; times < 99; times++)
             {
                 outputArray.Text = new InsertionSort<int>().Start(getArray());
             }
-                t.Stop();
+            t.Stop();
+
             textBox3.Text = t.Duration(1).ToString();
         }
 
@@ -69,18 +69,21 @@ namespace AD
         {
             inputArray.Clear();
             inputArray.Text = textBox1.Text.ToString();
+
             t.Start();
             for (int times = 0; times < 99; times++)
             {
                 outputArray.Text = new SelectionSort<int>().Start(getArray());
             }
             t.Stop();
+
             textBox4.Text = t.Duration(1).ToString();
         }
 
         private void random_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
+
             String values;
             Random r = new Random();
             for (int rand = 0; rand < 50; rand++)
@@ -89,11 +92,6 @@ namespace AD
                 values = textBox1.Text;
                 textBox1.Text = values + " " + number;
             }
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

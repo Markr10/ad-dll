@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AD
@@ -19,7 +16,7 @@ namespace AD
 
         static Program()
         {
-            // Save argument for later use and clear console window because that's expected.
+            // Save argument for later use and clear console window because that's expected
             if (Environment.GetCommandLineArgs().Length > 1 && Environment.GetCommandLineArgs()[1] == "-noClear")
             {
                 clearScreen = false;
@@ -32,10 +29,10 @@ namespace AD
         }
 
         /// <summary>
-        /// The main entry point for the application.
+        /// The main entry point for the application
         /// </summary>
         /// <param name="args">-noClear - Use the argument "-noClear" for not clearing the console window on starting up and
-        /// when outputting text to it.</param>
+        /// when outputting text to it</param>
         [STAThread]
         static void Main(string[] args)
         {
@@ -48,9 +45,9 @@ namespace AD
         }
 
         /// <summary>
-        /// Set the visibility of the console window en sets the title of the console window.
+        /// Set the visibility of the console window en sets the title of the console window
         /// </summary>
-        /// <param name="visible">The visibilty of the console window.</param>
+        /// <param name="visible">The visibilty of the console window</param>
         public static void setConsoleWindowVisibility(bool visible)
         {
             IntPtr hWnd = GetConsoleWindow();
@@ -71,11 +68,11 @@ namespace AD
         }
 
         /// <summary>
-        /// Set the visibility of the console window en sets the title of the console window.
+        /// Set the visibility of the console window en sets the title of the console window
         /// </summary>
-        /// <param name="visible">The visibilty of the console window.</param>
+        /// <param name="visible">The visibilty of the console window</param>
         /// <param name="title">The title for the console window. No title is set if
-        /// the title is empty or only consist of whitespace.</param>
+        /// the title is empty or only consist of whitespace</param>
         public static void setConsoleWindowVisibility(bool visible, string title)
         {
             if (title != null && title.Trim().Length != 0)

@@ -16,7 +16,7 @@ namespace AD_Dll.Hoofdstuk_5
         /// Er wordt daarna gekeken welke waarde als eerste in de stack staat (peek).
         /// Tenslotte worden er nog 3 items verwijderd (remove).
         /// </summary>
-        static Stacks()
+        public Stacks()
         {
             Stack<char> st = new Stack<char>();
 

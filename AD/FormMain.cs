@@ -1,33 +1,21 @@
-﻿using System;
-using AD_Dll;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using AD_Dll.Hoofdstuk_1;
+﻿using AD_Dll.Hoofdstuk_1;
 using AD_Dll.Hoofdstuk_11;
 using AD_Dll.Hoofdstuk_13;
-
+using System;
+using System.Windows.Forms;
 
 namespace AD
 {
     public partial class FormMain : FormConsole
     {
-        public FormMain()
-            : base(true)
+        public FormMain() : base(true)
         {
             InitializeComponent();
         }
 
-        /// <summary>
-        /// random test method
-        /// </summary>
         private void RandomIteration()
         {
+            // Unieke random voor het testen
             Random rnd = new Random();
             for (int i = short.MinValue; i < short.MaxValue; i++)
             {
@@ -69,12 +57,12 @@ namespace AD
         private void btnCSet1_Click(object sender, EventArgs e)
         {
             ShowConsole("CSet1");
-            //maak nieuwe cset aan
+            // Maak nieuwe CSets aan
             CSet<string> setA = new CSet<string>();
             CSet<string> setB = new CSet<string>();
             CSet<string> setC = new CSet<string>();
 
-            //voeg strings toe aan cset
+            // Voeg Strings toe aan CSet
             setA.Add("Milk");
             setA.Add("Eggs");
             setA.Add("Bacon");
@@ -86,7 +74,6 @@ namespace AD
 
             setC = setA.Union(setB);
 
-            Console.WriteLine();
             Console.WriteLine("A: " + setA.ToString());
             Console.WriteLine("B: " + setB.ToString());
             Console.WriteLine("A union B: " + setC.ToString());
@@ -96,6 +83,7 @@ namespace AD
             Console.WriteLine("A diff B: " + setC.ToString());
             setC = setB.Difference(setA);
             Console.WriteLine("B diff A: " + setC.ToString());
+
             if (setB.isSubset(setA))
             {
                 Console.WriteLine("b is a subset of a");
@@ -104,6 +92,7 @@ namespace AD
             {
                 Console.WriteLine("b is not a subset of a");
             }
+
             CloseConsole();
         }
 
@@ -122,10 +111,8 @@ namespace AD
             setB.Add(3);
 
 
-
             setC = setA.Union(setB);
 
-            Console.WriteLine();
             Console.WriteLine("A: " + setA.ToString());
             Console.WriteLine("B: " + setB.ToString());
             Console.WriteLine("A union B: " + setC.ToString());
@@ -135,6 +122,7 @@ namespace AD
             Console.WriteLine("A diff B: " + setC.ToString());
             setC = setB.Difference(setA);
             Console.WriteLine("B diff A: " + setC.ToString());
+
             if (setB.isSubset(setA))
             {
                 Console.WriteLine("b is a subset of a");
@@ -143,6 +131,7 @@ namespace AD
             {
                 Console.WriteLine("b is not a subset of a");
             }
+
             CloseConsole();
         }
 

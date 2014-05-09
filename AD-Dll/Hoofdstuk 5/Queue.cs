@@ -15,7 +15,7 @@ namespace AD_Dll.Hoofdstuk_5
         /// Er worden daarna nog eens 2 items toegevoegd.
         /// Tenslotte worden er nog 3 items verwijderd (remove).
         /// </summary>
-        static Queue()
+        public Queue()
         {
             Queue<string> q = new Queue<string>();
 

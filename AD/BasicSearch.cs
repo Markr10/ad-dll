@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using AD_Dll;
 using AD_Dll.Hoofdstuk_4;
-using AD_Dll;
+using System;
 
 namespace AD
 {
@@ -42,25 +34,25 @@ namespace AD
                 WriteLastLine(Search<string>.linear(searchArray, searchLetter).ToString());
                 t.Stop();
             }
-            
-            ShowConsole("timing");
+
+            ShowConsole("Timing");
             Console.WriteLine("Time in microseconds to perform BasicSearch: " + t.Duration(1).ToString());
             CloseConsole();
         }
 
         private void btnShowBinSearch_Click(object sender, EventArgs e)
         {
-            ShowConsole("Binary search");           
+            ShowConsole("Binary search");
             Console.WriteLine("Enter 10 numbers for the array separated by [Enter]: ");
             int[] searchArray = new int[10];
 
             for (int i = 0; i < searchArray.Length; i++)
             {
-                    if(!Int32.TryParse(Console.ReadLine(), out searchArray[i]))
-                    {
-                        Console.WriteLine("Numbers only");
-                        i--;
-                    }                
+                if (!Int32.TryParse(Console.ReadLine(), out searchArray[i]))
+                {
+                    Console.WriteLine("Numbers only");
+                    i--;
+                }
             }
 
             Console.WriteLine("Enter a number to search for: ");
@@ -84,7 +76,7 @@ namespace AD
                 t.Stop();
             }
 
-            ShowConsole("timing");
+            ShowConsole("Timing");
             Console.WriteLine("Time in microseconds to perform BinarySearch: " + t.Duration(1).ToString());
             CloseConsole();
         }

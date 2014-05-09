@@ -28,38 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnQueue = new System.Windows.Forms.Button();
+            this.btnStack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnQueue
             // 
-            this.button1.Location = new System.Drawing.Point(11, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 26);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Queue";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnQueue.Location = new System.Drawing.Point(87, 89);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(115, 46);
+            this.btnQueue.TabIndex = 1;
+            this.btnQueue.Text = "Queue";
+            this.btnQueue.UseVisualStyleBackColor = true;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
             // 
-            // button2
+            // btnStack
             // 
-            this.button2.Location = new System.Drawing.Point(12, 47);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 26);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Stack";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnStack.Location = new System.Drawing.Point(87, 22);
+            this.btnStack.Name = "btnStack";
+            this.btnStack.Size = new System.Drawing.Size(115, 46);
+            this.btnStack.TabIndex = 0;
+            this.btnStack.Text = "Stack";
+            this.btnStack.UseVisualStyleBackColor = true;
+            this.btnStack.Click += new System.EventHandler(this.btnStack_Click);
             // 
-            // Stacks_and_Queues
+            // StacksAndQueues
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Stacks_and_Queues";
+            this.ClientSize = new System.Drawing.Size(287, 156);
+            this.Controls.Add(this.btnStack);
+            this.Controls.Add(this.btnQueue);
+            this.Name = "StacksAndQueues";
             this.Text = "StacksAndQueues";
             this.ResumeLayout(false);
 
@@ -67,8 +67,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnQueue;
+        private System.Windows.Forms.Button btnStack;
 
     }
 }
