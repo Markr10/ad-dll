@@ -48,7 +48,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "GenericStudent";
             this.Text = "GenericStudent";
-            this.Load += new System.EventHandler(this.GenericStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

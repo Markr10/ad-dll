@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using AD_Dll;
 using AD_Dll.Hoofdstuk_1;
 using AD_Dll.Hoofdstuk_2;
-using AD_Dll;
+using System;
 using System.Collections;
 
 namespace AD
@@ -83,7 +75,7 @@ namespace AD
 
         private void btnCreateMDArrays_Click(object sender, EventArgs e)
         {
-            sales = new double[4,5];
+            sales = new double[4, 5];
             grades = new int[,]
             {
                 {1, 82, 74, 89, 100},
@@ -140,13 +132,13 @@ namespace AD
         private void btnSumNums_Click(object sender, EventArgs e)
         {
             WriteFirstLine("The sum of 1, 2, 3 is: " + CustomParameterArrayMethods.sumNums(1, 2, 3).ToString(), "Sum numbers");
-            
+
             int[] numbersOneTillTen = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             CustomParameterArrayMethods.sumNumsAndPrint(numbersOneTillTen);
 
             CustomParameterArrayMethods.sumNumsAndPrint(Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101),
                 Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101), Other.rndObj.Next(0, 101));
-            
+
             CloseConsole();
         }
 

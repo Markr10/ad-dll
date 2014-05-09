@@ -1,47 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using AD_Dll.Hoofdstuk_10;
+﻿using AD_Dll.Hoofdstuk_10;
+using System;
 
 namespace AD
 {
     public partial class HashTableForm : FormConsole
     {
-        /*
-         * Bij het laden van de form gelijk een nieuwe Hashtable aanmaken met test-waarden
-         */
         private HashTable hTable;
+
         public HashTableForm() : base(false)
         {
             InitializeComponent();
             string[] newNames = new string[6] { "Mark", "Danny", "Thomas", "Reinier", "Wybren", "Raymon" };
             hTable = new HashTable(newNames);
-            
+
         }
 
-        /*
-         * Een betere Hash techniek laten zien op het scherm
-         */
         private void btnBetterHash_Click(object sender, EventArgs e)
         {
             ShowConsole("BetterHash");
             string[] betterHash = hTable.getHashTable("BetterHash");
-            foreach(string name in betterHash)
+            foreach (string name in betterHash)
             {
                 Console.WriteLine(name);
             }
             CloseConsole();
         }
 
-        /*
-         * Een simpele Hash techniek laten zien
-         */
         private void btnSimpleHash_Click(object sender, EventArgs e)
         {
             ShowConsole("SimpleHash");

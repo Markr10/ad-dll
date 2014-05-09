@@ -15,7 +15,7 @@ namespace AD_Dll.Hoofdstuk_5
         /// Er worden daarna nog eens 2 items toegevoegd.
         /// Tenslotte worden er nog 3 items verwijderd (remove).
         /// </summary>
-        static Queue()
+        public Queue()
         {
             Queue<string> q = new Queue<string>();
 
@@ -41,9 +41,9 @@ namespace AD_Dll.Hoofdstuk_5
             Console.WriteLine();
 
             Console.WriteLine("Removing some values ");
-            string ch = (string) q.Dequeue();
+            string ch = (string)q.Dequeue();
             Console.WriteLine("The removed value: {0}", ch);
-            ch = (string) q.Dequeue();
+            ch = (string)q.Dequeue();
             Console.WriteLine("The removed value: {0}", ch);
         }
     }

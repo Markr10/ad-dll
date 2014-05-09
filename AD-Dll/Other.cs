@@ -19,7 +19,7 @@ namespace AD_Dll
         {
             StringBuilder builder = new StringBuilder();
             char ch;
-            for(int i = 0; i < length; i++)
+            for (int i = 0; i < length; i++)
             {
                 ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * rndObj.NextDouble() + 65)));
                 builder.Append(ch);

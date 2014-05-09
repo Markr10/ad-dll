@@ -1,14 +1,6 @@
-﻿using System;
-using AD_Dll;
+﻿using AD_Dll.Hoofdstuk_1;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using AD_Dll.Hoofdstuk_1;
 
 namespace AD
 {
@@ -20,11 +12,6 @@ namespace AD
             CreateOutput();
         }
 
-        private void GenericStudent_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void CreateOutput()
         {
             List<Student> list = new List<Student>();
@@ -33,11 +20,11 @@ namespace AD
             list.Add(new Student() { Name = "Mark", Age = 20, StudentID = 255815 });
 
 
-            // Uses IComparable.CompareTo()
+            // Gebruikt IComparable.CompareTo()
             list.Sort();
 
             ShowConsole("Generics");
-            // Uses Student.ToString
+            // Gebruikt Student.ToString()
             foreach (var element in list)
             {
                 textBox1.Text += element.ToString() + "\r\n";
@@ -45,6 +32,5 @@ namespace AD
             }
             CloseConsole();
         }
-
     }
 }

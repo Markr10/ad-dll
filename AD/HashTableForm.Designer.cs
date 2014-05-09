@@ -34,21 +34,21 @@
             // 
             // btnBetterHash
             // 
-            this.btnBetterHash.Location = new System.Drawing.Point(12, 79);
+            this.btnBetterHash.Location = new System.Drawing.Point(87, 22);
             this.btnBetterHash.Name = "btnBetterHash";
-            this.btnBetterHash.Size = new System.Drawing.Size(261, 61);
+            this.btnBetterHash.Size = new System.Drawing.Size(115, 46);
             this.btnBetterHash.TabIndex = 0;
-            this.btnBetterHash.Text = "Get BetterHASH";
+            this.btnBetterHash.Text = "Get BetterHash";
             this.btnBetterHash.UseVisualStyleBackColor = true;
             this.btnBetterHash.Click += new System.EventHandler(this.btnBetterHash_Click);
             // 
             // btnSimpleHash
             // 
-            this.btnSimpleHash.Location = new System.Drawing.Point(12, 12);
+            this.btnSimpleHash.Location = new System.Drawing.Point(87, 89);
             this.btnSimpleHash.Name = "btnSimpleHash";
-            this.btnSimpleHash.Size = new System.Drawing.Size(260, 61);
+            this.btnSimpleHash.Size = new System.Drawing.Size(115, 46);
             this.btnSimpleHash.TabIndex = 1;
-            this.btnSimpleHash.Text = "Get SimpleHASH";
+            this.btnSimpleHash.Text = "Get SimpleHash";
             this.btnSimpleHash.UseVisualStyleBackColor = true;
             this.btnSimpleHash.Click += new System.EventHandler(this.btnSimpleHash_Click);
             // 
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 150);
+            this.ClientSize = new System.Drawing.Size(287, 156);
             this.Controls.Add(this.btnSimpleHash);
             this.Controls.Add(this.btnBetterHash);
             this.Name = "HashTableForm";

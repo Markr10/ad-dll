@@ -15,7 +15,7 @@ namespace AD_Dll.Hoofdstuk_3
         /// Standaard constructor
         /// </summary>
         /// <remarks>De constructor van deze klasse is standaard leeg</remarks>
-        public BubbleSort() {}
+        public BubbleSort() { }
 
         /// <summary>
         /// Sorteert een array volgens de BubbleSort methode.
@@ -26,7 +26,7 @@ namespace AD_Dll.Hoofdstuk_3
         public string Start(T[] array)
         {
             T temp;
-            
+
             for (int p = 0; p <= array.Length - 2; p++)
             {
                 for (int i = 0; i <= array.Length - 2; i++)

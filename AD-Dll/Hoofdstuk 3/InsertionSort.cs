@@ -15,7 +15,7 @@ namespace AD_Dll.Hoofdstuk_3
         /// Standaard constructor
         /// </summary>
         /// <remarks>De constructor van deze klasse is standaard leeg</remarks>
-        public InsertionSort() {}
+        public InsertionSort() { }
 
         /// <summary>
         /// Sorteert een array volgens de InsertionSort methode.
@@ -26,7 +26,7 @@ namespace AD_Dll.Hoofdstuk_3
         /// <returns>De gesorteerde array</returns>
         public string Start(T[] array)
         {
-            T temp; 
+            T temp;
             int k;
 
             for (int i = 1; i < array.Length; i++)
@@ -45,7 +45,7 @@ namespace AD_Dll.Hoofdstuk_3
             {
                 result += (array[i] + " ");
             }
-            
+
             return result;
         }
     }

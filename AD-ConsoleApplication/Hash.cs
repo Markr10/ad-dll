@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AD_Dll.Hoofdstuk_10;
+﻿using AD_Dll.Hoofdstuk_10;
+using System;
 
 namespace AD_ConsoleApplication
 {
@@ -38,7 +34,9 @@ namespace AD_ConsoleApplication
             for (int i = 0; i <= arr.GetUpperBound(0); i++)
             {
                 if (arr[i] != null)
+                {
                     Console.WriteLine(i + " " + arr[i]);
+                }
             }
             Console.WriteLine();
         }

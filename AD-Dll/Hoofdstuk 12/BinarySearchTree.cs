@@ -285,5 +285,3 @@ namespace AD_Dll.Hoofdstuk_12
         }
     }
 }
-
-

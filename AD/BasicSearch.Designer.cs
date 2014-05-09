@@ -34,9 +34,9 @@
             // 
             // btnShowSeqSearch
             // 
-            this.btnShowSeqSearch.Location = new System.Drawing.Point(48, 105);
+            this.btnShowSeqSearch.Location = new System.Drawing.Point(87, 22);
             this.btnShowSeqSearch.Name = "btnShowSeqSearch";
-            this.btnShowSeqSearch.Size = new System.Drawing.Size(75, 48);
+            this.btnShowSeqSearch.Size = new System.Drawing.Size(115, 46);
             this.btnShowSeqSearch.TabIndex = 0;
             this.btnShowSeqSearch.Text = "Sequential search";
             this.btnShowSeqSearch.UseVisualStyleBackColor = true;
@@ -44,9 +44,9 @@
             // 
             // btnShowBinSearch
             // 
-            this.btnShowBinSearch.Location = new System.Drawing.Point(161, 105);
+            this.btnShowBinSearch.Location = new System.Drawing.Point(87, 89);
             this.btnShowBinSearch.Name = "btnShowBinSearch";
-            this.btnShowBinSearch.Size = new System.Drawing.Size(75, 48);
+            this.btnShowBinSearch.Size = new System.Drawing.Size(115, 46);
             this.btnShowBinSearch.TabIndex = 1;
             this.btnShowBinSearch.Text = "Binary search";
             this.btnShowBinSearch.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(287, 156);
             this.Controls.Add(this.btnShowBinSearch);
             this.Controls.Add(this.btnShowSeqSearch);
             this.Name = "BasicSearch";
